@@ -1,0 +1,11 @@
+name: Continuous Build
+on: [push]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v3
+      - run: yarn
+      - run: yarn lint
+      - run: yarn test

@@ -1,0 +1,32 @@
+{
+  "name": "@api3/data-feed-reader-example",
+  "version": "1.0.0",
+  "license": "MIT",
+  "description": "An example project for reading API3 data feeds",
+  "scripts": {
+    "build": "hardhat compile",
+    "lint": "yarn prettier:check && yarn lint:eslint && yarn lint:solhint",
+    "lint:eslint": "eslint . --ext .js,.ts",
+    "lint:solhint": "solhint contracts/**/*.sol",
+    "prepare": "husky install",
+    "prettier": "prettier --write \"./**/*.{json,js,ts,sol,md}\"",
+    "prettier:check": "prettier --check \"./**/*.{json,js,ts,sol,md}\"",
+    "test": "hardhat test"
+  },
+  "devDependencies": {
+    "@api3/airnode-protocol-v1": "^0.5.1",
+    "@api3/operations": "^0.0.1-08167ffd23a6b65b11c1a916e20d5dcf36d0fc0f-1",
+    "@nomiclabs/hardhat-ethers": "^2.0.6",
+    "@nomiclabs/hardhat-waffle": "^2.0.3",
+    "chai": "^4.3.6",
+    "eslint": "^8.16.0",
+    "ethereum-waffle": "^3.4.4",
+    "ethers": "^5.6.8",
+    "hardhat": "^2.9.6",
+    "hardhat-deploy": "^0.11.10",
+    "husky": "^8.0.1",
+    "prettier": "^2.6.2",
+    "prettier-plugin-solidity": "^1.0.0-beta.19",
+    "solhint": "^3.3.7"
+  }
+}
