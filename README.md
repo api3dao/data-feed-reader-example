@@ -13,7 +13,7 @@ API3 serves three kinds of data feeds:
 All data feeds that API3 serves on a chain can be read from a single DapiServer contract. In this repo, we inherit the
 DapiReader contract to implement an example data feed reader contract.
 
-## Polygon testnet
+## About Polygon testnet
 
 We wanted to duplicate all of our data feeds across all mainnets on a testnet for testing. We chose the Polygon testnet
 for this, as it is relatively stable and its faucet and RPC endpoints are reliable. Extending this to other testnets is
@@ -67,7 +67,7 @@ DAPI_NAME=AVAX/USD yarn run:static-read-dapi-with-name
 DATA_FEED_ID=0x1e455f28cd0c027f0894aa67b5883d78859c7b39d6977a16fbe1e25a61ab2a6c yarn run:static-read-data-feed-with-id
 ```
 
-## Reading dAPIs with name using a contract
+## Reading dAPIs using a contract
 
 First send a transaction to allow the deployed DataFeedReaderExample contract to read the dAPI. Note that you only need
 to do this once, and you can only do this on Polygon testnet.
