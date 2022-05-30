@@ -29,7 +29,7 @@ contract MockDapiServer {
     // Mocks the mapping of a dAPI name to a data feed
     function mockDapiName(bytes32 dapiName, bytes32 dataFeedId) external {
         require(dapiName != bytes32(0), "dAPI name zero");
-        dapiNameHash  ToDataFeedId[
+        dapiNameHashToDataFeedId[
             keccak256(abi.encodePacked(dapiName))
         ] = dataFeedId;
     }
