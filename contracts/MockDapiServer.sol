@@ -29,17 +29,17 @@ contract MockDapiServer {
     // Mocks the mapping of a dAPI name to a data feed
     function mockDapiName(bytes32 dapiName, bytes32 dataFeedId) external {
         require(dapiName != bytes32(0), "dAPI name zero");
-        dapiNameHashToDataFeedId[
+        dapiNameHash  ToDataFeedId[
             keccak256(abi.encodePacked(dapiName))
         ] = dataFeedId;
     }
 
     // Mocks reads being allowed or not
-    function mockReadAllowance(bool _allowedToRead) external {
+    function mockIfAllowedToRead(bool _allowedToRead) external {
         allowedToRead = _allowedToRead;
     }
 
-    // Called to read a data feed using the data feed ID
+    // Reads a data feed using the data feed ID
     function readDataFeedWithId(bytes32 dataFeedId)
         external
         view
@@ -50,7 +50,7 @@ contract MockDapiServer {
         return (dataFeed.value, dataFeed.timestamp);
     }
 
-    // Called to read a data feed using the data feed ID. Omits the timestamp.
+    // Reads a data feed using the data feed ID. Omits the timestamp.
     function readDataFeedValueWithId(bytes32 dataFeedId)
         external
         view
@@ -62,8 +62,7 @@ contract MockDapiServer {
         return dataFeed.value;
     }
 
-    // Called to read a data feed using the dAPI name that is mapped to a data
-    // feed
+    // Reads a data feed using the dAPI name that is mapped to a data feed
     function readDataFeedWithDapiName(bytes32 dapiName)
         external
         view
@@ -77,8 +76,8 @@ contract MockDapiServer {
         return (dataFeed.value, dataFeed.timestamp);
     }
 
-    // Called to read a data feed using the dAPI name that is mapped to a data
-    // feed. Omits the timestamp.
+    // Reads a data feed using the dAPI name that is mapped to a data feed.
+    // Omits the timestamp.
     function readDataFeedValueWithDapiName(bytes32 dapiName)
         external
         view
