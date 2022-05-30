@@ -14,8 +14,10 @@
     "prettier:check": "prettier --check \"./**/*.{json,js,ts,sol,md}\"",
     "run:allow-to-read-dapi-with-name": "hardhat run scripts/allow-to-read-dapi-with-name.js --network polygon-testnet",
     "run:allow-to-read-data-feed-with-id": "hardhat run scripts/allow-to-read-data-feed-with-id.js --network polygon-testnet",
-    "run:read-dapi-value-with-id": "hardhat run scripts/read-dapi-value-with-id.js --network polygon-testnet",
-    "run:read-dapi-with-id": "hardhat run scripts/read-dapi-with-id.js --network polygon-testnet",
+    "run:eoa-read-dapi-with-name": "hardhat run scripts/eoa-read-dapi-with-name.js --network polygon-testnet",
+    "run:eoa-read-data-feed-with-id": "hardhat run scripts/eoa-read-data-feed-with-id.js --network polygon-testnet",
+    "run:read-dapi-value-with-name": "hardhat run scripts/read-dapi-value-with-name.js --network polygon-testnet",
+    "run:read-dapi-with-name": "hardhat run scripts/read-dapi-with-name.js --network polygon-testnet",
     "run:read-data-feed-value-with-id": "hardhat run scripts/read-data-feed-value-with-id.js --network polygon-testnet",
     "run:read-data-feed-with-id": "hardhat run scripts/read-data-feed-with-id.js --network polygon-testnet",
     "test": "hardhat test"
