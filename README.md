@@ -7,7 +7,8 @@ API3 serves three kinds of data feeds:
 - [Beacons](https://medium.com/api3/beacons-building-blocks-for-web3-data-connectivity-df6ad3eb5763): Single-source data
   feeds, addressed by the hash of their parameters
 - Beacon sets: Aggregation of Beacons, addressed by the hash of the underlying Beacon IDs
-- dAPIs: A managed data feed that is pointed to a Beacon or a Beacon set, addressed by its human-readable name
+- [dAPIs](https://medium.com/api3/dapis-apis-for-dapps-53b83f8d2493): A managed data feed that is pointed to a Beacon or
+  a Beacon set, addressed by its human-readable name
 
 All data feeds that API3 serves on a chain can be read from a single DapiServer contract. In this repo, we inherit the
 DapiReader contract to implement an example data feed reader contract.
