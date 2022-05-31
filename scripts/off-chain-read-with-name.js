@@ -13,7 +13,7 @@ async function main() {
     throw new Error('dAPI name not defined');
   }
   const encodedDapiName = hre.ethers.utils.formatBytes32String(dapiName);
-  const dapi = await dapiServer.readDapiWithName(encodedDapiName);
+  const dapi = await dapiServer.readDataFeedWithDapiName(encodedDapiName);
   console.log(
     `VoidSigner with address 0 read dAPI with name ${dapiName} as \n  value: ${dapi.value.toString()}\n  timestamp: ${dapi.timestamp.toString()}`
   );

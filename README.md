@@ -10,21 +10,22 @@ API3 serves three kinds of data feeds:
 - [dAPIs](https://medium.com/api3/dapis-apis-for-dapps-53b83f8d2493): A managed data feed that is pointed to a Beacon or
   a Beacon set, addressed by its human-readable name
 
-All data feeds that API3 serves on a chain can be read from a single DapiServer contract. In this repo, we inherit the
-DapiReader contract to implement an example data feed reader contract.
+All data feeds that API3 serves on a chain can be read from a single DapiServer contract using the ID for Beacons and
+Beacon sets and the name for dAPIs. In this repo, we inherit the DapiReader contract to implement an example data feed
+reader contract.
 
 ## About Polygon testnet
 
-We wanted to duplicate all of our data feeds across all mainnets on a testnet for testing. We chose the Polygon testnet
-for this, as it is relatively stable and its faucet and RPC endpoints are reliable. Extending this to other testnets is
-not trivial, which is why we are not planning to do it in the foreseeable future.
+We duplicated all of our data feeds across all mainnets on a testnet. We chose the Polygon testnet for this, as it is
+relatively stable and its faucet and RPC endpoints are reliable. Extending this to other testnets is not trivial, which
+is why we are not planning to do it in the foreseeable future.
 
 ## Access control
 
 Anyone can read an API3 data feed with an off-chain, static call. However, only contracts allowed by an authorized
-account (EOA or contract) are allowed to read on-chain. For production use-cases on mainnet, you will need to pay for
-contract read access. On Polygon testnet, there is a contract that you can call to allow your contract to do on-chain
-calls for free for testing purposes, which we use in this repo.
+account are allowed to read on-chain. For production use-cases on mainnet, you will need to pay for contract read
+access. On Polygon testnet, there is a contract that you can call to allow your contract to do on-chain calls for free
+for testing purposes, which we use in this repo.
 
 ## Data feed IDs and dAPI names
 
@@ -56,36 +57,36 @@ cp credentials.example.json credentials.json
 yarn deploy
 ```
 
-## Reading data feeds using an EOA
+## Reading data feeds off-chain
 
 Use the scripts below to read the data feeds off-chain. You need to do the static call with a VoidSigner with address 0,
 see the scripts for details.
 
 ```sh
-DAPI_NAME=AVAX/USD yarn run:static-read-dapi-with-name
+DAPI_NAME=AVAX/USD yarn run:off-chain-read-with-name
 
-DATA_FEED_ID=0x1e455f28cd0c027f0894aa67b5883d78859c7b39d6977a16fbe1e25a61ab2a6c yarn run:static-read-data-feed-with-id
+DATA_FEED_ID=0x981fb212c961973cb0e36c2ba003ab0d43e61f01035284e8c9917a296b78dbcb yarn run:off-chain-read-with-id
 ```
 
-## Reading dAPIs using a contract
+## Reading dAPIs with name using a contract
 
 First send a transaction to allow the deployed DataFeedReaderExample contract to read the dAPI. Note that you only need
 to do this once, and you can only do this on Polygon testnet.
 
 ```sh
-DAPI_NAME=AVAX/USD yarn run:allow-to-read-dapi-with-name
+DAPI_NAME=AVAX/USD yarn run:allow-to-read-with-name
 ```
 
 Then you can use the script below to have the DataFeedReaderExample contract read the dAPI.
 
 ```sh
-DAPI_NAME=AVAX/USD yarn run:read-dapi-with-name
+DAPI_NAME=AVAX/USD yarn run:read-with-name
 ```
 
 You can also omit reading the timestamp and only get the value.
 
 ```sh
-DAPI_NAME=AVAX/USD yarn run:read-dapi-value-with-name
+DAPI_NAME=AVAX/USD yarn run:read-value-with-name
 ```
 
 ## Reading data feeds with ID using a contract
@@ -94,19 +95,19 @@ First send a transaction to allow the deployed DataFeedReaderExample contract to
 need to do this once, and you can only do this on Polygon testnet.
 
 ```sh
-DATA_FEED_ID=0x1e455f28cd0c027f0894aa67b5883d78859c7b39d6977a16fbe1e25a61ab2a6c yarn run:allow-to-read-data-feed-with-id
+DATA_FEED_ID=0x981fb212c961973cb0e36c2ba003ab0d43e61f01035284e8c9917a296b78dbcb yarn run:allow-to-read-with-id
 ```
 
 Then you can use the script below to have the DataFeedReaderExample contract read the data feed.
 
 ```sh
-DATA_FEED_ID=0x1e455f28cd0c027f0894aa67b5883d78859c7b39d6977a16fbe1e25a61ab2a6c yarn run:read-data-feed-with-id
+DATA_FEED_ID=0x981fb212c961973cb0e36c2ba003ab0d43e61f01035284e8c9917a296b78dbcb yarn run:read-with-id
 ```
 
 You can also omit reading the timestamp and only get the value.
 
 ```sh
-DATA_FEED_ID=0x1e455f28cd0c027f0894aa67b5883d78859c7b39d6977a16fbe1e25a61ab2a6c yarn run:read-data-feed-value-with-id
+DATA_FEED_ID=0x981fb212c961973cb0e36c2ba003ab0d43e61f01035284e8c9917a296b78dbcb yarn run:read-value-with-id
 ```
 
 ## Local development and testing

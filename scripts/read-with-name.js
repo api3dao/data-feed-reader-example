@@ -12,7 +12,7 @@ async function main() {
     throw new Error('dAPI name not defined');
   }
   const encodedDapiName = hre.ethers.utils.formatBytes32String(dapiName);
-  const dapi = await dataFeedReaderExample.readDapiWithName(encodedDapiName);
+  const dapi = await dataFeedReaderExample.readDataFeedWithDapiName(encodedDapiName);
   console.log(
     `DataFeedReaderExample at ${
       DataFeedReaderExample.address
