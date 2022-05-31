@@ -46,15 +46,8 @@ yarn
 
 ```sh
 cp credentials.example.json credentials.json
-# Populate credentials.json with your mnemonic
-```
 
-- Get Mumbai MATIC from the [faucet](https://faucet.polygon.technology/)
-
-- Deploy DataFeedReaderExample
-
-```sh
-yarn deploy
+# ..and populate credentials.json with your mnemonic
 ```
 
 ## Reading data feeds off-chain
@@ -68,7 +61,17 @@ DAPI_NAME=AVAX/USD yarn run:off-chain-read-with-name
 DATA_FEED_ID=0x981fb212c961973cb0e36c2ba003ab0d43e61f01035284e8c9917a296b78dbcb yarn run:off-chain-read-with-id
 ```
 
-## Reading dAPIs with name using a contract
+## Deploying DataFeedReaderExample
+
+- Get Mumbai MATIC from the [faucet](https://faucet.polygon.technology/)
+
+- Deploy DataFeedReaderExample
+
+```sh
+yarn deploy
+```
+
+## Reading dAPIs with name using DataFeedReaderExample
 
 First send a transaction to allow the deployed DataFeedReaderExample contract to read the dAPI. Note that you only need
 to do this once, and you can only do this on Polygon testnet.
@@ -89,7 +92,7 @@ You can also omit reading the timestamp and only get the value.
 DAPI_NAME=AVAX/USD yarn run:read-value-with-name
 ```
 
-## Reading data feeds with ID using a contract
+## Reading data feeds with ID using DataFeedReaderExample
 
 First send a transaction to allow the deployed DataFeedReaderExample contract to read the data feed. Note that you only
 need to do this once, and you can only do this on Polygon testnet.
