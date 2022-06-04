@@ -15,7 +15,9 @@ async function main() {
   console.log(
     `DataFeedReaderExample at ${
       DataFeedReaderExample.address
-    } read data feed with ID ${dataFeedId} as \n  value: ${dataFeed.value.toString()}\n  timestamp: ${dataFeed.timestamp.toString()}`
+    } read data feed with ID ${dataFeedId} as \n  value: ${dataFeed.value.toString()}\n  timestamp: ${dataFeed.timestamp.toString()} (${new Date(
+      dataFeed.timestamp.toNumber() * 1000
+    ).toISOString()})`
   );
 }
 

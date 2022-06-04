@@ -16,7 +16,9 @@ async function main() {
   console.log(
     `DataFeedReaderExample at ${
       DataFeedReaderExample.address
-    } read dAPI with name ${dapiName} as \n  value: ${dapi.value.toString()}\n  timestamp: ${dapi.timestamp.toString()}`
+    } read dAPI with name ${dapiName} as \n  value: ${dapi.value.toString()}\n  timestamp: ${dapi.timestamp.toString()} (${new Date(
+      dapi.timestamp.toNumber() * 1000
+    ).toISOString()})`
   );
 }
 
