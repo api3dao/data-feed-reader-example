@@ -41,4 +41,32 @@ contract DataFeedReaderExample is DapiReader {
     {
         value = IDapiServer(dapiServer).readDataFeedValueWithDapiName(dapiName);
     }
+
+    function dataFeedIdToReaderToWhitelistStatus(
+        bytes32 dataFeedId,
+        address reader
+    )
+        external
+        view
+        returns (uint64 expirationTimestamp, uint192 indefiniteWhitelistCount)
+    {
+        return
+            IDapiServer(dapiServer).dataFeedIdToReaderToWhitelistStatus(
+                dataFeedId,
+                reader
+            );
+    }
+
+    function dapiNameToReaderToWhitelistStatus(bytes32 dapiName, address reader)
+        external
+        view
+        returns (uint64 expirationTimestamp, uint192 indefiniteWhitelistCount)
+    {
+        bytes32 dapiNameHash = keccak256(abi.encodePacked(dapiName));
+        return
+            IDapiServer(dapiServer).dataFeedIdToReaderToWhitelistStatus(
+                dapiNameHash,
+                reader
+            );
+    }
 }

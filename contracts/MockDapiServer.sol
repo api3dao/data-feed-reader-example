@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.9;
 
-// A mock contract to simulate DapiServer. See the original for more info
+// A limited mock contract to simulate DapiServer. See the original for more info
 // https://github.com/api3dao/airnode-protocol-v1/blob/main/contracts/dapis/DapiServer.sol
 contract MockDapiServer {
     struct DataFeed {

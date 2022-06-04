@@ -2,6 +2,11 @@ const hre = require('hardhat');
 
 async function main() {
   const DataFeedReaderExample = await hre.deployments.get('DataFeedReaderExample');
+  const dataFeedReaderExample = new hre.ethers.Contract(
+    DataFeedReaderExample.address,
+    DataFeedReaderExample.abi,
+    hre.ethers.provider
+  );
   const selfServeDapiServerWhitelisterAddressOnPolygonTestnet = '0x78D95f27B068F36Bd4c3f29e424D7072D149DDF3';
   const selfServeDapiServerWhitelisterAbi = [
     'function allowToReadDataFeedWithIdFor30Days(bytes32 dataFeedId, address reader) public',
@@ -17,12 +22,23 @@ async function main() {
     throw new Error('dAPI name not defined');
   }
   const encodedDapiName = hre.ethers.utils.formatBytes32String(dapiName);
-  await selfServeDapiServerWhitelister.allowToReadDataFeedWithDapiNameFor30Days(
+  const receipt = await selfServeDapiServerWhitelister.allowToReadDataFeedWithDapiNameFor30Days(
     encodedDapiName,
     DataFeedReaderExample.address
   );
+  await new Promise((resolve) =>
+    hre.ethers.provider.once(receipt.hash, () => {
+      resolve();
+    })
+  );
+  const accessStatus = await dataFeedReaderExample.dapiNameToReaderToWhitelistStatus(
+    encodedDapiName,
+    dataFeedReaderExample.address
+  );
   console.log(
-    `Allowed DataFeedReaderExample at ${DataFeedReaderExample.address} to read dAPI with name ${dapiName} for 30 days.`
+    `DataFeedReaderExample is allowed to read the dAPI with name ${dapiName} until ${new Date(
+      accessStatus.expirationTimestamp.toNumber() * 1000
+    ).toISOString()}. It is granted indefinite access ${accessStatus.indefiniteWhitelistCount} times.`
   );
 }
 
