@@ -79,7 +79,7 @@ yarn deploy
 ## Reading dAPIs with name using DataFeedReaderExample
 
 First, send a transaction to allow the deployed DataFeedReaderExample contract to read the dAPI. Note that you only need
-to do this once, and you can only do this on Polygon testnet.
+to do this once, and [you can only do this on Polygon testnet](#access-control).
 
 ```sh
 DAPI_NAME=AVAX/USD yarn run:allow-to-read-with-name
@@ -100,7 +100,7 @@ DAPI_NAME=AVAX/USD yarn run:read-value-with-name
 ## Reading data feeds with ID using DataFeedReaderExample
 
 First send a transaction to allow the deployed DataFeedReaderExample contract to read the data feed. Note that you only
-need to do this once, and you can only do this on Polygon testnet.
+need to do this once, and [you can only do this on Polygon testnet](#access-control).
 
 ```sh
 DATA_FEED_ID=0x981fb212c961973cb0e36c2ba003ab0d43e61f01035284e8c9917a296b78dbcb yarn run:allow-to-read-with-id
