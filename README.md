@@ -35,8 +35,9 @@ dAPIs are read using their names. You can find the dAPIs available on the Polygo
 repo, you will need to specify dAPI names as the environment variable `DAPI_NAME`.
 
 Beacons and Beacon sets are read using their IDs. You can find the Beacons available on the Polygon testnet
-[here](https://github.com/api3dao/operations/tree/main/data/apis). While using the scripts in this repo, you will need
-to specify data feed ID as the environment variable `DATA_FEED_ID`.
+[here](https://github.com/api3dao/operations/tree/main/data/apis), in `beacons/` under the respective API provider's
+directory. While using the scripts in this repo, you will need to specify data feed ID as the environment variable
+`DATA_FEED_ID`.
 
 ## Installation instructions
 
