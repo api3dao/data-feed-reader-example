@@ -30,12 +30,14 @@ for testing purposes, which we use in this repo.
 ## dAPI names and data feed IDs
 
 dAPIs are read using their names. You can find the dAPIs available on the Polygon testnet
+[here](https://docs.api3.org/dapis/reference/dapi-browser.html) or
 [here](https://github.com/api3dao/operations/blob/main/data/dapis/polygon-testnet.json). While using the scripts in this
 repo, you will need to specify dAPI names as the environment variable `DAPI_NAME`.
 
 Beacons and Beacon sets are read using their IDs. You can find the Beacons available on the Polygon testnet
-[here](https://github.com/api3dao/operations/tree/main/data/apis). While using the scripts in this repo, you will need
-to specify data feed ID as the environment variable `DATA_FEED_ID`.
+[here](https://github.com/api3dao/operations/tree/main/data/apis), in `beacons/` under the respective API provider's
+directory. While using the scripts in this repo, you will need to specify data feed ID as the environment variable
+`DATA_FEED_ID`.
 
 ## Installation instructions
 
@@ -59,9 +61,9 @@ Use the scripts below to read the data feeds off-chain. You need to do the stati
 see the scripts for details.
 
 ```sh
-DAPI_NAME=AVAX/USD yarn run:off-chain-read-with-name
+DAPI_NAME=BTC/USD yarn run:off-chain-read-with-name
 
-DATA_FEED_ID=0x981fb212c961973cb0e36c2ba003ab0d43e61f01035284e8c9917a296b78dbcb yarn run:off-chain-read-with-id
+DATA_FEED_ID=0x01aadef3e56974c0ed8829b34353495191c1362f48bb5aa9533835c00cb2a7af yarn run:off-chain-read-with-id
 ```
 
 ## Deploying DataFeedReaderExample
@@ -77,43 +79,43 @@ yarn deploy
 ## Reading dAPIs with name using DataFeedReaderExample
 
 First, send a transaction to allow the deployed DataFeedReaderExample contract to read the dAPI. Note that you only need
-to do this once, and you can only do this on Polygon testnet.
+to do this once, and [you can only do this on Polygon testnet](#access-control).
 
 ```sh
-DAPI_NAME=AVAX/USD yarn run:allow-to-read-with-name
+DAPI_NAME=BTC/USD yarn run:allow-to-read-with-name
 ```
 
 Then, you can use the script below to have the DataFeedReaderExample contract read the dAPI.
 
 ```sh
-DAPI_NAME=AVAX/USD yarn run:read-with-name
+DAPI_NAME=BTC/USD yarn run:read-with-name
 ```
 
 You can also omit the timestamp and only read the value.
 
 ```sh
-DAPI_NAME=AVAX/USD yarn run:read-value-with-name
+DAPI_NAME=BTC/USD yarn run:read-value-with-name
 ```
 
 ## Reading data feeds with ID using DataFeedReaderExample
 
 First send a transaction to allow the deployed DataFeedReaderExample contract to read the data feed. Note that you only
-need to do this once, and you can only do this on Polygon testnet.
+need to do this once, and [you can only do this on Polygon testnet](#access-control).
 
 ```sh
-DATA_FEED_ID=0x981fb212c961973cb0e36c2ba003ab0d43e61f01035284e8c9917a296b78dbcb yarn run:allow-to-read-with-id
+DATA_FEED_ID=0x01aadef3e56974c0ed8829b34353495191c1362f48bb5aa9533835c00cb2a7af yarn run:allow-to-read-with-id
 ```
 
 Then, you can use the script below to have the DataFeedReaderExample contract read the data feed.
 
 ```sh
-DATA_FEED_ID=0x981fb212c961973cb0e36c2ba003ab0d43e61f01035284e8c9917a296b78dbcb yarn run:read-with-id
+DATA_FEED_ID=0x01aadef3e56974c0ed8829b34353495191c1362f48bb5aa9533835c00cb2a7af yarn run:read-with-id
 ```
 
 You can also omit the timestamp and only read the value.
 
 ```sh
-DATA_FEED_ID=0x981fb212c961973cb0e36c2ba003ab0d43e61f01035284e8c9917a296b78dbcb yarn run:read-value-with-id
+DATA_FEED_ID=0x01aadef3e56974c0ed8829b34353495191c1362f48bb5aa9533835c00cb2a7af yarn run:read-value-with-id
 ```
 
 ## Local development and testing
