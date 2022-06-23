@@ -30,6 +30,7 @@ for testing purposes, which we use in this repo.
 ## dAPI names and data feed IDs
 
 dAPIs are read using their names. You can find the dAPIs available on the Polygon testnet
+[here](https://docs.api3.org/dapis/reference/dapi-browser.html) or
 [here](https://github.com/api3dao/operations/blob/main/data/dapis/polygon-testnet.json). While using the scripts in this
 repo, you will need to specify dAPI names as the environment variable `DAPI_NAME`.
 
