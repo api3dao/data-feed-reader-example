@@ -124,6 +124,25 @@ You can also omit the timestamp and only read the value.
 DATA_FEED_ID=0x01aadef3e56974c0ed8829b34353495191c1362f48bb5aa9533835c00cb2a7af yarn run:read-value-with-id
 ```
 
+## Testing with Remix
+Deploy [DataFeedReaderExample](./contracts/DataFeedReaderExample.sol) using Remix by inputing the DapiServer contract address as the constructor argument.
+
+Once deployed, whitelist the deployed `DataFeedReaderExample` contract address on the `SelfServeDapiServerWhitelister` [here](https://mumbai.polygonscan.com/address/0x78D95f27B068F36Bd4c3f29e424D7072D149DDF3#writeContract).
+
+To be able to read via a `datafeedId`, whitelist by calling the `allowToReadDataFeedWithIdFor30Days` function with the `datafeedId` and `reader` address (DataFeedReaderExample).
+
+To be able to read via a `dAPI Name`, whitelist by calling the `allowToReadDataFeedWithDapiNameFor30Days` function with the `dapiName` and `reader` address (DataFeedReaderExample).
+
+Note: The dapiName argument has to be a bytes32 character, you can use the following cli commands to convert a string to bytes32
+
+```
+/home/data-feed-reader-example> npm install -g @ethersproject/cli
+/home/data-feed-reader-example> ethers eval 'utils.formatBytes32String("BTC/USD")'
+0x4254432f55534400000000000000000000000000000000000000000000000000
+```
+
+After Whitelisting, head back to remix and try calling `readDataFeedWithDapiName` or `readDataFeedWithId` with the whitelisted dapiName/datafeedId. Your deployed `DataFeedReaderExample` should display a value and timestamp associated with the respective dapiName/datafeedId.
+
 ## Local development and testing
 
 A MockDapiServer contract is provided for local development and testing. See the tests for its usage, and run the tests
