@@ -21,6 +21,7 @@ faucet and RPC endpoints are reliable. Extending this to other testnets is not t
 to do so in the foreseeable future.
 
 ### Contract Addresses
+
 ```
 DapiServer: 0x71Da7A936fCaEd1Ee364Df106B12deF6D1Bf1f14
 SelfServeDapiServerWhitelister: 0x78D95f27B068F36Bd4c3f29e424D7072D149DDF3
@@ -30,8 +31,9 @@ SelfServeDapiServerWhitelister: 0x78D95f27B068F36Bd4c3f29e424D7072D149DDF3
 
 Anyone can read an API3 data feed with an off-chain, static call. However, only contracts allowed by an authorized
 account are allowed to read on-chain. For production use-cases on mainnet, you will need to pay for contract read
-access. On Polygon testnet, there is a contract called [`SelfServeDapiServerWhitelister`](https://mumbai.polygonscan.com/address/0x78D95f27B068F36Bd4c3f29e424D7072D149DDF3#writeContract) that you can call to allow your contract to do on-chain reads for free
-for testing purposes, which we use in this repo.
+access. On Polygon testnet, there is a contract called
+[`SelfServeDapiServerWhitelister`](https://mumbai.polygonscan.com/address/0x78D95f27B068F36Bd4c3f29e424D7072D149DDF3#writeContract)
+that you can call to allow your contract to do on-chain reads for free for testing purposes, which we use in this repo.
 
 ## dAPI names and data feed IDs
 
@@ -125,15 +127,21 @@ DATA_FEED_ID=0x01aadef3e56974c0ed8829b34353495191c1362f48bb5aa9533835c00cb2a7af 
 ```
 
 ## Testing with Remix
-Deploy [DataFeedReaderExample](./contracts/DataFeedReaderExample.sol) using Remix by inputing the DapiServer contract address as the constructor argument.
 
-Once deployed, whitelist the deployed `DataFeedReaderExample` contract address on the `SelfServeDapiServerWhitelister` [here](https://mumbai.polygonscan.com/address/0x78D95f27B068F36Bd4c3f29e424D7072D149DDF3#writeContract).
+Deploy [DataFeedReaderExample](./contracts/DataFeedReaderExample.sol) using Remix by inputing the DapiServer contract
+address as the constructor argument.
 
-To be able to read via a `datafeedId`, whitelist by calling the `allowToReadDataFeedWithIdFor30Days` function with the `datafeedId` and `reader` address (DataFeedReaderExample).
+Once deployed, whitelist the deployed `DataFeedReaderExample` contract address on the `SelfServeDapiServerWhitelister`
+[here](https://mumbai.polygonscan.com/address/0x78D95f27B068F36Bd4c3f29e424D7072D149DDF3#writeContract).
 
-To be able to read via a `dAPI Name`, whitelist by calling the `allowToReadDataFeedWithDapiNameFor30Days` function with the `dapiName` and `reader` address (DataFeedReaderExample).
+To be able to read via a `datafeedId`, whitelist by calling the `allowToReadDataFeedWithIdFor30Days` function with the
+`datafeedId` and `reader` address (DataFeedReaderExample).
 
-Note: The dapiName argument has to be a bytes32 character, you can use the following cli commands to convert a string to bytes32
+To be able to read via a `dAPI Name`, whitelist by calling the `allowToReadDataFeedWithDapiNameFor30Days` function with
+the `dapiName` and `reader` address (DataFeedReaderExample).
+
+Note: The dapiName argument has to be a bytes32 character, you can use the following cli commands to convert a string to
+bytes32
 
 ```
 /home/data-feed-reader-example> npm install -g @ethersproject/cli
@@ -141,7 +149,9 @@ Note: The dapiName argument has to be a bytes32 character, you can use the follo
 0x4254432f55534400000000000000000000000000000000000000000000000000
 ```
 
-After Whitelisting, head back to remix and try calling `readDataFeedWithDapiName` or `readDataFeedWithId` with the whitelisted dapiName/datafeedId. Your deployed `DataFeedReaderExample` should display a value and timestamp associated with the respective dapiName/datafeedId.
+After Whitelisting, head back to remix and try calling `readDataFeedWithDapiName` or `readDataFeedWithId` with the
+whitelisted dapiName/datafeedId. Your deployed `DataFeedReaderExample` should display a value and timestamp associated
+with the respective dapiName/datafeedId.
 
 ## Local development and testing
 
