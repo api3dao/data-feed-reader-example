@@ -20,12 +20,7 @@ We duplicated all of our data feeds across all mainnets on the Polygon testnet, 
 faucet and RPC endpoints are reliable. Extending this to other testnets is not trivial, which is why we are not planning
 to do so in the foreseeable future.
 
-### Contract Addresses
-
-```
-DapiServer: 0x71Da7A936fCaEd1Ee364Df106B12deF6D1Bf1f14
-SelfServeDapiServerWhitelister: 0x78D95f27B068F36Bd4c3f29e424D7072D149DDF3
-```
+The contract addresses for `DapiServer` and `SelfServeDapiServerWhitelister` for polygon testnet can be found [here](https://docs.api3.org/dapis/reference/chains.html). The cli commands used to whitelist and read datafeeds reference the addresses to execute scripts in `/scripts`.
 
 ## Access control
 
@@ -128,7 +123,7 @@ DATA_FEED_ID=0x01aadef3e56974c0ed8829b34353495191c1362f48bb5aa9533835c00cb2a7af 
 
 ## Testing with Remix
 
-Deploy [DataFeedReaderExample](./contracts/DataFeedReaderExample.sol) using Remix by inputing the DapiServer contract
+Deploy [DataFeedReaderExample](./contracts/DataFeedReaderExample.sol) using Remix by inputting the DapiServer contract
 address as the constructor argument.
 
 Once deployed, whitelist the deployed `DataFeedReaderExample` contract address on the `SelfServeDapiServerWhitelister`
@@ -137,7 +132,7 @@ Once deployed, whitelist the deployed `DataFeedReaderExample` contract address o
 To be able to read via a `datafeedId`, whitelist by calling the `allowToReadDataFeedWithIdFor30Days` function with the
 `datafeedId` and `reader` address (DataFeedReaderExample).
 
-To be able to read via a `dAPI Name`, whitelist by calling the `allowToReadDataFeedWithDapiNameFor30Days` function with
+To be able to read via a `dapiName`, whitelist by calling the `allowToReadDataFeedWithDapiNameFor30Days` function with
 the `dapiName` and `reader` address (DataFeedReaderExample).
 
 Note: The dapiName argument has to be a bytes32 character, you can use the following cli commands to convert a string to
