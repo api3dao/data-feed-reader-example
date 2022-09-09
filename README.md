@@ -30,7 +30,7 @@ that you can call to allow your contract to do on-chain reads for free for testi
 
 ## Contracts
 
-The contract addresses for `DapiServer` and `SelfServeDapiServerWhitelister` for polygon testnet can be found
+The contract addresses for `DapiServer` and `SelfServeDapiServerWhitelister` for Polygon Testnet can be found
 [here](https://docs.api3.org/dapis/reference/chains.html). The cli commands used to whitelist and read datafeeds
 reference these addresses to execute scripts in `/scripts`.
 
