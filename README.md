@@ -20,10 +20,6 @@ We duplicated all of our data feeds across all mainnets on the Polygon testnet, 
 faucet and RPC endpoints are reliable. Extending this to other testnets is not trivial, which is why we are not planning
 to do so in the foreseeable future.
 
-The contract addresses for `DapiServer` and `SelfServeDapiServerWhitelister` for polygon testnet can be found
-[here](https://docs.api3.org/dapis/reference/chains.html). The cli commands used to whitelist and read datafeeds
-reference the addresses to execute scripts in `/scripts`.
-
 ## Access control
 
 Anyone can read an API3 data feed with an off-chain, static call. However, only contracts allowed by an authorized
@@ -31,6 +27,12 @@ account are allowed to read on-chain. For production use-cases on mainnet, you w
 access. On Polygon testnet, there is a contract called
 [`SelfServeDapiServerWhitelister`](https://mumbai.polygonscan.com/address/0x78D95f27B068F36Bd4c3f29e424D7072D149DDF3#writeContract)
 that you can call to allow your contract to do on-chain reads for free for testing purposes, which we use in this repo.
+
+## Contracts
+
+The contract addresses for `DapiServer` and `SelfServeDapiServerWhitelister` for polygon testnet can be found
+[here](https://docs.api3.org/dapis/reference/chains.html). The cli commands used to whitelist and read datafeeds
+reference these addresses to execute scripts in `/scripts`.
 
 ## dAPI names and data feed IDs
 
