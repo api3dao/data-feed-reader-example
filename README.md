@@ -20,7 +20,9 @@ We duplicated all of our data feeds across all mainnets on the Polygon testnet, 
 faucet and RPC endpoints are reliable. Extending this to other testnets is not trivial, which is why we are not planning
 to do so in the foreseeable future.
 
-The contract addresses for `DapiServer` and `SelfServeDapiServerWhitelister` for polygon testnet can be found [here](https://docs.api3.org/dapis/reference/chains.html). The cli commands used to whitelist and read datafeeds reference the addresses to execute scripts in `/scripts`.
+The contract addresses for `DapiServer` and `SelfServeDapiServerWhitelister` for polygon testnet can be found
+[here](https://docs.api3.org/dapis/reference/chains.html). The cli commands used to whitelist and read datafeeds
+reference the addresses to execute scripts in `/scripts`.
 
 ## Access control
 
