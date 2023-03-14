@@ -14,10 +14,10 @@
   resolved "https://registry.yarnpkg.com/@api3/chains/-/chains-1.1.2.tgz#43ad8e03d406270561df92844a3f5a6abda058c3"
   integrity sha512-pRxG/Vjjdo43817t704CoPj/aFNoCmEPhVGd7F5VMLMqEXHjUegMNfgwVWEjKm3khWpdbj21aHhX/r71VhXUVQ==
 
-"@api3/contracts@^0.4.1":
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/@api3/contracts/-/contracts-0.4.1.tgz#58965f1cf7da452c94442d756f16aeb2669a290a"
-  integrity sha512-OEt3o8d8JQ0B7s+1KgmLIgaczggEWEKmuI5c6Qdo7Vv/rJNM30jW4W1ytymE5COnbZp4gor7uSU5HcO9IMJSFQ==
+"@api3/contracts@^0.4.2":
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/@api3/contracts/-/contracts-0.4.2.tgz#7a3a999c2e60706a71a2933f9437294ad429b962"
+  integrity sha512-5JCn0kBm6HZVicYVAIBCqk4q2HA62njqtjmUxZaex7jHnP0ELs03UTVyaMzT79RJMdGn6qC1TdMYA9xvFrEMzA==
   dependencies:
     "@api3/airnode-protocol-v1" "1.2.4"
 

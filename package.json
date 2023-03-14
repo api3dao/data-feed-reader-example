@@ -16,7 +16,7 @@
   },
   "devDependencies": {
     "@api3/chains": "^1.1.2",
-    "@api3/contracts": "^0.4.1",
+    "@api3/contracts": "^0.4.2",
     "@nomicfoundation/hardhat-chai-matchers": "^1.0.0",
     "@nomicfoundation/hardhat-network-helpers": "^1.0.0",
     "@nomicfoundation/hardhat-toolbox": "^2.0.2",
