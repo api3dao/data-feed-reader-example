@@ -1,15 +1,21 @@
-require('@nomiclabs/hardhat-waffle');
+require('@nomicfoundation/hardhat-toolbox');
 require('hardhat-deploy');
+const api3Chains = require('@api3/chains/src');
+require('dotenv').config();
 
-const fs = require('fs');
-let credentials = require('./credentials.example.json');
-if (fs.existsSync('./credentials.json')) {
-  credentials = require('./credentials.json');
-}
+const networks = Object.entries(api3Chains.hardhatConfigNetworks()).reduce((networksWithMnemonic, networkEntry) => {
+  const chainAlias = networkEntry[0];
+  const network = networkEntry[1];
+  networksWithMnemonic[chainAlias] = {
+    ...network,
+    accounts: { mnemonic: process.env.MNEMONIC ? process.env.MNEMONIC : '' },
+  };
+  return networksWithMnemonic;
+}, {});
 
 module.exports = {
-  networks: credentials.networks,
+  networks,
   solidity: {
-    version: '0.8.9',
+    version: '0.8.17',
   },
 };

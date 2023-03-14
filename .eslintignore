@@ -1,13 +1,11 @@
 node_modules
+dist
 .env
 coverage
 coverage.json
 typechain
+typechain-types
 
-#Hardhat files
+# Hardhat files
 cache
 artifacts
-deployments
-
-# User secrets
-credentials.json

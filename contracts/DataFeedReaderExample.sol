@@ -1,72 +1,30 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.9;
+pragma solidity 0.8.17;
 
-import "@api3/airnode-protocol-v1/contracts/dapis/DapiReader.sol";
+import "@openzeppelin/contracts/access/Ownable.sol";
+import "@api3/contracts/contracts/v0.8/interfaces/IProxy.sol";
 
-contract DataFeedReaderExample is DapiReader {
-    constructor(address _dapiServer) DapiReader(_dapiServer) {}
+contract DataFeedReaderExample is Ownable {
+    // This contract reads from a single proxy. Your contract can read from multiple proxies.
+    address public proxy;
 
-    function readDataFeedWithId(bytes32 dataFeedId)
+    constructor(address _proxy) {
+        setProxy(_proxy);
+    }
+
+    // Updating the proxy address is a security-critical action. In this example, only
+    // the owner is allowed to do so.
+    function setProxy(address _proxy) public onlyOwner {
+        proxy = _proxy;
+    }
+
+    function readDataFeed()
         external
         view
         returns (int224 value, uint256 timestamp)
     {
-        (value, timestamp) = IDapiServer(dapiServer).readDataFeedWithId(
-            dataFeedId
-        );
-    }
-
-    function readDataFeedValueWithId(bytes32 dataFeedId)
-        external
-        view
-        returns (int224 value)
-    {
-        value = IDapiServer(dapiServer).readDataFeedValueWithId(dataFeedId);
-    }
-
-    function readDataFeedWithDapiName(bytes32 dapiName)
-        external
-        view
-        returns (int224 value, uint256 timestamp)
-    {
-        (value, timestamp) = IDapiServer(dapiServer).readDataFeedWithDapiName(
-            dapiName
-        );
-    }
-
-    function readDataFeedValueWithDapiName(bytes32 dapiName)
-        external
-        view
-        returns (int224 value)
-    {
-        value = IDapiServer(dapiServer).readDataFeedValueWithDapiName(dapiName);
-    }
-
-    function dataFeedIdToReaderToWhitelistStatus(
-        bytes32 dataFeedId,
-        address reader
-    )
-        external
-        view
-        returns (uint64 expirationTimestamp, uint192 indefiniteWhitelistCount)
-    {
-        return
-            IDapiServer(dapiServer).dataFeedIdToReaderToWhitelistStatus(
-                dataFeedId,
-                reader
-            );
-    }
-
-    function dapiNameToReaderToWhitelistStatus(bytes32 dapiName, address reader)
-        external
-        view
-        returns (uint64 expirationTimestamp, uint192 indefiniteWhitelistCount)
-    {
-        bytes32 dapiNameHash = keccak256(abi.encodePacked(dapiName));
-        return
-            IDapiServer(dapiServer).dataFeedIdToReaderToWhitelistStatus(
-                dapiNameHash,
-                reader
-            );
+        (value, timestamp) = IProxy(proxy).read();
+        // If you have any assumptions about `value` and `timestamp`, make sure
+        // to validate them right after reading from the proxy.
     }
 }
