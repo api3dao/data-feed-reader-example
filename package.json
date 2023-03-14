@@ -11,14 +11,7 @@
     "lint:eslint": "eslint . --ext .js,.ts",
     "prettier:check": "prettier --check \"./**/*.{js,ts,md,json,sol}\"",
     "prettier": "prettier --write \"./**/*.{js,ts,md,json,sol}\"",
-    "run:allow-to-read-with-id": "hardhat run scripts/allow-to-read-with-id.js --network polygon-testnet",
-    "run:allow-to-read-with-name": "hardhat run scripts/allow-to-read-with-name.js --network polygon-testnet",
-    "run:off-chain-read-with-id": "hardhat run scripts/off-chain-read-with-id.js --network polygon-testnet",
-    "run:off-chain-read-with-name": "hardhat run scripts/off-chain-read-with-name.js --network polygon-testnet",
-    "run:read-value-with-id": "hardhat run scripts/read-value-with-id.js --network polygon-testnet",
-    "run:read-value-with-name": "hardhat run scripts/read-value-with-name.js --network polygon-testnet",
-    "run:read-with-id": "hardhat run scripts/read-with-id.js --network polygon-testnet",
-    "run:read-with-name": "hardhat run scripts/read-with-name.js --network polygon-testnet",
+    "run:read-data-feed": "hardhat run scripts/read-data-feed.js --network $NETWORK",
     "test": "hardhat test"
   },
   "devDependencies": {
