@@ -9,7 +9,7 @@ async function main() {
   );
   const dataFeed = await dataFeedReaderExample.readDataFeed();
   console.log(
-    `DataFeedReaderExample at ${DataFeedReaderExample.address} read the data feed as:\n ${dataFeed.toString()}`
+    `DataFeedReaderExample at ${DataFeedReaderExample.address} read its data feed as:\n ${dataFeed.toString()}`
   );
 }
 

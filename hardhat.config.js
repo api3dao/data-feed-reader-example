@@ -1,6 +1,6 @@
 require('@nomicfoundation/hardhat-toolbox');
 require('hardhat-deploy');
-const api3Chains = require('@api3/chains/src');
+const api3Chains = require('@api3/chains');
 require('dotenv').config();
 
 const networks = Object.entries(api3Chains.hardhatConfigNetworks()).reduce((networksWithMnemonic, networkEntry) => {
