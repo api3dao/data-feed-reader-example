@@ -4,7 +4,11 @@ const api3Contracts = require('@api3/contracts');
 async function main() {
   const proxyFactoryAddress = api3Contracts.references.ProxyFactory[hre.network.config.chainId.toString()];
   const proxyFactoryArtifact = await hre.artifacts.readArtifact('IProxyFactory');
-  const proxyFactory = new hre.ethers.Contract(proxyFactoryAddress, proxyFactoryArtifact.abi, hre.ethers.provider);
+  const proxyFactory = new hre.ethers.Contract(
+    proxyFactoryAddress,
+    proxyFactoryArtifact.abi,
+    (await hre.ethers.getSigners())[0]
+  );
   const dataFeedId = process.env.DATA_FEED_ID;
   if (!dataFeedId) {
     throw new Error('Environment variable "DATA_FEED_ID" is not defined');
