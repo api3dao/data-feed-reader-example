@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@api3/airnode-protocol-v1@1.2.4":
-  version "1.2.4"
-  resolved "https://registry.yarnpkg.com/@api3/airnode-protocol-v1/-/airnode-protocol-v1-1.2.4.tgz#c799ab5b0398f94b85334f0ecd98dc7940c03b5a"
-  integrity sha512-5QB+e/4CNmtkVAZERaEXkUttbjCUMOwqpaYUZdtuzbEXXoXQ2hWo+bTJNZ5bYhpphlLQULLbqje6s5oN1CTUuw==
+"@api3/airnode-protocol-v1@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@api3/airnode-protocol-v1/-/airnode-protocol-v1-2.0.0.tgz#e68f0d00426224813cb6997761678cc10e72dd10"
+  integrity sha512-6bgpBOuQW2gAXzvFZKeaPSk0A2BiIvG+fNt50nplIvGGjsblLlFsoNiUpyzF7OD2+uacm7upEsAOhBL5hfsU9Q==
   dependencies:
     "@openzeppelin/contracts" "4.8.2"
 
@@ -14,12 +14,13 @@
   resolved "https://registry.yarnpkg.com/@api3/chains/-/chains-1.2.0.tgz#3e3e83d9682396cea59ab6448ed772e620c4b6b0"
   integrity sha512-P49+XShat+CmXwmekFiyA+AGTl+qD9M92RByUVZpFznayDg3vvD7vs7OkaRLmQkgbL5Qwn4Owqk6Cnj/i2CN2g==
 
-"@api3/contracts@^0.4.2":
-  version "0.4.2"
-  resolved "https://registry.yarnpkg.com/@api3/contracts/-/contracts-0.4.2.tgz#7a3a999c2e60706a71a2933f9437294ad429b962"
-  integrity sha512-5JCn0kBm6HZVicYVAIBCqk4q2HA62njqtjmUxZaex7jHnP0ELs03UTVyaMzT79RJMdGn6qC1TdMYA9xvFrEMzA==
+"@api3/contracts@^0.5.0":
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/@api3/contracts/-/contracts-0.5.0.tgz#df975fe0910d3f8ee1cb82ba5fd95bb565965f12"
+  integrity sha512-2RF/fW0DtvTLpZ98kyugbrr49jVUsWpfLfUh+PeeOiWRXQGltR0EGgX5xMvdgg8b/IccawRdsGpdZI2DoffUNA==
   dependencies:
-    "@api3/airnode-protocol-v1" "1.2.4"
+    "@api3/airnode-protocol-v1" "^2.0.0"
+    ethers "^5.4.7"
 
 "@babel/code-frame@^7.0.0":
   version "7.18.6"
@@ -2287,7 +2288,7 @@ ethers@^4.0.40:
     uuid "2.0.1"
     xmlhttprequest "1.8.0"
 
-ethers@^5.5.3:
+ethers@^5.4.7, ethers@^5.5.3:
   version "5.7.2"
   resolved "https://registry.yarnpkg.com/ethers/-/ethers-5.7.2.tgz#3a7deeabbb8c030d4126b24f84e525466145872e"
   integrity sha512-wswUsmWo1aOK8rR7DIKiWSw9DbLWe6x98Jrn8wcTflTVvaXhAMaB5zGAXy0GYQEQp9iO1iSHWVyARQm11zUtyg==
