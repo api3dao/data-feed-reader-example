@@ -7,9 +7,14 @@ async function main() {
     DataFeedReaderExample.abi,
     hre.ethers.provider
   );
+  const dataFeedProxy = await dataFeedReaderExample.proxy();
   const dataFeed = await dataFeedReaderExample.readDataFeed();
   console.log(
-    `DataFeedReaderExample at ${DataFeedReaderExample.address} read its data feed as:\n ${dataFeed.toString()}`
+    `DataFeedReaderExample at ${
+      DataFeedReaderExample.address
+    } read its data feed through the proxy at ${dataFeedProxy} as \n  value: ${dataFeed.value.toString()}\n  timestamp: ${dataFeed.timestamp.toString()} (${new Date(
+      dataFeed.timestamp.toNumber() * 1000
+    ).toISOString()})`
   );
 }
 
