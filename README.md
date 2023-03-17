@@ -84,13 +84,18 @@ You can see the valid dAPI names on API3 Market.
 
 ## Deploy a DataFeedProxy programmatically
 
+> **WARNING:** DapiProxy reads a data feed whose composition is managed by API3, and using it is essentially outsourcing data feed curation to API3.
+> DataFeedProxy reads a data feed whose composition is immutable, which is fully trust-minimized when used with first-party oracles.
+> However, this also means when there is something wrong with the composition of the DataFeedProxy you are using, you will need to deploy a new one and switch to that, i.e., you will need to do your own data feed curation.
+> Do not prefer DataFeedProxy over DapiProxy unless you understand the distinction and are capable of managing your own data feeds.
+
 See the command below, but use your own `NETWORK` and `DATA_FEED_ID` values.
 
 ```sh
 NETWORK=polygon-testnet DATA_FEED_ID=0x4385954e058fbe6b6a744f32a4f89d67aad099f8fb8b23e7ea8dd366ae88151d yarn deploy-data-feed-proxy
 ```
 
-See https://github.com/nodaryio/examples about a more detailed example about this usage scenario.
+See https://github.com/nodaryio/examples about a more detailed example.
 
 ### Update the proxy address of DataFeedReaderExample
 
