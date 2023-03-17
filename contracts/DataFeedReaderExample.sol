@@ -35,7 +35,10 @@ contract DataFeedReaderExample is Ownable {
         require(value > 0, "Value not positive");
         // ...and if the data feed is being updated with a one day-heartbeat
         // interval, you may want to check for that.
-        require(timestamp + 1 days > block.timestamp, "Timestamp older than one day");
+        require(
+            timestamp + 1 days > block.timestamp,
+            "Timestamp older than one day"
+        );
         // Try to be strict about validations, but be wary of:
         // (1) Overly strict validation that may invalidate valid values
         // (2) Mutable validation parameters that are controlled by a trusted
