@@ -90,8 +90,7 @@ See the command below, but use your own `NETWORK` and `DATA_FEED_ID` values.
 NETWORK=polygon-testnet DATA_FEED_ID=0x4385954e058fbe6b6a744f32a4f89d67aad099f8fb8b23e7ea8dd366ae88151d yarn deploy-data-feed-proxy
 ```
 
-We will provide instructions for where to find data feed IDs in the future.
-Until then, using DataFeedProxy is not recommended.
+See https://github.com/nodaryio/examples about a more detailed example about this usage scenario.
 
 ### Update the proxy address of DataFeedReaderExample
 
