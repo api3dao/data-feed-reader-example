@@ -102,5 +102,5 @@ You can update the proxy that your DataFeedReaderExample reads from.
 - See the command below, but use your own `NETWORK` and `PROXY` values
 
 ```sh
-NETWORK=polygon-testnet PROXY=0xe5Cf15fED24942E656dBF75165aF1851C89F21B5 yarn deploy
+NETWORK=polygon-testnet PROXY=0xe5Cf15fED24942E656dBF75165aF1851C89F21B5 yarn update-proxy
 ```
