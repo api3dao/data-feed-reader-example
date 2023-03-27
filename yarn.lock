@@ -2,24 +2,24 @@
 # yarn lockfile v1
 
 
-"@api3/airnode-protocol-v1@^2.0.1":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@api3/airnode-protocol-v1/-/airnode-protocol-v1-2.0.1.tgz#92466a6f3e4793e5916487d265f6113f06e1d3bd"
-  integrity sha512-2VguhLrJ7g0nyaEtnAF29dxom/cqAEiI4CtONWEEAbe6Tc1IvBjVGP9WrJ/U19cFGAZPr++FoTdyW8J+5WbHOA==
+"@api3/airnode-protocol-v1@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@api3/airnode-protocol-v1/-/airnode-protocol-v1-2.1.0.tgz#6ed18e1159c1d861f1ce3fe9dc9506b0ff5201f8"
+  integrity sha512-fHGzfh9Gr0ydIs+pQ+TQaUKJqkA5MYUXEI0AHrDqUbPqFDI2EE3twlGWpveESXtpdpDuDqE5N0f7NtpiFfD6hw==
   dependencies:
     "@openzeppelin/contracts" "4.8.2"
 
-"@api3/chains@^1.2.1":
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/@api3/chains/-/chains-1.2.1.tgz#04e700b7b2c0e55f275aba4b7d9db978cb459dfa"
-  integrity sha512-YLu6FJMY0q5UC705n8p2OAPmAJ00OGNW9AZQcr03PgwE8NdOYsymK+NixWljftsVgG/kdyAUbqinEyU2LguoIw==
+"@api3/chains@^1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@api3/chains/-/chains-1.4.0.tgz#4ee80048f439f3def09c5e3cf12957ba9544cc65"
+  integrity sha512-eSE84gQuvH+B5hQDxO8o6XNJVyPPNRSyLiJwYcltjzz1FqjHZbttYKe16hdIQbTDObp/aL1GtZojVOGkx2sblA==
 
-"@api3/contracts@^0.5.1":
-  version "0.5.1"
-  resolved "https://registry.yarnpkg.com/@api3/contracts/-/contracts-0.5.1.tgz#ce29fcfc7a41406c56d317afdb87b6807e7c9c27"
-  integrity sha512-590Y+YIZbHzAklYuA1mEOFI+1WrJEJm/drjRXCGMbsVJZZTHXiwdKapQ3w6FeUsyzZWXvkk5OcDUTVQ7HphS7g==
+"@api3/contracts@^0.6.0":
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/@api3/contracts/-/contracts-0.6.0.tgz#7f5523181a3d51fb9312e8b242b8e131f741f579"
+  integrity sha512-vA3SfPRrZyJeDDwV6EEPql9D6ezBJdqq8QBsjmG7k7rXB/zBwxvudbLaGS8ZGVAqV0f4hV414SWH0sCDyhgC5w==
   dependencies:
-    "@api3/airnode-protocol-v1" "^2.0.1"
+    "@api3/airnode-protocol-v1" "^2.1.0"
     ethers "^5.4.7"
 
 "@babel/code-frame@^7.0.0":
