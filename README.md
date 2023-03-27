@@ -59,6 +59,7 @@ See https://github.com/api3dao/chains for details
 - optimism
 - polygon-testnet
 - polygon-zkevm-goerli-testnet
+- polygon-zkevm
 - polygon
 
 ## Local development and testing
