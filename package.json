@@ -14,6 +14,7 @@
     "prettier:check": "prettier --check \"./**/*.{js,ts,md,json,sol}\"",
     "prettier": "prettier --write \"./**/*.{js,ts,md,json,sol}\"",
     "read-data-feed": "hardhat run scripts/read-data-feed.js --network $NETWORK",
+    "read-direct": "hardhat run scripts/read-direct.js --network $NETWORK",
     "test": "hardhat test",
     "update-proxy": "hardhat run scripts/update-proxy.js --network $NETWORK"
   },
