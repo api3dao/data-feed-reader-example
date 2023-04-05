@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@api3/airnode-protocol-v1@^2.1.0":
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/@api3/airnode-protocol-v1/-/airnode-protocol-v1-2.1.0.tgz#6ed18e1159c1d861f1ce3fe9dc9506b0ff5201f8"
-  integrity sha512-fHGzfh9Gr0ydIs+pQ+TQaUKJqkA5MYUXEI0AHrDqUbPqFDI2EE3twlGWpveESXtpdpDuDqE5N0f7NtpiFfD6hw==
+"@api3/airnode-protocol-v1@^2.2.1":
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/@api3/airnode-protocol-v1/-/airnode-protocol-v1-2.2.1.tgz#688551e55d0b665307dd57a37dcf1fa38732f68e"
+  integrity sha512-8DcNvEixNDzJCtGTggGH0oem+PdDckmTeMlas3jWC+wNodxYPsK4NsxULE6Nf4GNH6W+weFnqSNZ1MQ8BIPtQQ==
   dependencies:
     "@openzeppelin/contracts" "4.8.2"
 
@@ -14,12 +14,12 @@
   resolved "https://registry.yarnpkg.com/@api3/chains/-/chains-1.4.0.tgz#4ee80048f439f3def09c5e3cf12957ba9544cc65"
   integrity sha512-eSE84gQuvH+B5hQDxO8o6XNJVyPPNRSyLiJwYcltjzz1FqjHZbttYKe16hdIQbTDObp/aL1GtZojVOGkx2sblA==
 
-"@api3/contracts@^0.6.0":
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/@api3/contracts/-/contracts-0.6.0.tgz#7f5523181a3d51fb9312e8b242b8e131f741f579"
-  integrity sha512-vA3SfPRrZyJeDDwV6EEPql9D6ezBJdqq8QBsjmG7k7rXB/zBwxvudbLaGS8ZGVAqV0f4hV414SWH0sCDyhgC5w==
+"@api3/contracts@^0.7.1":
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/@api3/contracts/-/contracts-0.7.1.tgz#407d1ebcadc8180f71f9aa7c6669c6fd8ea0592b"
+  integrity sha512-Ej48AAE3tGYp962MZMGlZqSoktnFJNKWfUKx24qUWib/DFTIjoinvc+p3lJeVNgmafQi0VfRCFVwWiCHogVi+g==
   dependencies:
-    "@api3/airnode-protocol-v1" "^2.1.0"
+    "@api3/airnode-protocol-v1" "^2.2.1"
     ethers "^5.4.7"
 
 "@babel/code-frame@^7.0.0":
