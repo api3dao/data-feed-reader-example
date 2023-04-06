@@ -14,12 +14,13 @@
     "prettier:check": "prettier --check \"./**/*.{js,ts,md,json,sol}\"",
     "prettier": "prettier --write \"./**/*.{js,ts,md,json,sol}\"",
     "read-data-feed": "hardhat run scripts/read-data-feed.js --network $NETWORK",
+    "read-direct": "hardhat run scripts/read-direct.js --network $NETWORK",
     "test": "hardhat test",
     "update-proxy": "hardhat run scripts/update-proxy.js --network $NETWORK"
   },
   "devDependencies": {
     "@api3/chains": "^1.4.0",
-    "@api3/contracts": "^0.6.0",
+    "@api3/contracts": "^0.7.1",
     "@nomicfoundation/hardhat-chai-matchers": "^1.0.0",
     "@nomicfoundation/hardhat-network-helpers": "^1.0.0",
     "@nomicfoundation/hardhat-toolbox": "^2.0.2",
