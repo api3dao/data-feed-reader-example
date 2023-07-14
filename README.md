@@ -50,28 +50,33 @@ NETWORK=zksync-goerli-testnet PROXY=0x28ce555ee7a3daCdC305951974FcbA59F5BdF09b y
 
 See https://github.com/api3dao/chains for details
 
-- arbitrum-goerli-testnet
+### Mainnets
+
 - arbitrum
-- avalanche-testnet
 - avalanche
-- bsc-testnet
 - bsc
-- ethereum-goerli-testnet
-- ethereum-sepolia-testnet
 - ethereum
-- fantom-testnet
 - fantom
-- gnosis-testnet
 - gnosis
-- moonbeam-testnet
 - moonbeam
 - moonriver
-- optimism-goerli-testnet
 - optimism
-- polygon-testnet
-- polygon-zkevm-goerli-testnet
 - polygon-zkevm
 - polygon
+
+### Testnets
+
+- arbitrum-goerli-testnet
+- avalanche-testnet
+- bsc-testnet
+- ethereum-goerli-testnet
+- ethereum-sepolia-testnet
+- fantom-testnet
+- gnosis-testnet
+- moonbeam-testnet
+- optimism-goerli-testnet
+- polygon-testnet
+- polygon-zkevm-goerli-testnet
 - zksync-goerli-testnet
 
 ## Local development and testing
