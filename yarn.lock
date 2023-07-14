@@ -2,24 +2,26 @@
 # yarn lockfile v1
 
 
-"@api3/airnode-protocol-v1@^2.2.1":
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/@api3/airnode-protocol-v1/-/airnode-protocol-v1-2.2.1.tgz#688551e55d0b665307dd57a37dcf1fa38732f68e"
-  integrity sha512-8DcNvEixNDzJCtGTggGH0oem+PdDckmTeMlas3jWC+wNodxYPsK4NsxULE6Nf4GNH6W+weFnqSNZ1MQ8BIPtQQ==
+"@api3/airnode-protocol-v1@^2.8.0":
+  version "2.8.0"
+  resolved "https://registry.yarnpkg.com/@api3/airnode-protocol-v1/-/airnode-protocol-v1-2.8.0.tgz#19a755bf0dfb127edd362282b09b9ff51409e626"
+  integrity sha512-QmDaFvD8U3CYuYqpKP7au7htr1fIW5s6YzoAfduDqh6z6jqFWUHd4wd3m0BYu715SZpu5xSa0lsYpfnPhxHpIg==
   dependencies:
     "@openzeppelin/contracts" "4.8.2"
 
-"@api3/chains@^1.4.0":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@api3/chains/-/chains-1.4.0.tgz#4ee80048f439f3def09c5e3cf12957ba9544cc65"
-  integrity sha512-eSE84gQuvH+B5hQDxO8o6XNJVyPPNRSyLiJwYcltjzz1FqjHZbttYKe16hdIQbTDObp/aL1GtZojVOGkx2sblA==
-
-"@api3/contracts@^0.7.1":
-  version "0.7.1"
-  resolved "https://registry.yarnpkg.com/@api3/contracts/-/contracts-0.7.1.tgz#407d1ebcadc8180f71f9aa7c6669c6fd8ea0592b"
-  integrity sha512-Ej48AAE3tGYp962MZMGlZqSoktnFJNKWfUKx24qUWib/DFTIjoinvc+p3lJeVNgmafQi0VfRCFVwWiCHogVi+g==
+"@api3/chains@^3.2.0":
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/@api3/chains/-/chains-3.2.0.tgz#0fd4f6c3b09f1f90a884a655ce4dc7de62b06860"
+  integrity sha512-Lyp4200wzmLDYdSwVhdPQdWoOnhdiwtbiButC5mk3HqpaSiu7om6PuIJNObf1i/402RDTVVtNmOIYnNJKFaUlQ==
   dependencies:
-    "@api3/airnode-protocol-v1" "^2.2.1"
+    zod "^3.21.4"
+
+"@api3/contracts@^0.10.0":
+  version "0.10.0"
+  resolved "https://registry.yarnpkg.com/@api3/contracts/-/contracts-0.10.0.tgz#1b2bae4a77c8cf5b9ca15a6ac06b3b467a86d53f"
+  integrity sha512-AtkicTs2GmmN1qerr8K28q+ceLOGbFebMQd82sy0/h5MKBM431MyE6xB0ZseNa3Hg7bHGIo31ZOgQ6at+eI40g==
+  dependencies:
+    "@api3/airnode-protocol-v1" "^2.8.0"
     ethers "^5.4.7"
 
 "@babel/code-frame@^7.0.0":
@@ -5470,3 +5472,8 @@ zksync-web3@^0.8.1:
   version "0.8.1"
   resolved "https://registry.yarnpkg.com/zksync-web3/-/zksync-web3-0.8.1.tgz#db289d8f6caf61f4d5ddc471fa3448d93208dc14"
   integrity sha512-1A4aHPQ3MyuGjpv5X/8pVEN+MdZqMjfVmiweQSRjOlklXYu65wT9BGEOtCmMs5d3gIvLp4ssfTeuR5OCKOD2kw==
+
+zod@^3.21.4:
+  version "3.21.4"
+  resolved "https://registry.yarnpkg.com/zod/-/zod-3.21.4.tgz#10882231d992519f0a10b5dd58a38c9dabbb64db"
+  integrity sha512-m46AKbrzKVzOzs/DZgVnG5H55N1sv1M8qZU3A8RIKbs3mrACDNeIOeilDymVb2HdmP8uwshOCF4uJ8uM9rCqJw==
