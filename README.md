@@ -68,15 +68,22 @@ See https://github.com/api3dao/chains for details
 
 - arbitrum-goerli-testnet
 - avalanche-testnet
+- base-goerli-testnet
 - bsc-testnet
+- cronos-testnet
 - ethereum-goerli-testnet
 - ethereum-sepolia-testnet
 - fantom-testnet
 - gnosis-testnet
+- kava-testnet
+- linea-goerli-testnet
+- mantle-goerli-testnet
 - moonbeam-testnet
 - optimism-goerli-testnet
 - polygon-testnet
 - polygon-zkevm-goerli-testnet
+- rsk-testnet
+- scroll-goerli-testnet
 - zksync-goerli-testnet
 
 ## Local development and testing
