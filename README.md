@@ -23,7 +23,6 @@ echo 'MNEMONIC="bike north stone..."' > .env
 - Deploy DataFeedReaderExample.
   See the command below, but use your own `NETWORK` and `PROXY` values.
   See the [supported networks section](#supported-networks) for valid `NETWORK` values.
-  See [below](#note-about-zksync) for zkSync.
 
 ```sh
 NETWORK=polygon-testnet PROXY=0x26690F9f17FdC26D419371315bc17950a0FC90eD yarn deploy
@@ -34,16 +33,6 @@ NETWORK=polygon-testnet PROXY=0x26690F9f17FdC26D419371315bc17950a0FC90eD yarn de
 
 ```sh
 NETWORK=polygon-testnet yarn read-data-feed
-```
-
-### Note about zkSync
-
-This repo does not support deploying contracts on zkSync, which is why `yarn deploy` will fail.
-Instead, you can test the proxy by reading from it directly.
-See the command below, but use your own `NETWORK` and `PROXY` values.
-
-```sh
-NETWORK=zksync-goerli-testnet PROXY=0x28ce555ee7a3daCdC305951974FcbA59F5BdF09b yarn read-direct
 ```
 
 ## Supported networks
@@ -89,7 +78,6 @@ See https://github.com/api3dao/chains for details
 - polygon-zkevm-goerli-testnet
 - rsk-testnet
 - scroll-goerli-testnet
-- zksync-goerli-testnet
 
 ## Local development and testing
 
