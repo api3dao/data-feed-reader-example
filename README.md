@@ -25,7 +25,7 @@ echo 'MNEMONIC="bike north stone..."' > .env
   See the [supported networks section](#supported-networks) for valid `NETWORK` values.
 
 ```sh
-NETWORK=polygon-testnet PROXY=0x26690F9f17FdC26D419371315bc17950a0FC90eD yarn deploy
+NETWORK=polygon-testnet PROXY=0x009E9B1eec955E9Fe7FE64f80aE868e661cb4729 yarn deploy
 ```
 
 - Have DataFeedReaderExample read from the proxy.
@@ -125,5 +125,5 @@ You can update the proxy that your DataFeedReaderExample reads from.
 - See the command below, but use your own `NETWORK` and `PROXY` values
 
 ```sh
-NETWORK=polygon-testnet PROXY=0xe5Cf15fED24942E656dBF75165aF1851C89F21B5 yarn update-proxy
+NETWORK=polygon-testnet PROXY=0xba7892c114743bFd39F7A76180CacC93bAcC67e0 yarn update-proxy
 ```
