@@ -44,6 +44,7 @@ See https://github.com/api3dao/chains for details
 - arbitrum
 - avalanche
 - base
+- blast
 - bsc
 - ethereum
 - fantom
@@ -54,15 +55,15 @@ See https://github.com/api3dao/chains for details
 - moonbeam
 - moonriver
 - optimism
-- polygon-zkevm
 - polygon
+- polygon-zkevm
 - rsk
 
 ### Testnets
 
 - arbitrum-goerli-testnet
 - avalanche-testnet
-- base-goerli-testnet
+- blast-sepolia-testnet
 - bsc-testnet
 - cronos-testnet
 - ethereum-goerli-testnet
@@ -73,11 +74,11 @@ See https://github.com/api3dao/chains for details
 - linea-goerli-testnet
 - mantle-goerli-testnet
 - moonbeam-testnet
+- oev-network-sepolia-testnet
 - optimism-goerli-testnet
 - polygon-testnet
 - polygon-zkevm-goerli-testnet
 - rsk-testnet
-- scroll-goerli-testnet
 
 ## Local development and testing
 
