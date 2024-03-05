@@ -14,10 +14,10 @@
   dependencies:
     "@openzeppelin/contracts" "4.8.2"
 
-"@api3/chains@^4.11.0":
-  version "4.11.0"
-  resolved "https://registry.yarnpkg.com/@api3/chains/-/chains-4.11.0.tgz#d519c6a018c6737999a910301d497c743924d853"
-  integrity sha512-hEtqsn1HGMS/TfsoViIpudNy2G8DaTvbVzH1rTWSGsQRFCKc0PqNYvEAVPvEY4Aec7lM76bdf6c5HsAD4LzuIw==
+"@api3/chains@^4.11.1":
+  version "4.11.1"
+  resolved "https://registry.yarnpkg.com/@api3/chains/-/chains-4.11.1.tgz#d358866dfe152dae92b9a6e2eccd8ce4878cfc43"
+  integrity sha512-+MvzIblSs9nzGNL+VmLb8GTUkeIWqgbCMi+8eBDgYoSkKBNRf7yRHAwG8fPYxgILEeYglRAcObRo0l0Ehhrsdg==
   dependencies:
     viem "^2.7.1"
     zod "^3.22.4"
