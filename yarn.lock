@@ -7,27 +7,27 @@
   resolved "https://registry.yarnpkg.com/@adraffy/ens-normalize/-/ens-normalize-1.10.0.tgz#d2a39395c587e092d77cbbc80acf956a54f38bf7"
   integrity sha512-nA9XHtlAkYfJxY7bce8DcN7eKxWWCWkU+1GR9d+U6MbNpfwQp8TI7vqOsBsMcHoT4mBu2kypKoSKnghEzOOq5Q==
 
-"@api3/airnode-protocol-v1@^3.3.0":
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/@api3/airnode-protocol-v1/-/airnode-protocol-v1-3.3.0.tgz#62f36b04471f527d66db7c4ff3fe9b325745df3c"
-  integrity sha512-Kk/Hb5EyEWqtIMeFM66u4PTvgUfBs4M8GPh1qLS3iDLpl/2PwqsvQkoafSmuMeZr4jyOpg3XXZZ07QFPIksOoA==
+"@api3/airnode-protocol-v1@^3.4.0":
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/@api3/airnode-protocol-v1/-/airnode-protocol-v1-3.4.0.tgz#9b7c805b06208d844850fbac1d64a74fded3f54a"
+  integrity sha512-jjnzJC82RUEJkDfrz/PAS2/JP8TyEsBKQhYBO4xzOIGrTCC+XscwpxTWVneuNpNsXmQFYjfjvXzEC4lgDqwvTQ==
   dependencies:
     "@openzeppelin/contracts" "4.8.2"
 
-"@api3/chains@^4.13.0":
-  version "4.13.0"
-  resolved "https://registry.yarnpkg.com/@api3/chains/-/chains-4.13.0.tgz#dd9f87eee9e0d2efb628009e35e9d68660957fa8"
-  integrity sha512-MjAz/03peNiqOUqWie35mO0QihPTWYYGU+fGXTo0NkPher3bsl0EhSdxDIn4uzkRTgCskAN4jTCwGI28b70y6A==
+"@api3/chains@^4.13.1":
+  version "4.13.1"
+  resolved "https://registry.yarnpkg.com/@api3/chains/-/chains-4.13.1.tgz#a45cdcf476638cca1992779026c74680e1605f1a"
+  integrity sha512-JvvZBsZT0WcfrbXJAWd9ha7JPqOcXiP9uJfa7vqRD65WNbm5H8R91QR6at7JQyIi9HzSwTeiOaKVKGjrfHaUsg==
   dependencies:
     viem "^2.7.18"
     zod "^3.22.4"
 
-"@api3/contracts@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@api3/contracts/-/contracts-1.2.0.tgz#f487d27df025ffdbfebf631640a994f868627464"
-  integrity sha512-EdbLX5oZkvwBNksisYMMk+p12Jwrpc5iDmukxIDQQoR5p74qUIC9vnzWueAKoubnG8k2i2TZ8ZH+uCQ2e3oyKQ==
+"@api3/contracts@^1.3.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@api3/contracts/-/contracts-1.3.0.tgz#df8300978523b09b87e49ac9cfcffbdc7bd42820"
+  integrity sha512-lDHrCo0U9K6cIBz7FWo3WbiSGcDNFcHnTHFvTo9a9EqVvqf+plPU8gItZqbjc3dS3IFIEirGQiQefZe2fpzchQ==
   dependencies:
-    "@api3/airnode-protocol-v1" "^3.3.0"
+    "@api3/airnode-protocol-v1" "^3.4.0"
     ethers "^5.4.7"
 
 "@babel/code-frame@^7.0.0":
