@@ -61,24 +61,16 @@ See https://github.com/api3dao/chains for details
 
 ### Testnets
 
-- arbitrum-goerli-testnet
 - avalanche-testnet
 - blast-sepolia-testnet
 - bsc-testnet
-- cronos-testnet
-- ethereum-goerli-testnet
 - ethereum-sepolia-testnet
 - fantom-testnet
 - gnosis-testnet
 - kava-testnet
-- linea-goerli-testnet
-- mantle-goerli-testnet
 - moonbeam-testnet
 - oev-network-sepolia-testnet
-- optimism-goerli-testnet
 - polygon-testnet
-- polygon-zkevm-goerli-testnet
-- rsk-testnet
 
 ## Local development and testing
 
