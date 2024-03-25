@@ -1,4 +1,4 @@
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.17;
 
-import "@api3/contracts/v0.8/mock/MockProxy.sol";
+import "@api3/contracts/api3-server-v1/proxies/mock/MockProxy.sol";
