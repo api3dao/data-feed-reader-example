@@ -9,7 +9,7 @@ async function main() {
   const chainId = hre.network.config.chainId;
   const dapiProxyAddress = api3Contracts.computeDapiProxyAddress(chainId, dapiName, '0x');
   if ((await hre.ethers.provider.getCode(dapiProxyAddress)) === '0x') {
-    const proxyFactoryAddress = api3Contracts.references.ProxyFactory[chainId.toString()];
+    const proxyFactoryAddress = api3Contracts.deploymentAddresses.ProxyFactory[chainId.toString()];
     const proxyFactoryArtifact = await hre.artifacts.readArtifact('IProxyFactory');
     const proxyFactory = new hre.ethers.Contract(
       proxyFactoryAddress,
