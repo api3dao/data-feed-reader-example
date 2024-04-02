@@ -12,18 +12,18 @@
   resolved "https://registry.yarnpkg.com/@adraffy/ens-normalize/-/ens-normalize-1.10.1.tgz#63430d04bd8c5e74f8d7d049338f1cd9d4f02069"
   integrity sha512-96Z2IP3mYmF1Xg2cDm8f1gWGf/HUVedQ3FMifV4kG/PQ4yEP51xDtRAEfhVNt5f/uzpNkZHwWQuUcu6D6K+Ekw==
 
-"@api3/chains@^4.14.0":
-  version "4.14.0"
-  resolved "https://registry.yarnpkg.com/@api3/chains/-/chains-4.14.0.tgz#aacaf063d3c5602e267352683706de61c69deb94"
-  integrity sha512-zM37/EW6bsYVmu6wea+3+D7FlK60kI6LBYwCRxE85ISUUCT6gkclkFLksGN6vrw4ZTl9Xool2fbhALHiuYA7Uw==
+"@api3/chains@^4.15.0":
+  version "4.15.0"
+  resolved "https://registry.yarnpkg.com/@api3/chains/-/chains-4.15.0.tgz#75d51bfc3d24f97d0a367045f7c90660cd6140d2"
+  integrity sha512-5B9FIZsSgVqdt5p7RggkTP5VmuE/Ac7notC8BTHxO0RkxbxsnatCgeiuUO3HtWJbY9Y5JYi6D7Kqk6UxpwLdwA==
   dependencies:
-    viem "^2.7.18"
+    viem "^2.9.6"
     zod "^3.22.4"
 
-"@api3/contracts@^2.1.0":
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/@api3/contracts/-/contracts-2.1.0.tgz#4df30c6ad41712ec75ccc6998d86772c7135180d"
-  integrity sha512-NxQJWn2zwer1UflUw8ub5oRwinmeSOCbgO9tcbEq+2JNn2RJoleVYz8yhGR/lXEsbyAGje3Ynk6qDQu7O7od9A==
+"@api3/contracts@^2.2.0":
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/@api3/contracts/-/contracts-2.2.0.tgz#0c0d7698b62ffaebf56b56d07e580a0076490c60"
+  integrity sha512-XVZ0MWPNHwW1PKojDJmG8ZcnColy1oPR2c12/gJoHGbq7aPnJ/2PnW9of3yUEkzOi3uBH8K2SgzKgSOV9oyTpw==
   dependencies:
     ethers "^6.11.1"
 
@@ -5317,10 +5317,10 @@ verror@1.10.0:
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
 
-viem@^2.7.18:
-  version "2.7.20"
-  resolved "https://registry.yarnpkg.com/viem/-/viem-2.7.20.tgz#c0d517c3ce5a19b963d624b378d706bd3c45efc6"
-  integrity sha512-S31a24LWEjqXAjw1A+3/xALo+4eiYKklAjLtlLdPhA0cp+Kv6GcgruNVTktP8pKIGNYvpyQ+HA9PJyUhVXPdDw==
+viem@^2.9.6:
+  version "2.9.6"
+  resolved "https://registry.yarnpkg.com/viem/-/viem-2.9.6.tgz#66819684e878b6ea659ad9c49a0a864512859190"
+  integrity sha512-VVFWjGQei2wnWTvAB/xrIf22m6flCwxeBr8LnwejXMTSSi1EORWEswrw2lfKTmw3TlRPSG4uSiQMa/d0l0DKRg==
   dependencies:
     "@adraffy/ens-normalize" "1.10.0"
     "@noble/curves" "1.2.0"
