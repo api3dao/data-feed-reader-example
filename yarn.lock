@@ -20,10 +20,10 @@
     viem "^2.9.6"
     zod "^3.22.4"
 
-"@api3/contracts@^2.5.0":
-  version "2.5.0"
-  resolved "https://registry.yarnpkg.com/@api3/contracts/-/contracts-2.5.0.tgz#2958077499d134e8dbafc3cf971dd8b99a2623bc"
-  integrity sha512-tPrzkF2oA98wYT07fvJ1eu6LwJuXcUVI0Sljs4G17vXQopClkMyKcVUMcI9b6aI3ygwbqgy6XC1RONMSA3xFbA==
+"@api3/contracts@^2.6.0":
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/@api3/contracts/-/contracts-2.6.0.tgz#517666a99807bc216bdc0a30edce068bf043dbb9"
+  integrity sha512-mWQKreQE1QhcTBuKjGtL/rQvesyvXUxNnskoSrEhBjZEveFuwG8+PfUHfoSYh5MmuxBjkQnZMkVPq0jtFEPncQ==
   dependencies:
     ethers "^6.11.1"
 
