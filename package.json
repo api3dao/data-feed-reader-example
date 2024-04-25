@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "@api3/chains": "^4.17.1",
-    "@api3/contracts": "^3.0.0",
+    "@api3/contracts": "^3.1.0",
     "@nomicfoundation/hardhat-chai-matchers": "^1.0.0",
     "@nomicfoundation/hardhat-network-helpers": "^1.0.0",
     "@nomicfoundation/hardhat-toolbox": "^2.0.2",
