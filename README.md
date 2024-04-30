@@ -48,29 +48,35 @@ See https://github.com/api3dao/chains for details
 - bsc
 - ethereum
 - fantom
+- fraxtal
 - gnosis
 - kava
 - linea
 - mantle
+- mode
 - moonbeam
 - moonriver
 - optimism
 - polygon
 - polygon-zkevm
-- rsk
 
 ### Testnets
 
+- arbitrum-sepolia-testnet
 - avalanche-testnet
+- base-sepolia-testnet
 - blast-sepolia-testnet
 - bsc-testnet
 - ethereum-sepolia-testnet
 - fantom-testnet
+- fraxtal-holesky-testnet
 - gnosis-testnet
 - kava-testnet
+- linea-sepolia-testnet
+- mode-sepolia-testnet
 - moonbeam-testnet
-- oev-network-sepolia-testnet
-- polygon-testnet
+- optimism-sepolia-testnet
+- polygon-zkevm-sepolia-testnet
 
 ## Local development and testing
 
