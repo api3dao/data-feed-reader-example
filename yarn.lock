@@ -20,12 +20,12 @@
     viem "^2.9.6"
     zod "^3.22.4"
 
-"@api3/contracts@^3.3.0":
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/@api3/contracts/-/contracts-3.3.0.tgz#1641f3f1eb4109cbd6099188d273962bee1484b7"
-  integrity sha512-oPC+YrSmG6YQPysFXaeBPn+rC77MYViS8x9wnTyBK8zC/I/OSOj/0NmOEXfP0OzTqRNDSgpF9zM7AOjcBcUQYQ==
+"@api3/contracts@^3.4.0":
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/@api3/contracts/-/contracts-3.4.0.tgz#a84ac204be40c999a7ac6987e18f6ca6757df6bb"
+  integrity sha512-4hY8k3YeVfkqYd3jv1CpSevBRpVq/gaCW8Ax1gL07pymJ27m/MYB/ZDwpZ9nGexGzYHe2+KheJam8QQjiHobXA==
   dependencies:
-    ethers "^6.11.1"
+    ethers "^6.12.1"
 
 "@babel/code-frame@^7.0.0":
   version "7.18.6"
@@ -2381,10 +2381,10 @@ ethers@^5.5.3:
     "@ethersproject/web" "5.7.1"
     "@ethersproject/wordlists" "5.7.0"
 
-ethers@^6.11.1:
-  version "6.11.1"
-  resolved "https://registry.yarnpkg.com/ethers/-/ethers-6.11.1.tgz#96aae00b627c2e35f9b0a4d65c7ab658259ee6af"
-  integrity sha512-mxTAE6wqJQAbp5QAe/+o+rXOID7Nw91OZXvgpjDa1r4fAbq2Nu314oEZSbjoRLacuCzs7kUC3clEvkCQowffGg==
+ethers@^6.12.1:
+  version "6.12.1"
+  resolved "https://registry.yarnpkg.com/ethers/-/ethers-6.12.1.tgz#517ff6d66d4fd5433e38e903051da3e57c87ff37"
+  integrity sha512-j6wcVoZf06nqEcBbDWkKg8Fp895SS96dSnTCjiXT+8vt2o02raTn4Lo9ERUuIVU5bAjoPYeA+7ytQFexFmLuVw==
   dependencies:
     "@adraffy/ens-normalize" "1.10.1"
     "@noble/curves" "1.2.0"
