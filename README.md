@@ -37,46 +37,11 @@ NETWORK=polygon-testnet yarn read-data-feed
 
 ## Supported networks
 
-See https://github.com/api3dao/chains for details
+Chains listed in https://market.api3.org/ are the only ones that are supported. Alternatively, you can run the following command to list all the supported chains
 
-### Mainnets
-
-- arbitrum
-- avalanche
-- base
-- blast
-- bsc
-- ethereum
-- fantom
-- fraxtal
-- gnosis
-- kava
-- linea
-- mantle
-- mode
-- moonbeam
-- moonriver
-- optimism
-- polygon
-- polygon-zkevm
-
-### Testnets
-
-- arbitrum-sepolia-testnet
-- avalanche-testnet
-- base-sepolia-testnet
-- blast-sepolia-testnet
-- bsc-testnet
-- ethereum-sepolia-testnet
-- fantom-testnet
-- fraxtal-holesky-testnet
-- gnosis-testnet
-- kava-testnet
-- linea-sepolia-testnet
-- mode-sepolia-testnet
-- moonbeam-testnet
-- optimism-sepolia-testnet
-- polygon-zkevm-sepolia-testnet
+```sh
+yarn print-supported-chains
+```
 
 ## Local development and testing
 
