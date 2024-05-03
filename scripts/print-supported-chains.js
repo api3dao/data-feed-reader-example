@@ -4,11 +4,12 @@ async function main() {
   const supportedChains = getChains()
     .filter(chain => ['active', 'deprecated'].includes(chain.stage))
     .map(chain => {
-      const { alias } = api3Chains.CHAINS.find(({ id }) => id === chain.id);
-      return { id: Number(chain.id), name: alias, marketLink: `https://market.api3.org/${alias}` };
+      const { alias, testnet } = api3Chains.CHAINS.find(({ id }) => id === chain.id);
+      return { id: Number(chain.id), name: alias, type: testnet ? 'testnet' : 'mainnet', marketLink: `https://market.api3.org/${alias}` };
     })
     .sort((a, b) => a.name.localeCompare(b.name));
-  console.table(supportedChains, ['id', 'name', 'marketLink']);
+
+  console.table(supportedChains);
 }
 
 main()
