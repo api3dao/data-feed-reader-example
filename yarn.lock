@@ -20,10 +20,10 @@
     ethers "^5.7.2"
     lodash "^4.17.21"
 
-"@api3/api-integrations@1.4.1":
-  version "1.4.1"
-  resolved "https://registry.yarnpkg.com/@api3/api-integrations/-/api-integrations-1.4.1.tgz#efc84333042034eccf05934f4bdbc783771e6592"
-  integrity sha512-QoVVq4zN7PwwbYPs5/se6lzm0EsF1aKDRXz3G0jitOe6r5PWVY3CSsrxTfUPu+lKvqNPLWSNq2lsqB4LejGCPA==
+"@api3/api-integrations@1.6.0":
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/@api3/api-integrations/-/api-integrations-1.6.0.tgz#00bb5b74e377a0ef723a0f55a7c7af6e6d483504"
+  integrity sha512-57zo3M/hu5EY5WnQVcPai/8XmROFy+uZi/K+fHjVmmd2P6cstTiP/HmYukJwpW0Oa//a3X6IZSjz6osKQpoKNA==
   dependencies:
     "@api3/airnode-abi" "^0.14.1"
     "@api3/ois" "^2.3.2"
@@ -76,15 +76,15 @@
   dependencies:
     ethers "^6.12.1"
 
-"@api3/dapi-management@^1.23.0":
-  version "1.23.0"
-  resolved "https://registry.yarnpkg.com/@api3/dapi-management/-/dapi-management-1.23.0.tgz#55546bf495a666182e1482d20aba60f184c9064c"
-  integrity sha512-HXT5FHe2UywnJ5+IEGOT1+KaLs1YXPBihQXoeWEs5O+o2bSpeUrIL9vi5dw8RLS3XCxmyGyTdFmfBbYmFlj2dQ==
+"@api3/dapi-management@^1.25.0":
+  version "1.25.0"
+  resolved "https://registry.yarnpkg.com/@api3/dapi-management/-/dapi-management-1.25.0.tgz#aa0a7093a01e5e50af4a69bb170696f758a0c334"
+  integrity sha512-+Nv4KkPkhmyHuToC35iQZDmRYANb6MsaG2HFWiKA9M3i0uT90R/xhSHUuY/fDkB/USKK9tS5obaAISSJ+sUzfg==
   dependencies:
-    "@api3/api-integrations" "1.4.1"
+    "@api3/api-integrations" "1.6.0"
     "@api3/chains" "^6.2.0"
     "@api3/commons" "^0.9.0"
-    ethers "^5.7.2"
+    ethers "^6.11.1"
     zod "^3.22.4"
 
 "@api3/ois@^2.3.0", "@api3/ois@^2.3.2":
@@ -3343,7 +3343,7 @@ ethers@^5.5.3, ethers@^5.7.2:
     "@ethersproject/web" "5.7.1"
     "@ethersproject/wordlists" "5.7.0"
 
-ethers@^6.12.1:
+ethers@^6.11.1, ethers@^6.12.1:
   version "6.12.1"
   resolved "https://registry.yarnpkg.com/ethers/-/ethers-6.12.1.tgz#517ff6d66d4fd5433e38e903051da3e57c87ff37"
   integrity sha512-j6wcVoZf06nqEcBbDWkKg8Fp895SS96dSnTCjiXT+8vt2o02raTn4Lo9ERUuIVU5bAjoPYeA+7ytQFexFmLuVw==
