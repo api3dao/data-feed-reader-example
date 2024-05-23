@@ -75,7 +75,7 @@ You can see the valid dAPI names on API3 Market.
 See the command below, but use your own `NETWORK` and `DATA_FEED_ID` values.
 
 ```sh
-NETWORK=ethereum-sepolia-testnet DATA_FEED_ID=0x4385954e058fbe6b6a744f32a4f89d67aad099f8fb8b23e7ea8dd366ae88151d yarn deploy-data-feed-proxy
+NETWORK=ethereum-sepolia-testnet DATA_FEED_ID=0xd888b92f9d71afedd0a012622c0d1d5368fc0dc0ff1d30bb16266afcd49c2c17 yarn deploy-data-feed-proxy
 ```
 
 See https://github.com/nodaryio/examples for a more detailed example.
@@ -89,5 +89,5 @@ You can update the proxy that your DataFeedReaderExample reads from.
 - See the command below, but use your own `NETWORK` and `PROXY` values
 
 ```sh
-NETWORK=ethereum-sepolia-testnet PROXY=0xba7892c114743bFd39F7A76180CacC93bAcC67e0 yarn update-proxy
+NETWORK=ethereum-sepolia-testnet PROXY=0x08506208E776ecbdF4cE9DB69C08Aa90A06825C0 yarn update-proxy
 ```
