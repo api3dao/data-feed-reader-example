@@ -2,6 +2,8 @@
 
 ## Deploying proxy contracts programmatically
 
+For more details on Proxy contracts see the reference docs [here](https://docs.api3.org/reference/dapis/understand/proxy-contracts.html).
+
 ### DapiProxyWithOev and DapiProxy
 
 [Instructions](../README.md#instructions) have you use [API3 Market](https://market.api3.org) to deploy a `DapiProxyWithOev` contract.
