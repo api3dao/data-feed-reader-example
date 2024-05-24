@@ -9,9 +9,16 @@ async function main() {
   const chainId = hre.network.config.chainId;
   const oevBeneficiary = process.env.OEV_BENEFICIARY ?? api3Contracts.managerMultisigAddresses[chainId.toString()];
   if (!oevBeneficiary) {
-    throw new Error(`Environment variable OEV_BENEFICIARY is not defined or has GnosisSafeWithoutProxy has not been deployed on ${hre.network.name}`);
+    throw new Error(
+      `Environment variable OEV_BENEFICIARY is not defined or has GnosisSafeWithoutProxy has not been deployed on ${hre.network.name}`
+    );
   }
-  const dataFeedProxyWithOevAddress = api3Contracts.computeDataFeedProxyAddress(chainId, dataFeedId, oevBeneficiary, '0x');
+  const dataFeedProxyWithOevAddress = api3Contracts.computeDataFeedProxyAddress(
+    chainId,
+    dataFeedId,
+    oevBeneficiary,
+    '0x'
+  );
   if ((await hre.ethers.provider.getCode(dataFeedProxyWithOevAddress)) === '0x') {
     const proxyFactoryAddress = api3Contracts.deploymentAddresses.ProxyFactory[chainId.toString()];
     const proxyFactoryArtifact = await hre.artifacts.readArtifact('IProxyFactory');
@@ -26,7 +33,9 @@ async function main() {
         resolve();
       })
     );
-    console.log(`DataFeedProxyWithOev for ${dataFeedId} with OEV beneficiary ${oevBeneficiary} is deployed at ${dataFeedProxyWithOevAddress} of ${hre.network.name}`);
+    console.log(
+      `DataFeedProxyWithOev for ${dataFeedId} with OEV beneficiary ${oevBeneficiary} is deployed at ${dataFeedProxyWithOevAddress} of ${hre.network.name}`
+    );
   } else {
     console.log(
       `DataFeedProxyWithOev for ${dataFeedId} with OEV beneficiary ${oevBeneficiary} was already deployed at ${dataFeedProxyWithOevAddress} of ${hre.network.name}`
