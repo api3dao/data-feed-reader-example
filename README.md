@@ -52,42 +52,4 @@ See the tests for its usage, and run the tests with
 yarn test
 ```
 
-# Advanced
-
-## Deploy a DapiProxy programmatically
-
-[Instructions](#instructions) have you use [API3 Market](https://market.api3.org/dapis) to deploy a DapiProxy.
-To do it programmatically, see the command below, but use your own `NETWORK` and `DAPI_NAME` values.
-
-```sh
-NETWORK=ethereum-sepolia-testnet DAPI_NAME=BTC/USD yarn deploy-dapi-proxy
-```
-
-You can see the valid dAPI names on API3 Market.
-
-## Deploy a DataFeedProxy programmatically
-
-> **WARNING:** DapiProxy reads a data feed whose composition is managed by API3, and using it is essentially outsourcing data feed curation to API3.
-> DataFeedProxy reads a data feed whose composition is immutable, which is fully trust-minimized when used with first-party oracles.
-> However, this also means when there is something wrong with the composition of the DataFeedProxy you are using, you will need to deploy a new one and switch to that, i.e., you will need to do your own data feed curation.
-> Do not prefer DataFeedProxy over DapiProxy unless you understand the distinction and are capable of managing your own data feeds.
-
-See the command below, but use your own `NETWORK` and `DATA_FEED_ID` values.
-
-```sh
-NETWORK=ethereum-sepolia-testnet DATA_FEED_ID=0xd888b92f9d71afedd0a012622c0d1d5368fc0dc0ff1d30bb16266afcd49c2c17 yarn deploy-data-feed-proxy
-```
-
-See https://github.com/nodaryio/examples for a more detailed example.
-
-### Update the proxy address of DataFeedReaderExample
-
-You can update the proxy that your DataFeedReaderExample reads from.
-
-- Follow the [instructions](#instructions)
-- Deploy a new proxy
-- See the command below, but use your own `NETWORK` and `PROXY` values
-
-```sh
-NETWORK=ethereum-sepolia-testnet PROXY=0x08506208E776ecbdF4cE9DB69C08Aa90A06825C0 yarn update-proxy
-```
+For more advance instructions see the [Advanced instructions](./scripts/README.md) README file.
