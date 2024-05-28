@@ -20,10 +20,10 @@
     ethers "^5.7.2"
     lodash "^4.17.21"
 
-"@api3/api-integrations@^1.9.0":
-  version "1.9.0"
-  resolved "https://registry.yarnpkg.com/@api3/api-integrations/-/api-integrations-1.9.0.tgz#6aab0e788c3aed71c8d3208a58ebceefffd3b617"
-  integrity sha512-JuswFrSY5ysoD5qFIn6J1dXDVkQOsn7cTVDPtFrOC5Isqg3lUxEBoEdRKMjK6CWmZ6WUiwvMW4XkNN21KlYxQg==
+"@api3/api-integrations@^1.10.0":
+  version "1.10.0"
+  resolved "https://registry.yarnpkg.com/@api3/api-integrations/-/api-integrations-1.10.0.tgz#434973114a2f1dd2b8c983acc0f766d6d7cd6128"
+  integrity sha512-5rTV+VNwphazHBMvOrWaDGXpEH259PQqOvhDurO0GBgJWBCENcQePDMYYobXwMfrC8wRmuHQ00IMZ80k4sQ7Bw==
   dependencies:
     "@api3/airnode-abi" "^0.14.1"
     "@api3/ois" "^2.3.2"
@@ -34,6 +34,14 @@
   version "6.3.1"
   resolved "https://registry.yarnpkg.com/@api3/chains/-/chains-6.3.1.tgz#092a3c453025fc2d37095b7a56796a831ebfcca8"
   integrity sha512-NUfHMfK4EXQW/Nw4pIG2wxuHBauR4KxkibQo9w3ktPU+i3H4cEE0gginhRWLnl2EWEmwR1Z+a6YAgr8EZTUV4A==
+  dependencies:
+    viem "^2.9.29"
+    zod "^3.23.5"
+
+"@api3/chains@^7.1.0":
+  version "7.1.0"
+  resolved "https://registry.yarnpkg.com/@api3/chains/-/chains-7.1.0.tgz#402a60809167f30315dc7373a88afd7876c13fbb"
+  integrity sha512-+WAvRMvtbAdXeB86jsQ2f+1WXb1SYvNOMI76jNiyTUozSAExZlRNCD8n95ZWm5NUi6gAK7sbv3ss2rJ0VMv9TA==
   dependencies:
     viem "^2.9.29"
     zod "^3.23.5"
@@ -76,13 +84,13 @@
   dependencies:
     ethers "^6.12.1"
 
-"@api3/dapi-management@^1.34.0":
-  version "1.34.0"
-  resolved "https://registry.yarnpkg.com/@api3/dapi-management/-/dapi-management-1.34.0.tgz#0786979765bfb30d695944fccf0208f3fa79d299"
-  integrity sha512-AQXil9EXoe0o4fnZC493/lI+85kEyLCy8NluZBFksgpZFT0iT8xEVvtU4bD3cdmLNvsg5mR0rwjDZtbA+i4SMg==
+"@api3/dapi-management@^1.37.0":
+  version "1.37.0"
+  resolved "https://registry.yarnpkg.com/@api3/dapi-management/-/dapi-management-1.37.0.tgz#219f8177096a3cac6a6b5a628cad74bed0aea82c"
+  integrity sha512-HPfiF9FjRSoORasMGGQ1sC14Zog9fdrGCMv02Zrlnv/OFMCRqP/iwu7M/Ywn6lNH0jD98QN7UzUuTFOAJrFK9g==
   dependencies:
-    "@api3/api-integrations" "^1.9.0"
-    "@api3/chains" "^6.3.1"
+    "@api3/api-integrations" "^1.10.0"
+    "@api3/chains" "^7.1.0"
     "@api3/commons" "^0.9.1"
     ethers "^6.11.1"
     zod "^3.22.4"
