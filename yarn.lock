@@ -30,14 +30,6 @@
     ethers "^5.7.2"
     zod "^3.22.4"
 
-"@api3/chains@^6.3.1":
-  version "6.3.1"
-  resolved "https://registry.yarnpkg.com/@api3/chains/-/chains-6.3.1.tgz#092a3c453025fc2d37095b7a56796a831ebfcca8"
-  integrity sha512-NUfHMfK4EXQW/Nw4pIG2wxuHBauR4KxkibQo9w3ktPU+i3H4cEE0gginhRWLnl2EWEmwR1Z+a6YAgr8EZTUV4A==
-  dependencies:
-    viem "^2.9.29"
-    zod "^3.23.5"
-
 "@api3/chains@^7.1.0":
   version "7.1.0"
   resolved "https://registry.yarnpkg.com/@api3/chains/-/chains-7.1.0.tgz#402a60809167f30315dc7373a88afd7876c13fbb"
