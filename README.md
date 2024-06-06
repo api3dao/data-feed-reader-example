@@ -1,6 +1,6 @@
 # API3 data feed reader example
 
-> An example project for reading API3 data feeds
+> An example project that reads an API3 data feed
 
 ## Instructions
 
@@ -16,20 +16,17 @@ yarn
 echo 'MNEMONIC="bike north stone..."' > .env
 ```
 
-- Browse [market.api3.org](https://market.api3.org) and find a data feed you like
-- Fund the data feed (unless it is already funded)
-- Deploy the proxy to the data feed (unless it is already deployed)
-- Copy the address of the proxy
-- Deploy DataFeedReaderExample.
-  See the command below, but use your own `NETWORK` and `PROXY` values.
+- Go to [market.api3.org](https://market.api3.org) and find a data feed you like
+- If the data feed is not already activated, purchase a subscription
+- On the data feed page, click the `Integrate` button and copy the address of the proxy
+- Deploy `DataFeedReaderExample` by using the command below with your `NETWORK` and `PROXY` values.
   See the [supported networks section](#supported-networks) for valid `NETWORK` values.
 
 ```sh
-NETWORK=ethereum-sepolia-testnet PROXY=0x51097c0ed085958897fb2B062961E54B1D4d5771 yarn deploy
+NETWORK=ethereum-sepolia-testnet PROXY=0x1A4eE81BBbb479f3923f22E315Bc2bD1f6d5d180 yarn deploy
 ```
 
-- Have DataFeedReaderExample read from the proxy.
-  See the command below, but use your own `NETWORK` value.
+- Have `DataFeedReaderExample` read from the proxy by using the command below with your `NETWORK` value
 
 ```sh
 NETWORK=ethereum-sepolia-testnet yarn read-data-feed
@@ -37,7 +34,8 @@ NETWORK=ethereum-sepolia-testnet yarn read-data-feed
 
 ## Supported networks
 
-Chains listed in https://market.api3.org/ are the only ones that are supported. Alternatively, you can run the following command to list all the supported chains
+Chains listed on [market.api3.org](https://market.api3.org/) are all supported.
+You can run the following command to list them.
 
 ```sh
 yarn print-supported-chains
@@ -45,11 +43,13 @@ yarn print-supported-chains
 
 ## Local development and testing
 
-`@api3/contracts` provides a MockProxy contract for local development testing.
-See the tests for its usage, and run the tests with
+`@api3/contracts` provides a `MockProxy` contract for local development.
+See the [tests](./test/DataFeedReaderExample.sol.js) for its usage, and run the tests with the following command.
 
 ```sh
 yarn test
 ```
 
-For more advance instructions see the [Advanced instructions](./scripts/README.md) README file.
+## More?
+
+See the [advanced instructions](./scripts/README.md).

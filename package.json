@@ -6,10 +6,7 @@
   "scripts": {
     "build": "hardhat compile",
     "deploy": "hardhat deploy --network $NETWORK",
-    "deploy-dapi-proxy": "hardhat run scripts/deploy-dapi-proxy.js --network $NETWORK",
     "deploy-dapi-proxy-with-oev": "hardhat run scripts/deploy-dapi-proxy-with-oev.js --network $NETWORK",
-    "deploy-data-feed-proxy": "hardhat run scripts/deploy-data-feed-proxy.js --network $NETWORK",
-    "deploy-data-feed-proxy-with-oev": "hardhat run scripts/deploy-data-feed-proxy-with-oev.js --network $NETWORK",
     "lint": "yarn run prettier:check && yarn run lint:eslint && yarn run lint:solhint",
     "lint:solhint": "solhint ./contracts/**/*.sol",
     "lint:eslint": "eslint . --ext .js,.ts",
@@ -17,7 +14,6 @@
     "prettier": "prettier --write \"./**/*.{js,ts,md,json,sol}\"",
     "print-supported-chains": "node scripts/print-supported-chains.js",
     "read-data-feed": "hardhat run scripts/read-data-feed.js --network $NETWORK",
-    "read-direct": "hardhat run scripts/read-direct.js --network $NETWORK",
     "test": "hardhat test",
     "update-proxy": "hardhat run scripts/update-proxy.js --network $NETWORK"
   },

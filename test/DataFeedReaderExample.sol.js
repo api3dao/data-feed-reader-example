@@ -21,6 +21,7 @@ describe('DataFeedReaderExample', function () {
       dataFeedReaderExample,
     };
   }
+
   describe('constructor', function () {
     it('constructs', async function () {
       const { roles, mockProxy, dataFeedReaderExample } = await helpers.loadFixture(deploy);
