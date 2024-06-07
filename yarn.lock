@@ -30,13 +30,13 @@
     ethers "^5.7.2"
     zod "^3.23.8"
 
-"@api3/chains@^7.1.0":
-  version "7.1.0"
-  resolved "https://registry.yarnpkg.com/@api3/chains/-/chains-7.1.0.tgz#402a60809167f30315dc7373a88afd7876c13fbb"
-  integrity sha512-+WAvRMvtbAdXeB86jsQ2f+1WXb1SYvNOMI76jNiyTUozSAExZlRNCD8n95ZWm5NUi6gAK7sbv3ss2rJ0VMv9TA==
+"@api3/chains@^7.2.0":
+  version "7.2.0"
+  resolved "https://registry.yarnpkg.com/@api3/chains/-/chains-7.2.0.tgz#f1bc87481f5fd14859ff2cd9e6d46f3371e6ee31"
+  integrity sha512-AYF7zWIwgtiF4e8CFEsAu/gviZ9bT/JZHwIdzHOiYl9W9nLgVJEJL8gpv3YNzFbYqLuu94VlbaWjQOqm22gr/A==
   dependencies:
-    viem "^2.9.29"
-    zod "^3.23.5"
+    viem "^2.13.3"
+    zod "^3.23.8"
 
 "@api3/commons@^0.9.1":
   version "0.9.1"
@@ -69,20 +69,20 @@
     winston-console-format "^1.0.8"
     zod "^3.22.4"
 
-"@api3/contracts@^4.0.0":
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/@api3/contracts/-/contracts-4.0.0.tgz#5ae24666e91bc7945e1706b737d25fbbbc2029a9"
-  integrity sha512-iSx6QLzjLj/FzY7+rZoVqctzwWpTxXThE4e3B0siKPofP4LzZWGe8a+DH//yhh7vmbNhNxP5jSmKSt8u01kyTg==
+"@api3/contracts@^4.1.0":
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/@api3/contracts/-/contracts-4.1.0.tgz#c3ee520c437fee5d57366443b9c756664c8cfee1"
+  integrity sha512-9q6YbowhLtmEsLyEiBjVFyn+PmqR3cjon8aXpSpnBjYTSNAZddjZq9VjIxecCKXTnoH2C7oiWYsNrAs3WYixZw==
   dependencies:
     ethers "^6.12.1"
 
-"@api3/dapi-management@^1.44.0":
-  version "1.44.0"
-  resolved "https://registry.yarnpkg.com/@api3/dapi-management/-/dapi-management-1.44.0.tgz#293611d2245b12a9de4d9018eb67520f4a83089a"
-  integrity sha512-lk+Bz/iLnAnmTi6PkYlr1qLez6T2le2uCWQBsR6+0PWEhgX5hWS2j7bTQM8gp7byB0WGny60RGy1YsT/vzEVvg==
+"@api3/dapi-management@^1.45.0":
+  version "1.45.0"
+  resolved "https://registry.yarnpkg.com/@api3/dapi-management/-/dapi-management-1.45.0.tgz#144886b54d9d5856fcd4a813d01d1ccd5166397b"
+  integrity sha512-huwvcXeD+/bNWnXvGmnHE89sKVonScK2/TCf19jADfL0pLOQ+WrEj3ww72xZ9tzIAvJ7dQW8jT82dMjcM1eDzQ==
   dependencies:
     "@api3/api-integrations" "^1.13.0"
-    "@api3/chains" "^7.1.0"
+    "@api3/chains" "^7.2.0"
     "@api3/commons" "^0.9.1"
     ethers "^6.13.0"
     zod "^3.23.8"
@@ -4737,10 +4737,10 @@ isexe@^2.0.0:
   resolved "https://registry.yarnpkg.com/isexe/-/isexe-2.0.0.tgz#e8fbf374dc556ff8947a10dcb0572d633f2cfa10"
   integrity sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==
 
-isows@1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/isows/-/isows-1.0.3.tgz#93c1cf0575daf56e7120bab5c8c448b0809d0d74"
-  integrity sha512-2cKei4vlmg2cxEjm3wVSqn8pcoRF/LX/wpifuuNquFO4SQmPwarClT+SUCA2lt+l581tTeZIPIZuIDo2jWN1fg==
+isows@1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/isows/-/isows-1.0.4.tgz#810cd0d90cc4995c26395d2aa4cfa4037ebdf061"
+  integrity sha512-hEzjY+x9u9hPmBom9IIAqdJCwNLax+xrPb51vEPpERoFlIxgmZcHzsT5jKG06nvInKOBGvReAVz80Umed5CczQ==
 
 isstream@~0.1.2:
   version "0.1.2"
@@ -7270,10 +7270,10 @@ verror@1.10.0:
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
 
-viem@^2.9.29:
-  version "2.9.31"
-  resolved "https://registry.yarnpkg.com/viem/-/viem-2.9.31.tgz#cfe8e1bb81d358c9117e5e1144d26a95d8aab3dd"
-  integrity sha512-8aJ8Dm/591Czwb/nRayo0z8Ls5KxqC4QYE33fmHwhx2tDUWC/hHcPZqjLRSTWFtAfi0aZKvP7BeB6UZ3ZkTRhQ==
+viem@^2.13.3:
+  version "2.13.7"
+  resolved "https://registry.yarnpkg.com/viem/-/viem-2.13.7.tgz#c1153c02f7ffaf0263d784fc1d4e4ffa3f66c24a"
+  integrity sha512-SZWn9LPrz40PHl4PM2iwkPTTtjWPDFsnLr32UwpqC/Z5f0AwxitjLyZdDKcImvbWZ3vLQ0oPggR1aLlqvTcUug==
   dependencies:
     "@adraffy/ens-normalize" "1.10.0"
     "@noble/curves" "1.2.0"
@@ -7281,7 +7281,7 @@ viem@^2.9.29:
     "@scure/bip32" "1.3.2"
     "@scure/bip39" "1.2.1"
     abitype "1.0.0"
-    isows "1.0.3"
+    isows "1.0.4"
     ws "8.13.0"
 
 web3-utils@^1.3.6:
@@ -7614,11 +7614,6 @@ zod@^3.22.4:
   version "3.22.4"
   resolved "https://registry.yarnpkg.com/zod/-/zod-3.22.4.tgz#f31c3a9386f61b1f228af56faa9255e845cf3fff"
   integrity sha512-iC+8Io04lddc+mVqQ9AZ7OQ2MrUKGN+oIQyq1vemgt46jwCwLfhq7/pwnBnNXXXZb8VTVLKwp9EDkx+ryxIWmg==
-
-zod@^3.23.5:
-  version "3.23.6"
-  resolved "https://registry.yarnpkg.com/zod/-/zod-3.23.6.tgz#c08a977e2255dab1fdba933651584a05fcbf19e1"
-  integrity sha512-RTHJlZhsRbuA8Hmp/iNL7jnfc4nZishjsanDAfEY1QpDQZCahUp3xDzl+zfweE9BklxMUcgBgS1b7Lvie/ZVwA==
 
 zod@^3.23.8:
   version "3.23.8"
