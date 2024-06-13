@@ -76,10 +76,10 @@
   dependencies:
     ethers "^6.12.1"
 
-"@api3/dapi-management@^1.48.0":
-  version "1.48.0"
-  resolved "https://registry.yarnpkg.com/@api3/dapi-management/-/dapi-management-1.48.0.tgz#a622a07b6a37cfbb16766d7d9a922af771c0fecf"
-  integrity sha512-dmyZNg+JeIOZ8s7nQ4x7VGa8Rv9d0D0vPdpk/7V03rv0vENt4zi1kc3wkhoXHo4ng8HCEiS37hgizdXyA685FQ==
+"@api3/dapi-management@^1.49.0":
+  version "1.49.0"
+  resolved "https://registry.yarnpkg.com/@api3/dapi-management/-/dapi-management-1.49.0.tgz#40d1c058130029c22a996bee8bc46a9da451f71f"
+  integrity sha512-lMKYDJR1PltRbVOe/3v0jXzypwl8d5OIOvfw1ml89CLR5m2amMgyYJZWzTFwMvE8oRA5W98VkSg9qo9o0NbtKw==
   dependencies:
     "@api3/api-integrations" "^1.14.0"
     "@api3/chains" "^7.2.1"
