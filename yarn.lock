@@ -20,10 +20,10 @@
     ethers "^5.7.2"
     lodash "^4.17.21"
 
-"@api3/api-integrations@^1.15.0":
-  version "1.15.0"
-  resolved "https://registry.yarnpkg.com/@api3/api-integrations/-/api-integrations-1.15.0.tgz#ebf949251948587aff3ae953949046eeeca56b0d"
-  integrity sha512-OBS+iENduey+YBjjKFC4VyIWaFI+nK5DF5e/V202V8eUkSw745zfhNuIuPZdmbDrgDKnhD5Db5mrAU3qiTMBKw==
+"@api3/api-integrations@^1.16.0":
+  version "1.16.0"
+  resolved "https://registry.yarnpkg.com/@api3/api-integrations/-/api-integrations-1.16.0.tgz#1ea5267b0167054c14d220277372c036b2819a7a"
+  integrity sha512-yWeiD6MA7IgKqHBu1iK+asDULgrCdxZAR+oOh2wI05hGK/UQZCw4T0uXIa6Fl3tG0EJDndIxAg+ZeOwzytND8g==
   dependencies:
     "@api3/airnode-abi" "^0.14.1"
     "@api3/ois" "^2.3.2"
@@ -69,19 +69,19 @@
     winston-console-format "^1.0.8"
     zod "^3.22.4"
 
-"@api3/contracts@^4.1.1":
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/@api3/contracts/-/contracts-4.1.1.tgz#847823370812cc1423b90ae9e6278c70f8e67b20"
-  integrity sha512-IvRyO6CwkI79KxjCDksG12up89vzecuKzy6wg8qLqZqqIpaEhFmxinUMR6083wOhVEAgI2dRe+PRjDH5uAOckg==
+"@api3/contracts@^4.2.0":
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/@api3/contracts/-/contracts-4.2.0.tgz#cb989c4516d294d67e2862159fe75407ebbb1924"
+  integrity sha512-S37nR8+qP4Ra2kGXZsEs/THvERLWd9ShdEon9IXBuVvp6DQAERpCdG0R3COXtG48VhhCRW6W9qiX8Gracv3I1g==
   dependencies:
     ethers "^6.12.1"
 
-"@api3/dapi-management@^1.51.0":
-  version "1.51.0"
-  resolved "https://registry.yarnpkg.com/@api3/dapi-management/-/dapi-management-1.51.0.tgz#cb1695f935bfedce6fac6767edde5c94fae42721"
-  integrity sha512-FotME1PUBWeC+p2upLsK1fxAy9ho/ZN8EiX2r57GcUSPRWyUtlGcyJ0t2Pgo+9O9k61BwX0jh26QNl/QFMcP7Q==
+"@api3/dapi-management@^1.52.0":
+  version "1.52.0"
+  resolved "https://registry.yarnpkg.com/@api3/dapi-management/-/dapi-management-1.52.0.tgz#d87c8648bada170ce23f36891926c15b54966b58"
+  integrity sha512-m65/jL5cNmpHbvDQBrZ/U7cfyAC/S8YzgxydQDp0LzJmL/NBjFMMcAcbdI7CgU7Hc26232PD2doKuYKmmAlKyA==
   dependencies:
-    "@api3/api-integrations" "^1.15.0"
+    "@api3/api-integrations" "^1.16.0"
     "@api3/chains" "^7.2.1"
     "@api3/commons" "^0.9.1"
     ethers "^6.13.0"
