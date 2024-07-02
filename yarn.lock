@@ -76,15 +76,15 @@
   dependencies:
     ethers "^6.12.1"
 
-"@api3/dapi-management@^1.53.0":
-  version "1.53.0"
-  resolved "https://registry.yarnpkg.com/@api3/dapi-management/-/dapi-management-1.53.0.tgz#d0224dab8621ca2edbc8430673c5c607db843362"
-  integrity sha512-6sL9pOhpPar1aRaqgh0+R3kWVc0B2ObnFqoWW9l9hZiirlCBa9eGYDfzmKGTyfXzg3Sdj2bXjsjfVArAUGc8aw==
+"@api3/dapi-management@^1.54.0":
+  version "1.54.0"
+  resolved "https://registry.yarnpkg.com/@api3/dapi-management/-/dapi-management-1.54.0.tgz#de4890f451dbeaec53a641c5e97db60279db8c4d"
+  integrity sha512-5cLSgDdqW33Ea0xiNA22D7XJYmVdh12XCP5kzm7+8zCZGVzdui9fACmQSFVH8YBCKnRybQs9aDr75KNEWR1NLQ==
   dependencies:
     "@api3/api-integrations" "^1.16.0"
     "@api3/chains" "^7.2.1"
     "@api3/commons" "^0.9.1"
-    ethers "^6.13.0"
+    ethers "^6.13.1"
     zod "^3.23.8"
 
 "@api3/ois@^2.3.0", "@api3/ois@^2.3.2":
@@ -3434,10 +3434,10 @@ ethers@^6.12.1:
     tslib "2.4.0"
     ws "8.5.0"
 
-ethers@^6.13.0:
-  version "6.13.0"
-  resolved "https://registry.yarnpkg.com/ethers/-/ethers-6.13.0.tgz#f342958d0f622cf06559f59fbccdc1d30fa64f50"
-  integrity sha512-+yyQQQWEntY5UVbCv++guA14RRVFm1rSnO1GoLFdrK7/XRWMoktNgyG9UjwxrQqGBfGyFKknNZ81YpUS2emCgg==
+ethers@^6.13.1:
+  version "6.13.1"
+  resolved "https://registry.yarnpkg.com/ethers/-/ethers-6.13.1.tgz#2b9f9c7455cde9d38b30fe6589972eb083652961"
+  integrity sha512-hdJ2HOxg/xx97Lm9HdCWk949BfYqYWpyw4//78SiwOLgASyfrNszfMUNB2joKjvGUdwhHfaiMMFFwacVVoLR9A==
   dependencies:
     "@adraffy/ens-normalize" "1.10.1"
     "@noble/curves" "1.2.0"
@@ -3445,7 +3445,7 @@ ethers@^6.13.0:
     "@types/node" "18.15.13"
     aes-js "4.0.0-beta.5"
     tslib "2.4.0"
-    ws "8.5.0"
+    ws "8.17.1"
 
 ethjs-unit@0.1.6:
   version "0.1.6"
@@ -7493,6 +7493,11 @@ ws@8.13.0:
   version "8.13.0"
   resolved "https://registry.yarnpkg.com/ws/-/ws-8.13.0.tgz#9a9fb92f93cf41512a0735c8f4dd09b8a1211cd0"
   integrity sha512-x9vcZYTrFPC7aSIbj7sRCYo7L/Xb8Iy+pW0ng0wt2vCJv7M9HOMy0UoN3rr+IFC7hb7vXoqS+P9ktyLLLhO+LA==
+
+ws@8.17.1:
+  version "8.17.1"
+  resolved "https://registry.yarnpkg.com/ws/-/ws-8.17.1.tgz#9293da530bb548febc95371d90f9c878727d919b"
+  integrity sha512-6XQFvXTkbfUOZOKKILFG1PDK2NDQs4azKQl26T0YS5CxqWLgXajbPZ+h4gZekJyRqFU8pvnbAbbs/3TgRPy+GQ==
 
 ws@8.5.0:
   version "8.5.0"
