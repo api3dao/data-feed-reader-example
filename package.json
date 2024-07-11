@@ -12,6 +12,7 @@
     "lint:eslint": "eslint . --ext .js,.ts",
     "prettier:check": "prettier --check \"./**/*.{js,ts,md,json,sol}\"",
     "prettier": "prettier --write \"./**/*.{js,ts,md,json,sol}\"",
+    "print-proxy-address": "hardhat run scripts/print-proxy-address.js --network $NETWORK",
     "print-supported-chains": "node scripts/print-supported-chains.js",
     "read-data-feed": "hardhat run scripts/read-data-feed.js --network $NETWORK",
     "test": "hardhat test",

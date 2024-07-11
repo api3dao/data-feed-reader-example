@@ -18,7 +18,13 @@ echo 'MNEMONIC="bike north stone..."' > .env
 
 - Go to [market.api3.org](https://market.api3.org) and find a data feed you like
 - If the data feed is not already activated, purchase a subscription
-- On the data feed page, click the `Integrate` button and copy the address of the proxy
+- On the data feed page, click the `Integrate` button and copy the address of the proxy.
+  Alternatively, you can get the proxy address with the following command
+
+```sh
+NETWORK=ethereum-sepolia-testnet DAPI_NAME=ETH/USD yarn print-proxy-address
+```
+
 - Deploy `DataFeedReaderExample` by using the command below with your `NETWORK` and `PROXY` values.
   See the [supported networks section](#supported-networks) for valid `NETWORK` values.
 
