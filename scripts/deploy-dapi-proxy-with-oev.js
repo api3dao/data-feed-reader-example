@@ -10,7 +10,7 @@ async function main() {
   const oevBeneficiary = process.env.OEV_BENEFICIARY ?? api3Contracts.managerMultisigAddresses[chainId.toString()];
   if (!oevBeneficiary) {
     throw new Error(
-      `Environment variable OEV_BENEFICIARY is not defined or has GnosisSafeWithoutProxy has not been deployed on ${hre.network.name}`
+      `Environment variable OEV_BENEFICIARY is not defined or the manager multisig has not been deployed on ${hre.network.name}`
     );
   }
   const dapiProxyWithOevAddress = api3Contracts.computeDapiProxyWithOevAddress(chainId, dapiName, oevBeneficiary, '0x');
