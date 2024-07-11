@@ -27,14 +27,11 @@ To deploy the same proxy programmatically, use the command below with your `NETW
 NETWORK=ethereum-sepolia-testnet DAPI_NAME=ETH/USD yarn deploy-dapi-proxy-with-oev
 ```
 
-You can also refer to the [`deploy-dapi-proxy-with-oev` script](./deploy-dapi-proxy-with-oev.js) to see how the `@api3/contracts` package can be used to derive the respective `DapiProxyWithOev` address without needing to make any RPC calls.
+You can also refer to the [`print-proxy-address` script](./print-proxy-address.js) to see how the `@api3/contracts` package can be used to derive the respective `DapiProxyWithOev` address without needing to make any RPC calls.
 
 The OEV beneficiary of the proxy above is the API3 _manager multisig_ on that chain.
 To deploy a proxy with an arbitrary OEV beneficiary, use the command below with your `OEV_BENEFICIARY` value.
-Note that the OEV functionalities of proxies with custom beneficiaries are not supported
-
-Note that proxies with custom OEV beneficiaries are not supported on OEV Network by default, and require you to contact API3 to add support
-.
+Note that the OEV functionalities of proxies with custom beneficiaries are not supported by default.
 
 ```sh
 NETWORK=ethereum-sepolia-testnet DAPI_NAME=ETH/USD OEV_BENEFICIARY=0x55Cf1079a115029a879ec3A11Ba5D453272eb61D yarn deploy-dapi-proxy-with-oev
