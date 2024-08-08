@@ -20,26 +20,18 @@
     ethers "^5.7.2"
     lodash "^4.17.21"
 
-"@api3/api-integrations@^1.20.0":
-  version "1.20.0"
-  resolved "https://registry.yarnpkg.com/@api3/api-integrations/-/api-integrations-1.20.0.tgz#1042f06d125e995396ae55003f0d0eb17628368e"
-  integrity sha512-E3UB44saXhycosQ4pfsoNhs1hZ4/ID9uDDOjSfFnDwKpFQ+e9cL5UE2rkBYSyKfIbrXNW2xx/JbfZLfvAeR2SA==
+"@api3/api-integrations@^1.21.0":
+  version "1.21.0"
+  resolved "https://registry.yarnpkg.com/@api3/api-integrations/-/api-integrations-1.21.0.tgz#501e71715ea27ee14e7ea5d79376489657e300d8"
+  integrity sha512-zD2UufxRZSoOItVq4tjP2exP8AYCoXy44cT2v71ADhVZVpgpkZmaYj73+BJ5soeyfustkXfOoAVAPAbSIyNinA==
   dependencies:
     "@api3/airnode-abi" "^0.14.2"
-    "@api3/chains" "^9.0.0"
+    "@api3/chains" "^9.2.0"
     "@api3/ois" "^2.3.2"
     ethers "^5.7.2"
     zod "^3.23.8"
 
-"@api3/chains@^9.0.0":
-  version "9.0.0"
-  resolved "https://registry.yarnpkg.com/@api3/chains/-/chains-9.0.0.tgz#38079ad04aade5cff16ffea821792066729af106"
-  integrity sha512-uiTNUKu+/18QdVUjn30GbmEVEQS6KqDMj2N5oUabNJHTxbXxwZ59sRfo831kEyb32GbMevs7JdnmjTuZ9/jrvA==
-  dependencies:
-    viem "^2.16.5"
-    zod "^3.23.8"
-
-"@api3/chains@^9.1.0":
+"@api3/chains@^9.2.0":
   version "9.2.0"
   resolved "https://registry.yarnpkg.com/@api3/chains/-/chains-9.2.0.tgz#ab2e18f515957d690ae8ad13624e2d0fa24d4fc1"
   integrity sha512-lWgnR6pZ9aRrCfAT6I62adtIHfuQPgpUEwfqEE6W2xvPDUQB9w6XNoFd/ppE1BQHBfwBKFMvY/bD+1IAHIidZA==
@@ -69,13 +61,13 @@
   dependencies:
     ethers "^6.13.2"
 
-"@api3/dapi-management@^1.66.0":
-  version "1.66.0"
-  resolved "https://registry.yarnpkg.com/@api3/dapi-management/-/dapi-management-1.66.0.tgz#8a9a2d6470c46de88d60c325c50164f76556f02a"
-  integrity sha512-C0pbnpFh94WuroFwZhxJ8uoRAVCpY+j9CH17prshe4IKYNas66zka70HTQbj/2sV3Cb88IiP1Sh9mCthwT/dVg==
+"@api3/dapi-management@^1.66.1":
+  version "1.66.1"
+  resolved "https://registry.yarnpkg.com/@api3/dapi-management/-/dapi-management-1.66.1.tgz#acb9f6352a9e5743f768c1980141b9ca7c0b8cc7"
+  integrity sha512-dD6L1UCZ9e0cGBI7/T0JHfyjEqu/EURiV9TehZI7qk4ihhSfXyk37FWd+PKuR7tPQHZZSDni6sgofo5fL+5PQA==
   dependencies:
-    "@api3/api-integrations" "^1.20.0"
-    "@api3/chains" "^9.1.0"
+    "@api3/api-integrations" "^1.21.0"
+    "@api3/chains" "^9.2.0"
     "@api3/commons" "^0.10.0"
     ethers "^6.13.1"
     zod "^3.23.8"
@@ -5559,20 +5551,6 @@ verror@1.10.0:
     assert-plus "^1.0.0"
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
-
-viem@^2.16.5:
-  version "2.17.0"
-  resolved "https://registry.yarnpkg.com/viem/-/viem-2.17.0.tgz#5d7537e4e465e551c41a5304126d6d4a25468aa9"
-  integrity sha512-+gaVlsfDsHL1oYdjpatdRxW1WK/slLYVvpOws3fEdLfQFUToezKI6YLC9l1g2uKm4Hg3OdGX1KQy/G7/58tTKQ==
-  dependencies:
-    "@adraffy/ens-normalize" "1.10.0"
-    "@noble/curves" "1.4.0"
-    "@noble/hashes" "1.4.0"
-    "@scure/bip32" "1.4.0"
-    "@scure/bip39" "1.3.0"
-    abitype "1.0.5"
-    isows "1.0.4"
-    ws "8.17.1"
 
 viem@^2.18.8:
   version "2.19.2"
