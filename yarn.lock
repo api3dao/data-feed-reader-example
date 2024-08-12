@@ -54,17 +54,17 @@
     winston-console-format "^1.0.8"
     zod "^3.23.8"
 
-"@api3/contracts@^6.1.0":
-  version "6.1.0"
-  resolved "https://registry.yarnpkg.com/@api3/contracts/-/contracts-6.1.0.tgz#0fb5e0aeb1f2f2e2fc55e251194116df8c2e8d31"
-  integrity sha512-Vo0sTq9ns2jq0OYXQce4nJN2OmZlVumGd0/gooAKHTk/40C2pdTw7SZ66ofg3VhfIT65VC2YdEli7mtKIaad2w==
+"@api3/contracts@^6.2.0":
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/@api3/contracts/-/contracts-6.2.0.tgz#4a3b5296f3055fbfbecc94b64855aef019162b6e"
+  integrity sha512-Sq+6D3MASGhXeHkwtstDRY79WqqTRuEYP3rsPQ142QGZW7vJTBiDS0lRAhFvTgWP1q5NMKcr/iUZGMqq/CEiLg==
   dependencies:
     ethers "^6.13.2"
 
-"@api3/dapi-management@^1.66.1":
-  version "1.66.1"
-  resolved "https://registry.yarnpkg.com/@api3/dapi-management/-/dapi-management-1.66.1.tgz#acb9f6352a9e5743f768c1980141b9ca7c0b8cc7"
-  integrity sha512-dD6L1UCZ9e0cGBI7/T0JHfyjEqu/EURiV9TehZI7qk4ihhSfXyk37FWd+PKuR7tPQHZZSDni6sgofo5fL+5PQA==
+"@api3/dapi-management@^1.67.0":
+  version "1.67.0"
+  resolved "https://registry.yarnpkg.com/@api3/dapi-management/-/dapi-management-1.67.0.tgz#d605a54f3172c99beec3d8e156275178e9842e8e"
+  integrity sha512-S2cswxo94ijwLEsCQNM0BY6Fm5cvtlyvqLcfZUbWk6YB2hXACBElMexV/JHCFda7WgaIzXMrGox4NOuDlV3oWw==
   dependencies:
     "@api3/api-integrations" "^1.21.0"
     "@api3/chains" "^9.2.0"
