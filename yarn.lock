@@ -20,13 +20,13 @@
     ethers "^5.7.2"
     lodash "^4.17.21"
 
-"@api3/api-integrations@^1.25.0":
-  version "1.25.0"
-  resolved "https://registry.yarnpkg.com/@api3/api-integrations/-/api-integrations-1.25.0.tgz#a8b31ef74a3d65d0784db59f0411c7a8f4de62ba"
-  integrity sha512-Ek+pMOqhrJxUEMAZGoUg3k3DOhF9GMBUX3eyk6YLb+KX+0weFHaaM7BRJ/IOC2aJtD3nWW8pY0UIv4cYxCaC2Q==
+"@api3/api-integrations@^1.26.0":
+  version "1.26.0"
+  resolved "https://registry.yarnpkg.com/@api3/api-integrations/-/api-integrations-1.26.0.tgz#d627fe39e39d5dad30e946d981185b09b892e789"
+  integrity sha512-M8zgM6nJTGh5dp0pKzj7/uvw3v/MQmet13sgc6S8F+ml5XLKwvRNgEnGsjpcVhgwozTQCFV71SPU56n6uZbhyQ==
   dependencies:
     "@api3/airnode-abi" "^0.14.2"
-    "@api3/chains" "^9.2.0"
+    "@api3/chains" "^10.0.0"
     "@api3/ois" "^2.3.2"
     ethers "^5.7.2"
     zod "^3.23.8"
@@ -39,26 +39,18 @@
     viem "^2.18.8"
     zod "^3.23.8"
 
-"@api3/chains@^9.2.0":
-  version "9.2.0"
-  resolved "https://registry.yarnpkg.com/@api3/chains/-/chains-9.2.0.tgz#ab2e18f515957d690ae8ad13624e2d0fa24d4fc1"
-  integrity sha512-lWgnR6pZ9aRrCfAT6I62adtIHfuQPgpUEwfqEE6W2xvPDUQB9w6XNoFd/ppE1BQHBfwBKFMvY/bD+1IAHIidZA==
-  dependencies:
-    viem "^2.18.8"
-    zod "^3.23.8"
-
-"@api3/commons@^0.10.0":
-  version "0.10.0"
-  resolved "https://registry.yarnpkg.com/@api3/commons/-/commons-0.10.0.tgz#5eb48ef407c6209febbc8536a783e5a9e67303df"
-  integrity sha512-UbDW+GnLP8fr/I+CytXDsPF/dookddhU+VZ2HOPqaNnTSvJ7bcYB2rPzfH1+6HcYjxO+nUkJrAAilkGTbA2KMQ==
+"@api3/commons@^0.12.0":
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/@api3/commons/-/commons-0.12.0.tgz#1643fe4d2627d15fe0e7ee4934366eb73eed3fc8"
+  integrity sha512-QL/uZO21/YW76gGOrjEo5FELHBDI1Z28s50q1sbkHFz5X+Ys7piw5e7wy4rReN/o04z3rlApT9zjqy5zMa/95w==
   dependencies:
     "@api3/ois" "^2.3.2"
     "@api3/promise-utils" "^0.4.0"
-    axios "^1.7.2"
+    axios "^1.7.3"
     dotenv "^16.4.5"
     ethers "^5.7.2"
     lodash "^4.17.21"
-    winston "^3.13.0"
+    winston "^3.13.1"
     winston-console-format "^1.0.8"
     zod "^3.23.8"
 
@@ -69,14 +61,14 @@
   dependencies:
     ethers "^6.13.2"
 
-"@api3/dapi-management@^1.74.0":
-  version "1.74.0"
-  resolved "https://registry.yarnpkg.com/@api3/dapi-management/-/dapi-management-1.74.0.tgz#a4665cd99290ecb8979962336ebc94655dd30f5c"
-  integrity sha512-Xv0KzQ8CQaCrB0GiQ/GzaqUhkSJLpRujoYVvsrdlTv3t9bmhW284bW1kIADE9yJ2hu+o659RSxCAGDw0tDv9+Q==
+"@api3/dapi-management@^1.74.1":
+  version "1.74.1"
+  resolved "https://registry.yarnpkg.com/@api3/dapi-management/-/dapi-management-1.74.1.tgz#326f69725e01c902dbbe1dcf4d303c32269414fa"
+  integrity sha512-1xC/Y+cFWNfipd3EBE7uyrVyV/Yq2aFW7wuJsKOo3S06260HwQEyuBRKyKtT7ig+Bn6d85GYMqh0ayGLtUZ8pQ==
   dependencies:
-    "@api3/api-integrations" "^1.25.0"
+    "@api3/api-integrations" "^1.26.0"
     "@api3/chains" "^10.0.0"
-    "@api3/commons" "^0.10.0"
+    "@api3/commons" "^0.12.0"
     ethers "^6.13.1"
     zod "^3.23.8"
 
@@ -1487,10 +1479,10 @@ axios@^0.21.1:
   dependencies:
     follow-redirects "^1.14.0"
 
-axios@^1.7.2:
-  version "1.7.2"
-  resolved "https://registry.yarnpkg.com/axios/-/axios-1.7.2.tgz#b625db8a7051fbea61c35a3cbb3a1daa7b9c7621"
-  integrity sha512-2A8QhOMrbomlDuiLeK9XibIBzuHeRcqqNOHp0Cyp5EoJ1IFDh+XZH3A6BkXtv0K4gFGCI0Y4BM7B1wOEi0Rmgw==
+axios@^1.7.3:
+  version "1.7.5"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-1.7.5.tgz#21eed340eb5daf47d29b6e002424b3e88c8c54b1"
+  integrity sha512-fZu86yCo+svH3uqJ/yTdQ0QHpQu5oL+/QE+QPSv6BZSkDAoky9vytxp7u5qk83OJFS3kEBcesWni9WTZAv3tSw==
   dependencies:
     follow-redirects "^1.15.6"
     form-data "^4.0.0"
@@ -3848,10 +3840,22 @@ log-symbols@4.1.0:
     chalk "^4.1.0"
     is-unicode-supported "^0.1.0"
 
-logform@^2.2.0, logform@^2.3.2, logform@^2.4.0:
+logform@^2.2.0, logform@^2.3.2:
   version "2.6.0"
   resolved "https://registry.yarnpkg.com/logform/-/logform-2.6.0.tgz#8c82a983f05d6eaeb2d75e3decae7a768b2bf9b5"
   integrity sha512-1ulHeNPp6k/LD8H91o7VYFBng5i1BDE7HoKxVbZiGFidS1Rj65qcywLxX+pVfAPoQJEjRdvKcusKwOupHCVOVQ==
+  dependencies:
+    "@colors/colors" "1.6.0"
+    "@types/triple-beam" "^1.3.2"
+    fecha "^4.2.0"
+    ms "^2.1.1"
+    safe-stable-stringify "^2.3.1"
+    triple-beam "^1.3.0"
+
+logform@^2.6.0:
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/logform/-/logform-2.6.1.tgz#71403a7d8cae04b2b734147963236205db9b3df0"
+  integrity sha512-CdaO738xRapbKIMVn2m4F6KTj4j7ooJ8POVnebSgKo3KBz5axNXRAL7ZdRjIV6NOr2Uf4vjtRkxrFETOioCqSA==
   dependencies:
     "@colors/colors" "1.6.0"
     "@types/triple-beam" "^1.3.2"
@@ -5663,16 +5667,16 @@ winston-transport@^4.7.0:
     readable-stream "^3.6.0"
     triple-beam "^1.3.0"
 
-winston@^3.13.0:
-  version "3.13.0"
-  resolved "https://registry.yarnpkg.com/winston/-/winston-3.13.0.tgz#e76c0d722f78e04838158c61adc1287201de7ce3"
-  integrity sha512-rwidmA1w3SE4j0E5MuIufFhyJPBDG7Nu71RkZor1p2+qHvJSZ9GYDA81AyleQcZbh/+V6HjeBdfnTZJm9rSeQQ==
+winston@^3.13.1:
+  version "3.14.2"
+  resolved "https://registry.yarnpkg.com/winston/-/winston-3.14.2.tgz#94ce5fd26d374f563c969d12f0cd9c641065adab"
+  integrity sha512-CO8cdpBB2yqzEf8v895L+GNKYJiEq8eKlHU38af3snQBQ+sdAIUepjMSguOIJC7ICbzm0ZI+Af2If4vIJrtmOg==
   dependencies:
     "@colors/colors" "^1.6.0"
     "@dabh/diagnostics" "^2.0.2"
     async "^3.2.3"
     is-stream "^2.0.0"
-    logform "^2.4.0"
+    logform "^2.6.0"
     one-time "^1.0.0"
     readable-stream "^3.4.0"
     safe-stable-stringify "^2.3.1"
