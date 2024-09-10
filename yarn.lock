@@ -39,7 +39,7 @@
     viem "^2.18.8"
     zod "^3.23.8"
 
-"@api3/chains@^10.1.1":
+"@api3/chains@^10.2.0":
   version "10.2.0"
   resolved "https://registry.yarnpkg.com/@api3/chains/-/chains-10.2.0.tgz#4ee806b57125c479bfba6d2b9a6f811afff3b4c3"
   integrity sha512-83x5+nkn6CMGhvj5seYZhTgPKsYVflx7+akvyiKaJKziwW8wUi2B4QRAcPQcLMrF13qx/u6qwGVI9vmYbx/g7A==
@@ -69,13 +69,13 @@
   dependencies:
     ethers "^6.13.2"
 
-"@api3/dapi-management@^1.81.0":
-  version "1.81.0"
-  resolved "https://registry.yarnpkg.com/@api3/dapi-management/-/dapi-management-1.81.0.tgz#f3ae518d0545c0a273b827e6910e2df9fb14d848"
-  integrity sha512-BbMmvxLRDbZXllCJhWk0KgbCehqea+9feEjnEk03uG4SxRtder0RUX9wKTpYbgFiV1MK6N8rHGo9v4ojJOr41g==
+"@api3/dapi-management@^1.82.0":
+  version "1.82.0"
+  resolved "https://registry.yarnpkg.com/@api3/dapi-management/-/dapi-management-1.82.0.tgz#08ae2d36e7ad92b065175fa9e3d0bedc8a62f4d7"
+  integrity sha512-biQK8X2kgun9916cSCHm39/VnVNJNceCfypGNjHlPv0TZ2C7Y+9aoAMjaYco2HlbiyY9cBZcCEJVDnxuNuzE9Q==
   dependencies:
     "@api3/api-integrations" "^1.28.0"
-    "@api3/chains" "^10.1.1"
+    "@api3/chains" "^10.2.0"
     "@api3/commons" "^0.12.0"
     ethers "^6.13.2"
     zod "^3.23.8"
