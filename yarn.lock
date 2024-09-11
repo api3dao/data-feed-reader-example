@@ -20,23 +20,15 @@
     ethers "^5.7.2"
     lodash "^4.17.21"
 
-"@api3/api-integrations@^1.28.0":
-  version "1.28.0"
-  resolved "https://registry.yarnpkg.com/@api3/api-integrations/-/api-integrations-1.28.0.tgz#0a564cac864a700527501302795ea9a67ef0760f"
-  integrity sha512-puYY9YLGD/gkpeKxiiiT/BXxVU7G4PEuKrFrDjJFbSD0Od2VSXUTc8wy5DYDZY+oekXpCJDnseVlQHPQtaBlLA==
+"@api3/api-integrations@^1.29.0":
+  version "1.29.0"
+  resolved "https://registry.yarnpkg.com/@api3/api-integrations/-/api-integrations-1.29.0.tgz#490b0eedb5ba9b73b4179746bb5fd059f35ac510"
+  integrity sha512-yHOP7xHYxOSXHL5Sw1+7PUfkVoVmO08dmkm8R0XrPvO736/VFKj21MvbBeQbEJUM0TgfyheBgKRLAdPVYSaYDw==
   dependencies:
     "@api3/airnode-abi" "^0.14.2"
-    "@api3/chains" "^10.1.0"
+    "@api3/chains" "^10.2.0"
     "@api3/ois" "^2.3.2"
     ethers "^5.7.2"
-    zod "^3.23.8"
-
-"@api3/chains@^10.1.0":
-  version "10.1.0"
-  resolved "https://registry.yarnpkg.com/@api3/chains/-/chains-10.1.0.tgz#c7f06e175ac929310f0e4fbb330856c199be2770"
-  integrity sha512-Cgo6ojd1idK99vIcJ2JiEfOyCTu34+pbQ6IM1LD4wEi6cHBrf8FZWs51LjcjKrDEV8R74o0IqX0QvvkvyyNkVA==
-  dependencies:
-    viem "^2.18.8"
     zod "^3.23.8"
 
 "@api3/chains@^10.2.0":
@@ -69,12 +61,12 @@
   dependencies:
     ethers "^6.13.2"
 
-"@api3/dapi-management@^1.82.0":
-  version "1.82.0"
-  resolved "https://registry.yarnpkg.com/@api3/dapi-management/-/dapi-management-1.82.0.tgz#08ae2d36e7ad92b065175fa9e3d0bedc8a62f4d7"
-  integrity sha512-biQK8X2kgun9916cSCHm39/VnVNJNceCfypGNjHlPv0TZ2C7Y+9aoAMjaYco2HlbiyY9cBZcCEJVDnxuNuzE9Q==
+"@api3/dapi-management@^1.82.1":
+  version "1.82.1"
+  resolved "https://registry.yarnpkg.com/@api3/dapi-management/-/dapi-management-1.82.1.tgz#791eff46489f7d897b4ba942dae6955260ba7672"
+  integrity sha512-moVM//ij1f/j9P7TfK+7EeNA1SkIBJGhC+OShqFhXhNIWoiVA7EWCldt7mC80KmRDMXEpRaWoFpVxGZbwudkNg==
   dependencies:
-    "@api3/api-integrations" "^1.28.0"
+    "@api3/api-integrations" "^1.29.0"
     "@api3/chains" "^10.2.0"
     "@api3/commons" "^0.12.0"
     ethers "^6.13.2"
@@ -931,14 +923,6 @@
   dependencies:
     "@noble/hashes" "~1.2.0"
     "@scure/base" "~1.1.0"
-
-"@scure/bip39@1.3.0":
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/@scure/bip39/-/bip39-1.3.0.tgz#0f258c16823ddd00739461ac31398b4e7d6a18c3"
-  integrity sha512-disdg7gHuTDZtY+ZdkmLpPCk7fxZSu3gBiEGuoC1XYxv9cGx3Z6cpTggCgW6odSOOIXCiDjuGejW+aJKCY/pIQ==
-  dependencies:
-    "@noble/hashes" "~1.4.0"
-    "@scure/base" "~1.1.6"
 
 "@scure/bip39@1.4.0":
   version "1.4.0"
@@ -5576,21 +5560,6 @@ verror@1.10.0:
     assert-plus "^1.0.0"
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
-
-viem@^2.18.8:
-  version "2.19.2"
-  resolved "https://registry.yarnpkg.com/viem/-/viem-2.19.2.tgz#11f03621fd0d0d742f04e3da30fa49093a3cf612"
-  integrity sha512-BrR7fEEpuu9Om7obQGThb4BEu00PPHPKaUx+snB/F6yBZtr34FdXCPnphr+S73W2iIu/mt3yaRkfkLlD6a1R5g==
-  dependencies:
-    "@adraffy/ens-normalize" "1.10.0"
-    "@noble/curves" "1.4.0"
-    "@noble/hashes" "1.4.0"
-    "@scure/bip32" "1.4.0"
-    "@scure/bip39" "1.3.0"
-    abitype "1.0.5"
-    isows "1.0.4"
-    webauthn-p256 "0.0.5"
-    ws "8.17.1"
 
 viem@^2.21.1:
   version "2.21.4"
