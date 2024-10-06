@@ -63,15 +63,15 @@
   dependencies:
     ethers "^6.13.2"
 
-"@api3/dapi-management@^1.90.0":
-  version "1.90.0"
-  resolved "https://registry.yarnpkg.com/@api3/dapi-management/-/dapi-management-1.90.0.tgz#ff720665c44489998d6b75e861614f956dbdba6c"
-  integrity sha512-4Nl1vgEeguIkJ8FJy3lErJtDIyfW0wuOuUvjDZhVPP36GSasHRorMu+TG1j+idLNHYOjYY6xiJvpGo+kXChRZg==
+"@api3/dapi-management@^1.91.0":
+  version "1.91.0"
+  resolved "https://registry.yarnpkg.com/@api3/dapi-management/-/dapi-management-1.91.0.tgz#848fcd0b92444fa8aebea0fe1a46ee4fc8a44752"
+  integrity sha512-DX3rcpBSHTbjW0Ad66cFX7rAJq+EmYkSq/Lad0tRdC2nLNYFB3EfcYqXw+5If8TAucCgm4/GhUp7vCJV2CG3RQ==
   dependencies:
     "@api3/api-integrations" "^2.4.0"
     "@api3/chains" "^10.2.3"
     "@api3/commons" "^0.13.2"
-    ethers "^6.13.2"
+    ethers "^6.13.3"
     zod "^3.23.8"
 
 "@api3/ois@^2.3.2":
@@ -2648,6 +2648,19 @@ ethers@^6.13.2:
   version "6.13.2"
   resolved "https://registry.yarnpkg.com/ethers/-/ethers-6.13.2.tgz#4b67d4b49e69b59893931a032560999e5e4419fe"
   integrity sha512-9VkriTTed+/27BGuY1s0hf441kqwHJ1wtN2edksEtiRvXx+soxRX3iSXTfFqq2+YwrOqbDoTHjIhQnjJRlzKmg==
+  dependencies:
+    "@adraffy/ens-normalize" "1.10.1"
+    "@noble/curves" "1.2.0"
+    "@noble/hashes" "1.3.2"
+    "@types/node" "18.15.13"
+    aes-js "4.0.0-beta.5"
+    tslib "2.4.0"
+    ws "8.17.1"
+
+ethers@^6.13.3:
+  version "6.13.3"
+  resolved "https://registry.yarnpkg.com/ethers/-/ethers-6.13.3.tgz#b87afdadb91cc8df5f56b9c59c96e5b206f4a600"
+  integrity sha512-/DzbZOLVtoO4fKvvQwpEucHAQgIwBGWuRvBdwE/lMXgXvvHHTSkn7XqAQ2b+gjJzZDJjWA9OD05bVceVOsBHbg==
   dependencies:
     "@adraffy/ens-normalize" "1.10.1"
     "@noble/curves" "1.2.0"
