@@ -2,7 +2,7 @@
 pragma solidity 0.8.17;
 
 import "@openzeppelin/contracts/access/Ownable.sol";
-import "@api3/contracts/api3-server-v1/proxies/interfaces/IProxy.sol";
+import "api3-contracts-v10/interfaces/IApi3ReaderProxy.sol";
 
 contract DataFeedReaderExample is Ownable {
     // This contract reads from a single proxy. Your contract can read from
@@ -27,7 +27,7 @@ contract DataFeedReaderExample is Ownable {
         view
         returns (int224 value, uint256 timestamp)
     {
-        (value, timestamp) = IProxy(proxy).read();
+        (value, timestamp) = IApi3ReaderProxy(proxy).read();
         // If you have any assumptions about `value` and `timestamp`, make sure
         // to validate them right after reading from the proxy. For example,
         // if the value you are reading is the spot price of an asset, you may
