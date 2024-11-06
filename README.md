@@ -22,14 +22,14 @@ echo 'MNEMONIC="bike north stone..."' > .env
   Alternatively, you can get the proxy address with the following command
 
 ```sh
-NETWORK=ethereum-sepolia-testnet DAPI_NAME=ETH/USD yarn print-proxy-address
+NETWORK=ethereum-sepolia-testnet DAPI_NAME=ETH/USD yarn print-api3readerproxyv1-address
 ```
 
 - Deploy `DataFeedReaderExample` by using the command below with your `NETWORK` and `PROXY` values.
   See the [supported networks section](#supported-networks) for valid `NETWORK` values.
 
 ```sh
-NETWORK=ethereum-sepolia-testnet PROXY=0x1A4eE81BBbb479f3923f22E315Bc2bD1f6d5d180 yarn deploy
+NETWORK=ethereum-sepolia-testnet PROXY=0x5b0cf2b36a65a6BB085D501B971e4c102B9Cd473 yarn deploy
 ```
 
 - Have `DataFeedReaderExample` read from the proxy by using the command below with your `NETWORK` value
@@ -49,7 +49,7 @@ yarn print-supported-chains
 
 ## Local development and testing
 
-`@api3/contracts` provides a `MockProxy` contract for local development.
+`@api3/contracts` provides a `MockApi3ReaderProxy` contract for local development.
 See the [tests](./test/DataFeedReaderExample.sol.js) for its usage, and run the tests with the following command.
 
 ```sh

@@ -9,7 +9,7 @@ You can update the data feed that your `DataFeedReaderExample` reads by updating
 - Use the command below with your `NETWORK` and `PROXY` values
 
 ```sh
-NETWORK=ethereum-sepolia-testnet PROXY=0x3f16e1a6b915C42f6442bF59b092FaBb7d5eBB82 yarn update-proxy
+NETWORK=ethereum-sepolia-testnet PROXY=0xCAc4d304032a46C8D0947396B7cBb07986826A36 yarn update-proxy
 ```
 
 - Use the command below to confirm that `DataFeedReaderExample` now reads the new data feed
@@ -20,23 +20,19 @@ NETWORK=ethereum-sepolia-testnet yarn read-data-feed
 
 ## Deploying proxy contracts programmatically
 
-The [instructions](../README.md#instructions) have you use a `DapiProxyWithOev` contract that gets deployed automatically with a subscription purchase.
+The [instructions](../README.md#instructions) have you use a `Api3ReaderProxyV1` contract that gets deployed automatically with a subscription purchase.
 To deploy the same proxy programmatically, use the command below with your `NETWORK` and `PROXY` values.
 
 ```sh
-NETWORK=ethereum-sepolia-testnet DAPI_NAME=ETH/USD yarn deploy-dapi-proxy-with-oev
+NETWORK=ethereum-sepolia-testnet DAPI_NAME=ETH/USD yarn deploy-api3readerproxyv1
 ```
 
-You can also refer to the [`print-proxy-address` script](./print-proxy-address.js) to see how the `@api3/contracts` package can be used to derive the respective `DapiProxyWithOev` address without needing to make any RPC calls.
+You can also refer to the [`print-api3readerproxyv1-address` script](./print-api3readerproxyv1-address.js) to see how the `@api3/contracts` package can be used to derive the respective `Api3ReaderProxyV1` address without needing to make any RPC calls.
 
-The OEV beneficiary of the proxy above is the API3 _manager multisig_ on that chain.
-To deploy a proxy with an arbitrary OEV beneficiary, use the command below with your `OEV_BENEFICIARY` value.
-Note that the OEV functionalities of proxies with custom beneficiaries are not supported by default.
+The dApp ID of the proxy above is `1`.
+To deploy a proxy with an arbitrary dApp ID, use the command below with your `DAPP_ID` value.
+Note that the OEV functionalities of proxies with custom dApp IDs are not supported by default.
 
 ```sh
-NETWORK=ethereum-sepolia-testnet DAPI_NAME=ETH/USD OEV_BENEFICIARY=0x55Cf1079a115029a879ec3A11Ba5D453272eb61D yarn deploy-dapi-proxy-with-oev
+NETWORK=ethereum-sepolia-testnet DAPI_NAME=ETH/USD DAPP_ID=1337 yarn deploy-api3readerproxyv1
 ```
-
-## Self-funded feeds
-
-See https://github.com/api3dao/nodary-examples
