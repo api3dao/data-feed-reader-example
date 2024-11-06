@@ -1,5 +1,5 @@
 const hre = require('hardhat');
-const api3Contracts = require('api3-contracts-v10');
+const api3Contracts = require('@api3/contracts');
 
 async function main() {
   const dapiName = process.env.DAPI_NAME;

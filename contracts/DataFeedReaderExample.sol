@@ -2,7 +2,7 @@
 pragma solidity 0.8.17;
 
 import "@openzeppelin/contracts/access/Ownable.sol";
-import "api3-contracts-v10/interfaces/IApi3ReaderProxy.sol";
+import "@api3/contracts/interfaces/IApi3ReaderProxy.sol";
 
 contract DataFeedReaderExample is Ownable {
     // This contract reads from a single proxy. Your contract can read from
