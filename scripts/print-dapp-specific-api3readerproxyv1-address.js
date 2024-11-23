@@ -6,10 +6,17 @@ async function main() {
   if (!dapiName) {
     throw new Error('Environment variable DAPI_NAME is not defined');
   }
+  const dappAlias = process.env.DAPP_ALIAS;
+  if (!dappAlias) {
+    throw new Error('Environment variable DAPP_ALIAS is not defined');
+  }
   const chainId = hre.network.config.chainId;
-  const dappId = process.env.DAPP_ID ? process.env.DAPP_ID : 1;
-  const api3ReaderProxyV1Address = api3Contracts.computeApi3ReaderProxyV1Address(chainId, dapiName, dappId, '0x');
-  console.log(`The address of Api3ReaderProxyV1 for ${dapiName} with dApp ID ${dappId} is ${api3ReaderProxyV1Address}`);
+  const api3ReaderProxyV1Address = api3Contracts.computeDappSpecificApi3ReaderProxyV1Address(
+    dappAlias,
+    chainId,
+    dapiName
+  );
+  console.log(`The address of ${dappAlias}'s Api3ReaderProxyV1 for ${dapiName} is ${api3ReaderProxyV1Address}`);
 }
 
 main()

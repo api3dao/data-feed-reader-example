@@ -6,9 +6,16 @@ async function main() {
   if (!dapiName) {
     throw new Error('Environment variable DAPI_NAME is not defined');
   }
+  const dappAlias = process.env.DAPP_ALIAS;
+  if (!dappAlias) {
+    throw new Error('Environment variable DAPP_ALIAS is not defined');
+  }
   const chainId = hre.network.config.chainId;
-  const dappId = process.env.DAPP_ID ? process.env.DAPP_ID : 1;
-  const api3ReaderProxyV1Address = api3Contracts.computeApi3ReaderProxyV1Address(chainId, dapiName, dappId, '0x');
+  const api3ReaderProxyV1Address = api3Contracts.computeDappSpecificApi3ReaderProxyV1Address(
+    dappAlias,
+    chainId,
+    dapiName
+  );
   if ((await hre.ethers.provider.getCode(api3ReaderProxyV1Address)) === '0x') {
     const api3ReaderProxyV1FactoryAddress =
       api3Contracts.deploymentAddresses.Api3ReaderProxyV1Factory[chainId.toString()];
@@ -20,7 +27,7 @@ async function main() {
     );
     const receipt = await api3ReaderProxyV1Factory.deployApi3ReaderProxyV1(
       hre.ethers.utils.formatBytes32String(dapiName),
-      dappId,
+      api3Contracts.computeDappId(dappAlias, chainId),
       '0x'
     );
     await new Promise((resolve) =>
@@ -29,11 +36,11 @@ async function main() {
       })
     );
     console.log(
-      `Api3ReaderProxyV1 for ${dapiName} with dApp ID ${dappId} is deployed at ${api3ReaderProxyV1Address} of ${hre.network.name}`
+      `${dappAlias}'s Api3ReaderProxyV1 for ${dapiName} is deployed at ${api3ReaderProxyV1Address} of ${hre.network.name}`
     );
   } else {
     console.log(
-      `Api3ReaderProxyV1 for ${dapiName} with dApp ID ${dappId} was already deployed at ${api3ReaderProxyV1Address} of ${hre.network.name}`
+      `${dappAlias}'s Api3ReaderProxyV1 for ${dapiName} was already deployed at ${api3ReaderProxyV1Address} of ${hre.network.name}`
     );
   }
 }
