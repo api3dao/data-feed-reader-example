@@ -16,10 +16,11 @@ yarn
 echo 'MNEMONIC="bike north stone..."' > .env
 ```
 
-- Go to [market.api3.org](https://market.api3.org) and find a data feed you like
-- If the data feed is not already activated, purchase a subscription
+- Go to [market.api3.org](https://market.api3.org) and find a data feed you like.
+  If the data feed is not already activated, purchase a subscription.
+  Refer to the [docs](https://docs.api3.org/dapps/integration/) for help.
 - On the data feed page, click the `Integrate` button and copy the address of the proxy.
-  Alternatively, you can get the proxy address with the following command
+  Alternatively, you can get the proxy address with the following command.
 
 ```sh
 NETWORK=ethereum-sepolia-testnet DAPI_NAME=ETH/USD yarn print-api3readerproxyv1-address

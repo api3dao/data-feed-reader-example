@@ -39,15 +39,9 @@ contract DataFeedReaderExample is Ownable {
             timestamp + 1 days > block.timestamp,
             "Timestamp older than one day"
         );
-        // Try to be strict about validations, but be wary of:
-        // (1) Overly strict validation that may invalidate valid values
-        // (2) Mutable validation parameters that are controlled by a trusted
-        // party (eliminates the trust-minimization guarantees of first-party
-        // oracles)
-        // (3) Validation parameters that need to be tuned according to
-        // external conditions (if these are forgotten to be handled, it will
-        // result in (1), look up the Venus Protocol exploit related to LUNA)
-
         // After validation, you can implement your contract logic here.
+
+        // Refer to https://docs.api3.org/dapps/integration/contract-integration.html
+        // for more information about how to integrate your contract securely.
     }
 }
