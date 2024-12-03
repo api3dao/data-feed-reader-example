@@ -23,7 +23,7 @@ echo 'MNEMONIC="bike north stone..."' > .env
   Alternatively, you can get the proxy address with the following command.
 
 ```sh
-NETWORK=ethereum-sepolia-testnet DAPI_NAME=ETH/USD yarn print-communal-api3readerproxyv1-address
+NETWORK=ethereum-sepolia-testnet DAPI_NAME=ETH/USD yarn print:communal-api3readerproxyv1-address
 ```
 
 - Deploy `DataFeedReaderExample` by using the command below with your `NETWORK` and `PROXY` values.
@@ -45,7 +45,7 @@ Chains listed on [market.api3.org](https://market.api3.org/) are all supported.
 You can run the following command to list them.
 
 ```sh
-yarn print-supported-chains
+yarn print:supported-chains
 ```
 
 ## Local development and testing
