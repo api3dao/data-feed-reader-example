@@ -8,7 +8,7 @@
     "deploy": "hardhat deploy --network $NETWORK",
     "deploy-communal-api3readerproxyv1": "hardhat run scripts/deploy-communal-api3readerproxyv1.js --network $NETWORK",
     "deploy-dapp-specific-api3readerproxyv1": "hardhat run scripts/deploy-dapp-specific-api3readerproxyv1.js --network $NETWORK",
-    "deploy-custom-dapp-specific-api3readerproxyv1": "hardhat run scripts/deploy-custom-dapp-specific-api3readerproxyv1.js --network $NETWORK",
+    "deploy-dapp-specific-api3readerproxyv1:unsafe": "hardhat run scripts/deploy-dapp-specific-api3readerproxyv1-unsafe.js --network $NETWORK",
     "lint": "yarn run prettier:check && yarn run lint:eslint && yarn run lint:solhint",
     "lint:solhint": "solhint ./contracts/**/*.sol",
     "lint:eslint": "eslint . --ext .js,.ts",

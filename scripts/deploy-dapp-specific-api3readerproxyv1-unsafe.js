@@ -1,7 +1,12 @@
+// This script is intended for API3 to use internally.
+// Differently from `deploy-dapp-specific-api3readerproxyv1.js`, it allows
+// proxies with arbirary dApp aliases to be deployed.
 const hre = require('hardhat');
 const api3Contracts = require('@api3/contracts');
 
-function computeDappId(dappAlias, chainId) {
+// Unlike the `@api3/contracts` version, the below does not throw due to
+// `dappAlias` not being recognized
+function computeDappIdUnsafe(dappAlias, chainId) {
   return BigInt(
     hre.ethers.utils.solidityKeccak256(
       ['bytes32', 'uint256'],
@@ -19,13 +24,12 @@ async function main() {
   if (!dappAlias) {
     throw new Error('Environment variable DAPP_ALIAS is not defined');
   }
+  if (!api3Contracts.DAPPS.find((dapp) => dapp.alias === dappAlias)) {
+    console.warn(`@api3/contracts does not include the dApp with alias ${dappAlias}. Deployment will continue anyway.`);
+  }
   const chainId = hre.network.config.chainId;
-  const api3ReaderProxyV1Address = api3Contracts.computeApi3ReaderProxyV1Address(
-    chainId,
-    dapiName,
-    computeDappId(dappAlias, chainId),
-    '0x'
-  );
+  const dappId = computeDappIdUnsafe(dappAlias, chainId);
+  const api3ReaderProxyV1Address = api3Contracts.computeApi3ReaderProxyV1Address(chainId, dapiName, dappId, '0x');
   if ((await hre.ethers.provider.getCode(api3ReaderProxyV1Address)) === '0x') {
     const api3ReaderProxyV1FactoryAddress =
       api3Contracts.deploymentAddresses.Api3ReaderProxyV1Factory[chainId.toString()];
@@ -37,7 +41,7 @@ async function main() {
     );
     const receipt = await api3ReaderProxyV1Factory.deployApi3ReaderProxyV1(
       hre.ethers.utils.formatBytes32String(dapiName),
-      computeDappId(dappAlias, chainId),
+      dappId,
       '0x'
     );
     await new Promise((resolve) =>
