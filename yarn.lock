@@ -52,20 +52,20 @@
     viem "^2.21.29"
     zod "^3.23.8"
 
-"@api3/commons@^0.13.3":
-  version "0.13.3"
-  resolved "https://registry.yarnpkg.com/@api3/commons/-/commons-0.13.3.tgz#ed6ae1cc256adbba02402487a35cd122f58d72b1"
-  integrity sha512-oHTOV6rygP5nA2gKh7oV5wFTwLJC+njUxRIEe48FZwjTXdjfXaLH6aX/j09XOmW+TjC3sQ/ecJsFCanBQ3ugoQ==
+"@api3/commons@^0.13.4":
+  version "0.13.4"
+  resolved "https://registry.yarnpkg.com/@api3/commons/-/commons-0.13.4.tgz#b92e2abf4e2fe2804c4bf6a09b2d7bde9353cdff"
+  integrity sha512-DEAopivj60gdVO4pm1y0gcbnUh5H4A69Wh1pWFVmYf8hJIaC03ovXC01E2Lp+G1Ot9jHndrPM6kwr4XCzwQjVw==
   dependencies:
     "@api3/ois" "^2.3.2"
     "@api3/promise-utils" "^0.4.0"
     "@octokit/rest" "^20.1.1"
-    "@octokit/types" "^13.5.0"
+    "@octokit/types" "^13.6.1"
     axios "^1.7.7"
     dotenv "^16.4.5"
     ethers "^5.7.2"
     lodash "^4.17.21"
-    winston "^3.14.2"
+    winston "^3.17.0"
     winston-console-format "^1.0.8"
     zod "^3.23.8"
 
@@ -76,14 +76,14 @@
   dependencies:
     ethers "^6.13.2"
 
-"@api3/dapi-management@^1.111.0":
-  version "1.111.0"
-  resolved "https://registry.yarnpkg.com/@api3/dapi-management/-/dapi-management-1.111.0.tgz#c2fe5716f98a85067b64cc7bd8efd4b6f96cc674"
-  integrity sha512-iCSZaprGyfYVcZKykp+1uNikxsMt3g2ueVRS/qbaAc3qy92gpzLKVlzaTCcNREmGlwZjqL5OsIf45MNl4a2vRQ==
+"@api3/dapi-management@^1.112.0":
+  version "1.112.0"
+  resolved "https://registry.yarnpkg.com/@api3/dapi-management/-/dapi-management-1.112.0.tgz#b050b38e67da543c30672d9d3c9966078a614a86"
+  integrity sha512-PIpvIj5Tnm+TQ8MuGqCynSGiRrSaZ/BXt/fDfEyso2xAm9DLPOCpkS1rBk9DDZviqpHUBs02b2rWk+b/OPhmfQ==
   dependencies:
     "@api3/api-integrations" "^2.23.0"
     "@api3/chains" "^11.0.0"
-    "@api3/commons" "^0.13.3"
+    "@api3/commons" "^0.13.4"
     ethers "^6.13.4"
     zod "^3.23.8"
 
@@ -953,6 +953,13 @@
   version "13.5.0"
   resolved "https://registry.yarnpkg.com/@octokit/types/-/types-13.5.0.tgz#4796e56b7b267ebc7c921dcec262b3d5bfb18883"
   integrity sha512-HdqWTf5Z3qwDVlzCrP8UJquMwunpDiMPt5er+QjGzL4hqr/vBVY/MauQgS1xWxCDT1oMx1EULyqxncdCY/NVSQ==
+  dependencies:
+    "@octokit/openapi-types" "^22.2.0"
+
+"@octokit/types@^13.6.1":
+  version "13.6.2"
+  resolved "https://registry.yarnpkg.com/@octokit/types/-/types-13.6.2.tgz#e10fc4d2bdd65d836d1ced223b03ad4cfdb525bd"
+  integrity sha512-WpbZfZUcZU77DrSW4wbsSgTPfKcp286q3ItaIgvSbBpZJlu6mnYXAkjZz6LVZPXkEvLIM8McanyZejKTYUHipA==
   dependencies:
     "@octokit/openapi-types" "^22.2.0"
 
@@ -3420,7 +3427,7 @@ log-symbols@4.1.0, log-symbols@^4.1.0:
     chalk "^4.1.0"
     is-unicode-supported "^0.1.0"
 
-logform@^2.2.0, logform@^2.3.2:
+logform@^2.2.0:
   version "2.6.0"
   resolved "https://registry.yarnpkg.com/logform/-/logform-2.6.0.tgz#8c82a983f05d6eaeb2d75e3decae7a768b2bf9b5"
   integrity sha512-1ulHeNPp6k/LD8H91o7VYFBng5i1BDE7HoKxVbZiGFidS1Rj65qcywLxX+pVfAPoQJEjRdvKcusKwOupHCVOVQ==
@@ -3432,10 +3439,10 @@ logform@^2.2.0, logform@^2.3.2:
     safe-stable-stringify "^2.3.1"
     triple-beam "^1.3.0"
 
-logform@^2.6.0:
-  version "2.6.1"
-  resolved "https://registry.yarnpkg.com/logform/-/logform-2.6.1.tgz#71403a7d8cae04b2b734147963236205db9b3df0"
-  integrity sha512-CdaO738xRapbKIMVn2m4F6KTj4j7ooJ8POVnebSgKo3KBz5axNXRAL7ZdRjIV6NOr2Uf4vjtRkxrFETOioCqSA==
+logform@^2.7.0:
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/logform/-/logform-2.7.0.tgz#cfca97528ef290f2e125a08396805002b2d060d1"
+  integrity sha512-TFYA4jnP7PVbmlBIfhlSe+WKxs9dklXMTEGcBCIvLhE/Tn3H6Gk1norupVW7m5Cnd4bLcr08AytbyV/xj7f/kQ==
   dependencies:
     "@colors/colors" "1.6.0"
     "@types/triple-beam" "^1.3.2"
@@ -4022,7 +4029,7 @@ rc@1.2.8:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-readable-stream@^3.4.0, readable-stream@^3.6.0:
+readable-stream@^3.4.0, readable-stream@^3.6.0, readable-stream@^3.6.2:
   version "3.6.2"
   resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-3.6.2.tgz#56a9b36ea965c00c5a93ef31eb111a0f11056967"
   integrity sha512-9u/sniCrY3D5WdsERHzHE4G2YCXqoG5FTHUiCC4SIbr6XcLZBY05ya9EKjYek9O5xOAwjGq+1JdGBAS7Q9ScoA==
@@ -4888,31 +4895,31 @@ winston-console-format@^1.0.8:
     logform "^2.2.0"
     triple-beam "^1.3.0"
 
-winston-transport@^4.7.0:
-  version "4.7.0"
-  resolved "https://registry.yarnpkg.com/winston-transport/-/winston-transport-4.7.0.tgz#e302e6889e6ccb7f383b926df6936a5b781bd1f0"
-  integrity sha512-ajBj65K5I7denzer2IYW6+2bNIVqLGDHqDw3Ow8Ohh+vdW+rv4MZ6eiDvHoKhfJFZ2auyN8byXieDDJ96ViONg==
+winston-transport@^4.9.0:
+  version "4.9.0"
+  resolved "https://registry.yarnpkg.com/winston-transport/-/winston-transport-4.9.0.tgz#3bba345de10297654ea6f33519424560003b3bf9"
+  integrity sha512-8drMJ4rkgaPo1Me4zD/3WLfI/zPdA9o2IipKODunnGDcuqbHwjsbB79ylv04LCGGzU0xQ6vTznOMpQGaLhhm6A==
   dependencies:
-    logform "^2.3.2"
-    readable-stream "^3.6.0"
+    logform "^2.7.0"
+    readable-stream "^3.6.2"
     triple-beam "^1.3.0"
 
-winston@^3.14.2:
-  version "3.14.2"
-  resolved "https://registry.yarnpkg.com/winston/-/winston-3.14.2.tgz#94ce5fd26d374f563c969d12f0cd9c641065adab"
-  integrity sha512-CO8cdpBB2yqzEf8v895L+GNKYJiEq8eKlHU38af3snQBQ+sdAIUepjMSguOIJC7ICbzm0ZI+Af2If4vIJrtmOg==
+winston@^3.17.0:
+  version "3.17.0"
+  resolved "https://registry.yarnpkg.com/winston/-/winston-3.17.0.tgz#74b8665ce9b4ea7b29d0922cfccf852a08a11423"
+  integrity sha512-DLiFIXYC5fMPxaRg832S6F5mJYvePtmO5G9v9IgUFPhXm9/GkXarH/TUrBAVzhTCzAj9anE/+GjrgXp/54nOgw==
   dependencies:
     "@colors/colors" "^1.6.0"
     "@dabh/diagnostics" "^2.0.2"
     async "^3.2.3"
     is-stream "^2.0.0"
-    logform "^2.6.0"
+    logform "^2.7.0"
     one-time "^1.0.0"
     readable-stream "^3.4.0"
     safe-stable-stringify "^2.3.1"
     stack-trace "0.0.x"
     triple-beam "^1.3.0"
-    winston-transport "^4.7.0"
+    winston-transport "^4.9.0"
 
 word-wrap@^1.2.5:
   version "1.2.5"
