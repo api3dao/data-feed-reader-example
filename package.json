@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "@api3/contracts": "^11.1.0",
-    "@api3/dapi-management": "^1.113.0",
+    "@api3/dapi-management": "^1.114.0",
     "@nomicfoundation/hardhat-chai-matchers": "^1.0.6",
     "@nomicfoundation/hardhat-network-helpers": "^1.0.12",
     "@nomicfoundation/hardhat-toolbox": "^2.0.2",
