@@ -44,6 +44,14 @@
     viem "^2.21.29"
     zod "^3.23.8"
 
+"@api3/chains@^11.2.0":
+  version "11.2.0"
+  resolved "https://registry.yarnpkg.com/@api3/chains/-/chains-11.2.0.tgz#37be0c0c0cf5112642232f74d8dd56554f4c2ebc"
+  integrity sha512-yqDGZgdiGaGYlpJtEwE/+v3vKp7nScN/JUr01wT+Av6At0BapWjma79HsPJ7LF/DWKhoboUYoqqhjtqDAvSS0w==
+  dependencies:
+    viem "^2.21.29"
+    zod "^3.23.8"
+
 "@api3/commons@^0.13.4":
   version "0.13.4"
   resolved "https://registry.yarnpkg.com/@api3/commons/-/commons-0.13.4.tgz#b92e2abf4e2fe2804c4bf6a09b2d7bde9353cdff"
@@ -61,20 +69,20 @@
     winston-console-format "^1.0.8"
     zod "^3.23.8"
 
-"@api3/contracts@^11.1.0":
-  version "11.1.0"
-  resolved "https://registry.yarnpkg.com/@api3/contracts/-/contracts-11.1.0.tgz#d71e87b22f86047703037236a317bedd6dd74607"
-  integrity sha512-jl/U/y1FQorAgc+az1OldGwBHxnQQOoKI3Hcww3X+JAexV/vJkzhg8C8jklzutK29kJyYJU5LkXss8O7ho560Q==
+"@api3/contracts@^11.2.0":
+  version "11.2.0"
+  resolved "https://registry.yarnpkg.com/@api3/contracts/-/contracts-11.2.0.tgz#b89de582414ffaebb813f957a970dbce1c7daccd"
+  integrity sha512-bw5GirzGtFQerFKg79MdKvzG3PjLjKoL3huxJbFra1dXpQRjigTLlh4zSIHGvsV3X8HQx49T7ocMQ56gT5PeUA==
   dependencies:
     ethers "^6.13.2"
 
-"@api3/dapi-management@^1.114.0":
-  version "1.114.0"
-  resolved "https://registry.yarnpkg.com/@api3/dapi-management/-/dapi-management-1.114.0.tgz#0ca0f247394843db349807653b408a6d6e7f0f0a"
-  integrity sha512-6Wp0eMzdWehX81yuQn1efhLH7/konCghyPm41UXNaOkFJTY3X0zjhO+d2vPwUWLrlBkgJJqP2mB1YjxOCmKT8g==
+"@api3/dapi-management@^1.115.0":
+  version "1.115.0"
+  resolved "https://registry.yarnpkg.com/@api3/dapi-management/-/dapi-management-1.115.0.tgz#82cfda2ef4a71d08e630974e8dbd9334f7a94be7"
+  integrity sha512-+I/CKeHGx6Ywy53ZVpMjWXvSmrtC/ogvF8ErmAIxPAZjQThyn/H2j3uTEnRe/ev+nDeMuVkkpW+g5Imi/D7YwQ==
   dependencies:
     "@api3/api-integrations" "^2.25.0"
-    "@api3/chains" "^11.1.1"
+    "@api3/chains" "^11.2.0"
     "@api3/commons" "^0.13.4"
     ethers "^6.13.4"
     zod "^3.23.8"
