@@ -44,10 +44,10 @@
     viem "^2.21.29"
     zod "^3.23.8"
 
-"@api3/chains@^11.2.0":
-  version "11.2.1"
-  resolved "https://registry.yarnpkg.com/@api3/chains/-/chains-11.2.1.tgz#d7f0018136b3c443af71704d4dc6862c60df7bd9"
-  integrity sha512-9Oalcs+kXH0yHLY2X3LYW08AzXiAh+qK6FB138gZPPn+XnFM90PdFnfh23SmjRwVrkqo1RZi9HzVZeRGP897mg==
+"@api3/chains@^11.3.0":
+  version "11.3.0"
+  resolved "https://registry.yarnpkg.com/@api3/chains/-/chains-11.3.0.tgz#e8f4fa1a990be763db88f11c4a8c795884f06776"
+  integrity sha512-Jbi77Til12AiP2+X7i9q/B038w2LQV+WtfReWubejxuPKh87k02Mkl+VbSh9WazkC6ANGGT2t3YZd/rM8v1l5A==
   dependencies:
     viem "^2.21.29"
     zod "^3.23.8"
@@ -69,20 +69,20 @@
     winston-console-format "^1.0.8"
     zod "^3.23.8"
 
-"@api3/contracts@^13.0.0":
-  version "13.0.0"
-  resolved "https://registry.yarnpkg.com/@api3/contracts/-/contracts-13.0.0.tgz#7ae506b91829ee053c4fd54d15049e8733f7c159"
-  integrity sha512-Xq+m3GYmdYzdeNg11oUdBoIy9CTVFQ9Vx9Hb8dWoX/gZXB9l7nigheDFOm027HgCxqvFyJ2QsJQWIgusm4g66A==
+"@api3/contracts@^13.1.0":
+  version "13.1.0"
+  resolved "https://registry.yarnpkg.com/@api3/contracts/-/contracts-13.1.0.tgz#20231544ec4bca4a823724bef6aa34c906017b02"
+  integrity sha512-o88s2c8Sqb4R9lm0S7lAL3/5xTca+YCFFOhO+vH+hZ3NLO2kCZkjY+7fFzQsF646kcNAdeEzG3jpyM773/p/LA==
   dependencies:
     ethers "^6.13.2"
 
-"@api3/dapi-management@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@api3/dapi-management/-/dapi-management-2.0.0.tgz#d5a03c45549a2fdcdc7065409df060f5f5072779"
-  integrity sha512-Eljt5yekqzQ/C2RHybc8QHRpFGomPVqjJjC/XYfMIABbNaRjFNEVZsgLEkFoQtnM/0U6sRNAvn1oiG2Gw+gLdg==
+"@api3/dapi-management@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@api3/dapi-management/-/dapi-management-2.1.0.tgz#7ae17701ba61d9cc539cfe64dc84486bec84e0fd"
+  integrity sha512-J6joEnrRafJ+v/EpTUZS5DL4dLfnbibpn3l8f9V/Ue9jWsBHIxnI3syDM7hQLm2SFLrLvAJmGeBEwWMetvUNjA==
   dependencies:
     "@api3/api-integrations" "^2.25.0"
-    "@api3/chains" "^11.2.0"
+    "@api3/chains" "^11.3.0"
     "@api3/commons" "^0.13.4"
     ethers "^6.13.4"
     zod "^3.23.8"
