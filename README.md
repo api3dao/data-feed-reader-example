@@ -57,6 +57,11 @@ See the [tests](./test/DataFeedReaderExample.sol.js) for its usage, and run the 
 yarn test
 ```
 
+## AggregatorV2V3Interface example
+
+`Api3ReaderProxyV1` also implements `AggregatorV2V3Interface`, which enables you to use it as a drop-in replacement for a Chainlink data feed.
+See the [tests](./test/AggregatorV2V3InterfaceReaderExample.sol.js) for an example of how that is to be used, and refer to the [respective docs page](https://docs.api3.org/dapps/integration/aggregatorv2v3interface.html) for more information.
+
 ## More?
 
 See the [advanced instructions](./scripts/README.md).
