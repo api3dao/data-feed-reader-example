@@ -3,6 +3,7 @@
 // proxies with arbirary dApp aliases to be deployed.
 const hre = require('hardhat');
 const api3Contracts = require('@api3/contracts');
+const { validateDapiName } = require('./utils');
 
 // Unlike the `@api3/contracts` version, the below does not throw due to
 // `dappAlias` not being recognized
@@ -20,6 +21,7 @@ async function main() {
   if (!dapiName) {
     throw new Error('Environment variable DAPI_NAME is not defined');
   }
+  validateDapiName(dapiName);
   const dappAlias = process.env.DAPP_ALIAS;
   if (!dappAlias) {
     throw new Error('Environment variable DAPP_ALIAS is not defined');

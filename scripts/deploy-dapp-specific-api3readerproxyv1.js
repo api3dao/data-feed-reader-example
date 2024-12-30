@@ -1,11 +1,13 @@
 const hre = require('hardhat');
 const api3Contracts = require('@api3/contracts');
+const { validateDapiName } = require('./utils');
 
 async function main() {
   const dapiName = process.env.DAPI_NAME;
   if (!dapiName) {
     throw new Error('Environment variable DAPI_NAME is not defined');
   }
+  validateDapiName(dapiName);
   const dappAlias = process.env.DAPP_ALIAS;
   if (!dappAlias) {
     throw new Error('Environment variable DAPP_ALIAS is not defined');
