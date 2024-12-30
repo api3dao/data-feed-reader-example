@@ -16,7 +16,7 @@ jobs:
   check-md-links:
     runs-on: ubuntu-latest
     steps:
-    - name: Clone @api3/contracts
+    - name: Check out repo
       uses: actions/checkout@v4
     - name: Check Markdown links
       uses: gaurav-nelson/github-action-markdown-link-check@v1
