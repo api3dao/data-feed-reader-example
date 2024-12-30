@@ -12,11 +12,7 @@ interface AggregatorV2V3Interface {
 contract AggregatorV2V3InterfaceReaderExample is DataFeedReaderExample {
     constructor(address proxy) DataFeedReaderExample(proxy) {}
 
-    function readAggregatorV2V3Interface()
-        external
-        view
-        returns (int256 value)
-    {
+    function readValue() external view returns (int256 value) {
         value = AggregatorV2V3Interface(proxy).latestAnswer();
         // If you have any assumptions about `value`, make sure to validate
         // them right after reading from the proxy. For example, if the value
