@@ -9,8 +9,8 @@ contract DataFeedReaderExample is Ownable {
     // multiple proxies.
     address public proxy;
 
-    constructor(address _proxy) {
-        setProxy(_proxy);
+    constructor(address proxy_) {
+        setProxy(proxy_);
     }
 
     // Updating the proxy address is a security-critical action. In this
@@ -18,8 +18,8 @@ contract DataFeedReaderExample is Ownable {
     // You may want to update your proxy to switch to another data feed, enable
     // OEV support, or even switch to another oracle solution. Implementing a
     // method to update proxies is highly recommended.
-    function setProxy(address _proxy) public onlyOwner {
-        proxy = _proxy;
+    function setProxy(address proxy_) public onlyOwner {
+        proxy = proxy_;
     }
 
     function readDataFeed()
