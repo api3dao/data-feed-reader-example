@@ -1,5 +1,5 @@
 const helpers = require('@nomicfoundation/hardhat-network-helpers');
-const { context, describe, expect, it } = require('chai');
+const { expect } = require('chai');
 const { ethers } = require('hardhat');
 
 describe('DataFeedReaderExample', function () {
