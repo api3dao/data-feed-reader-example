@@ -1,5 +1,7 @@
-const hre = require('hardhat');
+import { network } from 'hardhat';
+
 const api3Contracts = require('@api3/contracts');
+
 const { validateDapiName } = require('./utils');
 
 async function main() {
@@ -12,7 +14,7 @@ async function main() {
   if (!dappAlias) {
     throw new Error('Environment variable DAPP_ALIAS is not defined');
   }
-  const chainId = hre.network.config.chainId;
+  const { chainId } = network.config;
   const api3ReaderProxyV1Address = api3Contracts.computeDappSpecificApi3ReaderProxyV1Address(
     dappAlias,
     chainId,

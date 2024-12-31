@@ -1,20 +1,17 @@
-const hre = require('hardhat');
+import { deployments, ethers } from 'hardhat';
 
 async function main() {
   const proxyAddress = process.env.PROXY;
   if (!proxyAddress) {
     throw new Error('Environment variable "PROXY" is not defined');
   }
-  const DataFeedReaderExample = await hre.deployments.get('DataFeedReaderExample');
-  const dataFeedReaderExample = new hre.ethers.Contract(
-    DataFeedReaderExample.address,
-    DataFeedReaderExample.abi,
-    (await hre.ethers.getSigners())[0]
-  );
+  const DataFeedReaderExample = await deployments.get('DataFeedReaderExample');
+  const [deployer] = await ethers.getSigners();
+  const dataFeedReaderExample = new ethers.Contract(DataFeedReaderExample.address, DataFeedReaderExample.abi, deployer);
   const oldProxyAddress = await dataFeedReaderExample.proxy();
   const receipt = await dataFeedReaderExample.setProxy(proxyAddress);
   await new Promise((resolve) =>
-    hre.ethers.provider.once(receipt.hash, () => {
+    ethers.provider.once(receipt.hash, () => {
       resolve();
     })
   );

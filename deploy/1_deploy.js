@@ -1,13 +1,14 @@
-const hre = require('hardhat');
+import { deployments, ethers } from 'hardhat';
 
 module.exports = async () => {
   const proxyAddress = process.env.PROXY;
   if (!proxyAddress) {
     throw new Error('Environment variable "PROXY" is not defined');
   }
-  const dataFeedReaderExample = await hre.deployments.deploy('DataFeedReaderExample', {
+  const [deployer] = await ethers.getSigners();
+  const dataFeedReaderExample = await deployments.deploy('DataFeedReaderExample', {
     args: [proxyAddress],
-    from: (await hre.getUnnamedAccounts())[0],
+    from: deployer,
     log: true,
   });
   console.log(`Deployed DataFeedReaderExample at ${dataFeedReaderExample.address}`);

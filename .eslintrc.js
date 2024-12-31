@@ -1,13 +1,14 @@
 module.exports = {
   env: {
-    es2020: true,
-    es6: true,
     mocha: true,
-    node: true,
   },
+  extends: ['plugin:@api3/eslint-plugin-commons/universal'],
   parserOptions: {
-    ecmaVersion: 11,
-    sourceType: 'module',
+    project: ['./tsconfig.json'],
   },
-  extends: 'eslint:recommended',
+  rules: {
+    'no-console': 'off',
+    'unicorn/filename-case': 'off',
+    'unicorn/no-anonymous-default-export': 'off',
+  },
 };

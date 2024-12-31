@@ -1,6 +1,6 @@
-const { ethers } = require('hardhat');
 const helpers = require('@nomicfoundation/hardhat-network-helpers');
 const { expect } = require('chai');
+const { ethers } = require('hardhat');
 
 describe('AggregatorV2V3InterfaceReaderExample', function () {
   async function deploy() {
@@ -57,16 +57,18 @@ describe('AggregatorV2V3InterfaceReaderExample', function () {
     context('Value is positive', function () {
       it('reads data feed', async function () {
         const { mockApi3ReaderProxyV1, aggregatorV2V3InterfaceReaderExample } = await helpers.loadFixture(deploy);
-        const dataFeedValue = 123456;
-        await mockApi3ReaderProxyV1.mock(dataFeedValue, (await ethers.provider.getBlock()).timestamp);
+        const dataFeedValue = 123_456;
+        const dataFeedTimestamp = await helpers.time.latest();
+        await mockApi3ReaderProxyV1.mock(dataFeedValue, dataFeedTimestamp);
         expect(await aggregatorV2V3InterfaceReaderExample.readValue()).to.equal(dataFeedValue);
       });
     });
     context('Value is not positive', function () {
       it('reverts', async function () {
         const { mockApi3ReaderProxyV1, aggregatorV2V3InterfaceReaderExample } = await helpers.loadFixture(deploy);
-        const dataFeedValue = -123456;
-        await mockApi3ReaderProxyV1.mock(dataFeedValue, (await ethers.provider.getBlock()).timestamp);
+        const dataFeedValue = -123_456;
+        const dataFeedTimestamp = await helpers.time.latest();
+        await mockApi3ReaderProxyV1.mock(dataFeedValue, dataFeedTimestamp);
         await expect(aggregatorV2V3InterfaceReaderExample.readValue()).to.be.revertedWith('Value not positive');
       });
     });
