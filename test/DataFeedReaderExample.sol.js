@@ -1,6 +1,6 @@
-const { ethers } = require('hardhat');
 const helpers = require('@nomicfoundation/hardhat-network-helpers');
-const { expect } = require('chai');
+const { context, describe, expect, it } = require('chai');
+const { ethers } = require('hardhat');
 
 describe('DataFeedReaderExample', function () {
   async function deploy() {
@@ -53,8 +53,8 @@ describe('DataFeedReaderExample', function () {
       context('Timestamp is not older than a day', function () {
         it('reads data feed', async function () {
           const { mockApi3ReaderProxy, dataFeedReaderExample } = await helpers.loadFixture(deploy);
-          const dataFeedValue = 123456;
-          const dataFeedTimestamp = (await ethers.provider.getBlock()).timestamp;
+          const dataFeedValue = 123_456;
+          const dataFeedTimestamp = await helpers.time.latest();
           await mockApi3ReaderProxy.mock(dataFeedValue, dataFeedTimestamp);
           const dataFeed = await dataFeedReaderExample.readDataFeed();
           expect(dataFeed.value).to.equal(dataFeedValue);
@@ -64,8 +64,8 @@ describe('DataFeedReaderExample', function () {
       context('Timestamp is older than a day', function () {
         it('reverts', async function () {
           const { mockApi3ReaderProxy, dataFeedReaderExample } = await helpers.loadFixture(deploy);
-          const dataFeedValue = 123456;
-          const dataFeedTimestamp = (await ethers.provider.getBlock()).timestamp - 24 * 60 * 60;
+          const dataFeedValue = 123_456;
+          const dataFeedTimestamp = (await helpers.time.latest()) - 24 * 60 * 60;
           await mockApi3ReaderProxy.mock(dataFeedValue, dataFeedTimestamp);
           await expect(dataFeedReaderExample.readDataFeed()).to.be.revertedWith('Timestamp older than one day');
         });
@@ -74,8 +74,8 @@ describe('DataFeedReaderExample', function () {
     context('Value is not positive', function () {
       it('reverts', async function () {
         const { mockApi3ReaderProxy, dataFeedReaderExample } = await helpers.loadFixture(deploy);
-        const dataFeedValue = -123456;
-        const dataFeedTimestamp = (await ethers.provider.getBlock()).timestamp;
+        const dataFeedValue = -123_456;
+        const dataFeedTimestamp = await helpers.time.latest();
         await mockApi3ReaderProxy.mock(dataFeedValue, dataFeedTimestamp);
         await expect(dataFeedReaderExample.readDataFeed()).to.be.revertedWith('Value not positive');
       });
