@@ -6,6 +6,9 @@ const {
 require('dotenv').config();
 
 module.exports = {
+  gasReporter: {
+    enabled: false,
+  },
   networks: hardhatConfig.networks(),
   solidity: {
     version: '0.8.17',
