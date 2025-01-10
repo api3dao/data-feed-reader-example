@@ -69,10 +69,10 @@
     winston-console-format "^1.0.8"
     zod "^3.23.8"
 
-"@api3/contracts@^13.3.0":
-  version "13.3.0"
-  resolved "https://registry.yarnpkg.com/@api3/contracts/-/contracts-13.3.0.tgz#3b09bc3d1e03a7701ab0104b2818971d66411fca"
-  integrity sha512-6uwJUWvYX0z1gAFaiH5i7pDNuS1tGThC+rD1J7evA2oSsb3j7+Tg+ubfISbtqiNXF8AaNIqHmtDqDVuA8EIBEw==
+"@api3/contracts@^15.0.0":
+  version "15.0.0"
+  resolved "https://registry.yarnpkg.com/@api3/contracts/-/contracts-15.0.0.tgz#8ad5e45ef3854d3d395f9aca1f66eef222f8c438"
+  integrity sha512-PLE9vRu8sSwrnfbbqwiiUO/4H0/M7/gubijJcBpvzCx9MZPUIWer7WjU4ISWtDauUg8M339/sFvXnsJXI8mNwQ==
   dependencies:
     ethers "^6.13.2"
 
