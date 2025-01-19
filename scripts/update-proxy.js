@@ -1,4 +1,4 @@
-import { deployments, ethers } from 'hardhat';
+const { deployments, ethers } = require('hardhat');
 
 async function main() {
   const proxyAddress = process.env.PROXY;

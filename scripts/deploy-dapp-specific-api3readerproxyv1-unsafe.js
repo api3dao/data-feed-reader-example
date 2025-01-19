@@ -1,10 +1,8 @@
 // This script is intended for API3 to use internally.
 // Differently from `deploy-dapp-specific-api3readerproxyv1.js`, it allows
 // proxies with arbirary dApp aliases to be deployed.
-const { artifacts, ethers, network } = require('hardhat');
-
 const api3Contracts = require('@api3/contracts');
-
+const { artifacts, ethers, network } = require('hardhat');
 const { validateDapiName } = require('./utils');
 
 // Unlike the `@api3/contracts` version, the below does not throw due to
