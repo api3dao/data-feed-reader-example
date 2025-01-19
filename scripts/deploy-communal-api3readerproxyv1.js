@@ -1,4 +1,4 @@
-import { artifacts, ethers, network } from 'hardhat';
+const { artifacts, ethers, network } = require('hardhat');
 
 const api3Contracts = require('@api3/contracts');
 

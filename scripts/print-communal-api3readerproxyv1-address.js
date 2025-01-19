@@ -1,4 +1,4 @@
-import { network } from 'hardhat';
+const { network } = require('hardhat');
 
 const api3Contracts = require('@api3/contracts');
 
