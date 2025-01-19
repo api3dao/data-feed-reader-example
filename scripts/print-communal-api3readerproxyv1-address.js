@@ -1,5 +1,6 @@
 const api3Contracts = require('@api3/contracts');
 const { network } = require('hardhat');
+
 const { validateDapiName } = require('./utils');
 
 async function main() {

@@ -3,6 +3,7 @@
 // proxies with arbirary dApp aliases to be deployed.
 const api3Contracts = require('@api3/contracts');
 const { artifacts, ethers, network } = require('hardhat');
+
 const { validateDapiName } = require('./utils');
 
 // Unlike the `@api3/contracts` version, the below does not throw due to
