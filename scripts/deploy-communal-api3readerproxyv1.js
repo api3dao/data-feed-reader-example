@@ -1,6 +1,5 @@
-import { artifacts, ethers, network } from 'hardhat';
-
 const api3Contracts = require('@api3/contracts');
+const { artifacts, ethers, network } = require('hardhat');
 
 const { validateDapiName } = require('./utils');
 
