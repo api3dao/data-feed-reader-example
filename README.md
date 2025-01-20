@@ -7,7 +7,7 @@
 - Install dependencies
 
 ```sh
-yarn
+yarn --ignore-engines
 ```
 
 - Create a `.env` file similar to `example.env`
