@@ -121,13 +121,13 @@
     yargs "^17.7.2"
     zod "^3.22.4"
 
-"@api3/api-integrations@^2.30.0":
-  version "2.30.0"
-  resolved "https://registry.yarnpkg.com/@api3/api-integrations/-/api-integrations-2.30.0.tgz#2314e5b44beb823fff10b307fe5c6104ed37dc2c"
-  integrity sha512-H3+bEk/GEbWYar4DcL7ST+eQr99JgkMdGJhS8jeBZWdV+seZgC+C64b1kLl5jC6cjYthHhrI5oIX3w5vaVudew==
+"@api3/api-integrations@^2.31.0":
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/@api3/api-integrations/-/api-integrations-2.31.0.tgz#d95dbce6500a988312271a1f017c18681e1c95b8"
+  integrity sha512-Slc9rBxAHxhYf7ll+uYViglfvgO6UiHDIDgn9FfsE1KNuV3Wp03Z/OEJvTlyqxep/jtB0vXj5V9LIpypL4f4Iw==
   dependencies:
     "@api3/airnode-abi" "^0.14.2"
-    "@api3/chains" "^11.5.0"
+    "@api3/chains" "^11.5.1"
     "@api3/ois" "^2.3.2"
     "@api3/signed-api" "^2.1.0"
     ethers "^5.7.2"
@@ -137,6 +137,14 @@
   version "11.5.0"
   resolved "https://registry.yarnpkg.com/@api3/chains/-/chains-11.5.0.tgz#43c11c91d6bca29b6ec627f8ebf6261a692e3d44"
   integrity sha512-Qc8EICOkwxj4BDBOtbRGnj7huAg9Td/EmqXr1/crPOUI9e/als8LKGFpVS3YPZzOePfXWsp7SVazc1J4ZBxFlg==
+  dependencies:
+    viem "^2.21.29"
+    zod "^3.23.8"
+
+"@api3/chains@^11.5.1":
+  version "11.5.1"
+  resolved "https://registry.yarnpkg.com/@api3/chains/-/chains-11.5.1.tgz#8707f1fbd7c7ec191d9f8cbfadf0b6f84f73af69"
+  integrity sha512-2V2+LvnhwSfpgo52JY0PFuk3ujgq1FdnhajIKXcAjIasbnSCfrapMersGnV3FdPlZfT7jxHczRb47lx5gwgLLQ==
   dependencies:
     viem "^2.21.29"
     zod "^3.23.8"
@@ -204,13 +212,13 @@
     ethers "^6.13.2"
     yargs "^17.7.2"
 
-"@api3/dapi-management@^2.18.0":
-  version "2.18.0"
-  resolved "https://registry.yarnpkg.com/@api3/dapi-management/-/dapi-management-2.18.0.tgz#bfd4893c84458f4d58d07717955516632cf1ee6f"
-  integrity sha512-HjyMhOi8fgenXKX4EzsWlZ2x7Hm+X73RiQ7BeOqQvk5jTRB+GIdwhMexsKK4pvXOVZ8Nwv09fTtq5hUsvDx1TQ==
+"@api3/dapi-management@^2.18.1":
+  version "2.18.1"
+  resolved "https://registry.yarnpkg.com/@api3/dapi-management/-/dapi-management-2.18.1.tgz#f1cb276ac64c4930a61e01d04a45f5a2c33f92a0"
+  integrity sha512-xnc1l4D+CaiRE5aOneKyZmv905HbSLMoMZmx3r2kXCgxtFgjJChXRENy3CBgsIISt36adxLoJS04zE+Dy2CL+Q==
   dependencies:
-    "@api3/api-integrations" "^2.30.0"
-    "@api3/chains" "^11.5.0"
+    "@api3/api-integrations" "^2.31.0"
+    "@api3/chains" "^11.5.1"
     "@api3/commons" "^0.13.4"
     ethers "^6.13.5"
     zod "^3.24.1"
