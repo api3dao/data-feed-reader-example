@@ -212,10 +212,10 @@
     ethers "^6.13.2"
     yargs "^17.7.2"
 
-"@api3/dapi-management@^2.18.2":
-  version "2.18.2"
-  resolved "https://registry.yarnpkg.com/@api3/dapi-management/-/dapi-management-2.18.2.tgz#de2bc51be14902d1199503caebca4d194d064c3b"
-  integrity sha512-pE9/ZgvlXgOFRMHPiNTF9O9RmRH9atWaeMjWXkl/AZNETGZqddu0NttLz1joDQbkrCLuPbkmeKmhKBtYQUNyqQ==
+"@api3/dapi-management@^2.19.0":
+  version "2.19.0"
+  resolved "https://registry.yarnpkg.com/@api3/dapi-management/-/dapi-management-2.19.0.tgz#56837adaaf47c874602f75302a6ec82e5522a558"
+  integrity sha512-o/nJrwJyyv6kV+TQ7+VsvIcK+1SHhbF16KswiMmIMtPMNBtHFizJ++nUEw86xgAElQLi6xFkbkud6InensA+ZA==
   dependencies:
     "@api3/api-integrations" "^2.32.0"
     "@api3/chains" "^11.5.1"
