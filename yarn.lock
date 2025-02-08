@@ -121,25 +121,17 @@
     yargs "^17.7.2"
     zod "^3.22.4"
 
-"@api3/api-integrations@^2.32.0":
-  version "2.32.0"
-  resolved "https://registry.yarnpkg.com/@api3/api-integrations/-/api-integrations-2.32.0.tgz#be0fbb74128fb810c6b879b70584870351d2496e"
-  integrity sha512-fjFleMKxFLCh7vpoUgErptSEeEsnEsSmMzvSZzf7ukMspVCSdOELIaZI2ussaB8PWR4Wx/xjn8UIzhhcmdwrVw==
+"@api3/api-integrations@^2.33.0":
+  version "2.33.0"
+  resolved "https://registry.yarnpkg.com/@api3/api-integrations/-/api-integrations-2.33.0.tgz#514bf9d582b30be361b225ae527e52e88ec59938"
+  integrity sha512-0B98lzNUpBmgn/bBuAJAVtWgJuSqHoqN38aYWXEPb/ApWvQ5N40hzYAy8HPw6xSgmf4rP28FVEvi563X5Fjbjg==
   dependencies:
     "@api3/airnode-abi" "^0.14.2"
-    "@api3/chains" "^11.5.1"
+    "@api3/chains" "^11.6.0"
     "@api3/ois" "^2.3.2"
     "@api3/signed-api" "^2.1.0"
     ethers "^5.7.2"
     zod "^3.24.1"
-
-"@api3/chains@^11.5.1":
-  version "11.5.1"
-  resolved "https://registry.yarnpkg.com/@api3/chains/-/chains-11.5.1.tgz#8707f1fbd7c7ec191d9f8cbfadf0b6f84f73af69"
-  integrity sha512-2V2+LvnhwSfpgo52JY0PFuk3ujgq1FdnhajIKXcAjIasbnSCfrapMersGnV3FdPlZfT7jxHczRb47lx5gwgLLQ==
-  dependencies:
-    viem "^2.21.29"
-    zod "^3.23.8"
 
 "@api3/chains@^11.6.0":
   version "11.6.0"
@@ -212,12 +204,12 @@
     ethers "^6.13.2"
     yargs "^17.7.2"
 
-"@api3/dapi-management@^2.20.0":
-  version "2.20.0"
-  resolved "https://registry.yarnpkg.com/@api3/dapi-management/-/dapi-management-2.20.0.tgz#d1f87f447b9e7fe02b6a2d0effc1aea09fa81d81"
-  integrity sha512-iQHZwBAFP/m8D2dkoXRXw+2P6pEH5UOy8+1fOa8svvD2jDoJ919fwdzCFhRApDKsluTPSUchYmZ53iFLKqWIbQ==
+"@api3/dapi-management@^2.20.1":
+  version "2.20.1"
+  resolved "https://registry.yarnpkg.com/@api3/dapi-management/-/dapi-management-2.20.1.tgz#4b4fd2d7e4c98bd95ce040a0f7121975137058a7"
+  integrity sha512-rq5KTnp6FkNLrJRJF46i3PfhGwHoF56qbTUUsxETp9OMI2apeVUaVSBJwMOzf58xlzP9HU6d3E+/By97krx/oQ==
   dependencies:
-    "@api3/api-integrations" "^2.32.0"
+    "@api3/api-integrations" "^2.33.0"
     "@api3/chains" "^11.6.0"
     "@api3/commons" "^0.13.4"
     ethers "^6.13.5"
