@@ -6,10 +6,10 @@ Alternatively, [`data-feed-reader-example`](https://github.com/api3dao/data-feed
 
 ::: info 💡 Tip
 
-In short, if your dApp has a [dApp alias](/dapps/oev-rewards/dapp-alias) assigned, deploy your own Api3ReaderProxyV1 contracts by referring to the [instructions in `data-feed-reader-example`.](https://github.com/api3dao/data-feed-reader-example/blob/main/scripts/README.md#deploying-proxy-contracts-programmatically)
+In short, if your dApp has a [dApp alias](https://github.com/api3dao/contracts/tree/main/data/dapps) assigned, deploy your own Api3ReaderProxyV1 contracts by referring to the [instructions in `data-feed-reader-example`.](https://github.com/api3dao/data-feed-reader-example/blob/main/scripts/README.md#deploying-proxy-contracts-programmatically)
 Otherwise, use the communal Api3ReaderProxyV1 addresses displayed on the integration pages of the respective data feeds.
 
-With either option, we recommended you to validate the Api3ReaderProxyV1 addresses using [`@api3/contracts`.](/dapps/integration/api3-contracts.md)
+With either option, we recommended you to validate the Api3ReaderProxyV1 addresses using [`@api3/contracts`.](https://docs.api3.org/dapps/integration/contract-integration.html#printing-api3readerproxyv1-addresses)
 
 :::
 
