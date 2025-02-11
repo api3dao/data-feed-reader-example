@@ -121,10 +121,10 @@
     yargs "^17.7.2"
     zod "^3.22.4"
 
-"@api3/api-integrations@^2.34.0":
-  version "2.34.0"
-  resolved "https://registry.yarnpkg.com/@api3/api-integrations/-/api-integrations-2.34.0.tgz#b6e7d112da857ad7e1529db9194e35c2296dda08"
-  integrity sha512-GbC3/lT1TxOVxBZBEf4HladWpKlt8TBWs9S7hgfLd0Yo+xL6uyCo1h0lpT1zUPpqe23hPAP1ne1yiBe0/xamyA==
+"@api3/api-integrations@^2.35.0":
+  version "2.35.0"
+  resolved "https://registry.yarnpkg.com/@api3/api-integrations/-/api-integrations-2.35.0.tgz#ea7e9898761684bdf449b2557ed2e160b4a73ca9"
+  integrity sha512-05ZtdHrPR7V2pZNDoRMw486Zgj7T/OqDySScio+HaXcOsPZFl0kOb6Nc8kAdinjcDa29NJ4aMi/oO5nRFc+ziw==
   dependencies:
     "@api3/airnode-abi" "^0.14.2"
     "@api3/chains" "^11.6.0"
@@ -204,12 +204,12 @@
     ethers "^6.13.2"
     yargs "^17.7.2"
 
-"@api3/dapi-management@^2.20.2":
-  version "2.20.2"
-  resolved "https://registry.yarnpkg.com/@api3/dapi-management/-/dapi-management-2.20.2.tgz#84affbbcb402d501f7a119ffdd1ba7bce233fa65"
-  integrity sha512-wgAoXpZUgItM8zZDL/65ECf0t3kimQ3B7tklTThFEuDbNmKlM7+W0psq+oN/s5JH0Q6qQQc4FuxGDHUc60KFZQ==
+"@api3/dapi-management@^2.21.0":
+  version "2.21.0"
+  resolved "https://registry.yarnpkg.com/@api3/dapi-management/-/dapi-management-2.21.0.tgz#9ba9106d964e69375eac89052d7e3d0557a361d9"
+  integrity sha512-BrhGZvWQxJdgu70I6d24IFP0FYUhFP4LtNiW1vza96EHdJCok+yjsu6DiLBxF0nzo/T9VH/uN++kwLfGCSCJmA==
   dependencies:
-    "@api3/api-integrations" "^2.34.0"
+    "@api3/api-integrations" "^2.35.0"
     "@api3/chains" "^11.6.0"
     "@api3/commons" "^0.13.4"
     ethers "^6.13.5"
