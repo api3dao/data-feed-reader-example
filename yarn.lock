@@ -141,6 +141,14 @@
     viem "^2.21.29"
     zod "^3.23.8"
 
+"@api3/chains@^11.7.0":
+  version "11.7.0"
+  resolved "https://registry.yarnpkg.com/@api3/chains/-/chains-11.7.0.tgz#9f52d7553b5b4446956641d92222e23932f08968"
+  integrity sha512-Jf3RgYdOSvKGiqN2I0oJWf54Sse5SisQZQQKO1y/rOb6azmjPWGg1sXnbcnsY4IQl5A/11t2dBk3fRklp72Kgg==
+  dependencies:
+    viem "^2.21.29"
+    zod "^3.23.8"
+
 "@api3/chains@^4.4.0":
   version "4.17.1"
   resolved "https://registry.yarnpkg.com/@api3/chains/-/chains-4.17.1.tgz#9a90f54cadf9cc8b00c2964efc7a32f9b6c490da"
@@ -195,12 +203,12 @@
     winston-console-format "^1.0.8"
     zod "^3.22.4"
 
-"@api3/contracts@^16.6.0":
-  version "16.6.0"
-  resolved "https://registry.yarnpkg.com/@api3/contracts/-/contracts-16.6.0.tgz#bbc750399fd6a466dca00e95f94cfe9b69afcd7c"
-  integrity sha512-dybxkLelcUueZowujHYdrg7j7PCR3+w2VNINSgDUxxLSIJ6zhT1V8MHIJRI4P3sNyVIwme9PFcWLQt5KjtuTKA==
+"@api3/contracts@^16.7.0":
+  version "16.7.0"
+  resolved "https://registry.yarnpkg.com/@api3/contracts/-/contracts-16.7.0.tgz#25f2feab164d7fdef52b405c82055e3be8ac5b40"
+  integrity sha512-ssVGqf/Db12YJNKm2hqJ3LZ0QSDS/Roj4PMpGfh/tNGAyrhUh44wAF2edffY/b3SXTCYjJO3WabR/uowaBl44A==
   dependencies:
-    "@api3/chains" "^11.6.0"
+    "@api3/chains" "^11.7.0"
     ethers "^6.13.2"
     yargs "^17.7.2"
 
