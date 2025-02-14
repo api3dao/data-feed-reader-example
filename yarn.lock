@@ -121,33 +121,17 @@
     yargs "^17.7.2"
     zod "^3.22.4"
 
-"@api3/api-integrations@^2.35.0":
-  version "2.35.0"
-  resolved "https://registry.yarnpkg.com/@api3/api-integrations/-/api-integrations-2.35.0.tgz#ea7e9898761684bdf449b2557ed2e160b4a73ca9"
-  integrity sha512-05ZtdHrPR7V2pZNDoRMw486Zgj7T/OqDySScio+HaXcOsPZFl0kOb6Nc8kAdinjcDa29NJ4aMi/oO5nRFc+ziw==
+"@api3/api-integrations@^2.36.0":
+  version "2.36.0"
+  resolved "https://registry.yarnpkg.com/@api3/api-integrations/-/api-integrations-2.36.0.tgz#f83d818be99742ab4cfd93596f294c70dc266f8d"
+  integrity sha512-3VKQ7mNI2m6IgCvQvYS/jcruATd8TUNS5MAiWCTQUIF03Uk5FfRdVzlLKODjMD9YWoTZV7V7pt15YximGSQsUw==
   dependencies:
     "@api3/airnode-abi" "^0.14.2"
-    "@api3/chains" "^11.6.0"
+    "@api3/chains" "^11.8.0"
     "@api3/ois" "^2.3.2"
     "@api3/signed-api" "^2.1.0"
     ethers "^5.7.2"
     zod "^3.24.1"
-
-"@api3/chains@^11.6.0":
-  version "11.6.0"
-  resolved "https://registry.yarnpkg.com/@api3/chains/-/chains-11.6.0.tgz#f31a20e3f2ab1c7e3456ade2a59e908197b17b46"
-  integrity sha512-DZt3W1gaw66EGGCatcJgHecEwSZ1CdYa9riiUfByesvrMLXAbUII41HgWq3P4NvgpyUfgpUvgN0WAq/HFzG7eA==
-  dependencies:
-    viem "^2.21.29"
-    zod "^3.23.8"
-
-"@api3/chains@^11.7.0":
-  version "11.7.0"
-  resolved "https://registry.yarnpkg.com/@api3/chains/-/chains-11.7.0.tgz#9f52d7553b5b4446956641d92222e23932f08968"
-  integrity sha512-Jf3RgYdOSvKGiqN2I0oJWf54Sse5SisQZQQKO1y/rOb6azmjPWGg1sXnbcnsY4IQl5A/11t2dBk3fRklp72Kgg==
-  dependencies:
-    viem "^2.21.29"
-    zod "^3.23.8"
 
 "@api3/chains@^11.8.0":
   version "11.8.0"
@@ -220,13 +204,13 @@
     ethers "^6.13.2"
     yargs "^17.7.2"
 
-"@api3/dapi-management@^2.23.0":
-  version "2.23.0"
-  resolved "https://registry.yarnpkg.com/@api3/dapi-management/-/dapi-management-2.23.0.tgz#5114b8a2ae25189ea1cd4a5aae06c78dc50ffb49"
-  integrity sha512-70poc24/yzFQrqPpeCnRBX3S//Ceo8CFMnUmzK5V5JQW75n5JgY2gd+FlT8fCORdBQf8pz8P2GuuJyZ+E0JmSA==
+"@api3/dapi-management@^2.25.0":
+  version "2.25.0"
+  resolved "https://registry.yarnpkg.com/@api3/dapi-management/-/dapi-management-2.25.0.tgz#8074633898ad6e8f93889b713aa1c4182c6fde2f"
+  integrity sha512-mpNNXmk+MQeXQqQRdluO7S2cdIhVfe8Loek9UJMZF/UGxkuMwpaI35h+cdMzSGNclCnGkjjRnWVWCUmuwD28uQ==
   dependencies:
-    "@api3/api-integrations" "^2.35.0"
-    "@api3/chains" "^11.7.0"
+    "@api3/api-integrations" "^2.36.0"
+    "@api3/chains" "^11.8.0"
     "@api3/commons" "^0.13.4"
     ethers "^6.13.5"
     zod "^3.24.1"
