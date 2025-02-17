@@ -204,10 +204,10 @@
     ethers "^6.13.2"
     yargs "^17.7.2"
 
-"@api3/dapi-management@^2.25.0":
-  version "2.25.0"
-  resolved "https://registry.yarnpkg.com/@api3/dapi-management/-/dapi-management-2.25.0.tgz#8074633898ad6e8f93889b713aa1c4182c6fde2f"
-  integrity sha512-mpNNXmk+MQeXQqQRdluO7S2cdIhVfe8Loek9UJMZF/UGxkuMwpaI35h+cdMzSGNclCnGkjjRnWVWCUmuwD28uQ==
+"@api3/dapi-management@^2.26.0":
+  version "2.26.0"
+  resolved "https://registry.yarnpkg.com/@api3/dapi-management/-/dapi-management-2.26.0.tgz#63fd06d4f7bcf4a2f54da78f3970ac2c29e07fc9"
+  integrity sha512-I497m7cOOZ6tVnUHE3tuZ8uGHBAqmYeBlK+d7bApH13nJLDM9lRXNhCw+EGJmtpJr6mOpIHrhF9b1eKVVqalzQ==
   dependencies:
     "@api3/api-integrations" "^2.36.0"
     "@api3/chains" "^11.8.0"
