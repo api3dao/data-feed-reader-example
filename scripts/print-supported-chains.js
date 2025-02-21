@@ -1,10 +1,10 @@
-const { getChains, api3Chains } = require('@api3/dapi-management');
+const { getChains, api3Contracts } = require('@api3/dapi-management');
 
 async function main() {
   const supportedChains = getChains()
     .filter((chain) => ['active', 'deprecated'].includes(chain.stage))
     .map((chain) => {
-      const { alias, testnet } = api3Chains.CHAINS.find(({ id }) => id === chain.id);
+      const { alias, testnet } = api3Contracts.CHAINS.find(({ id }) => id === chain.id);
       return {
         id: Number(chain.id),
         name: alias,
