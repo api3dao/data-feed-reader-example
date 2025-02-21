@@ -1,4 +1,4 @@
-import { deployments, ethers } from 'hardhat';
+const { deployments, ethers } = require('hardhat');
 
 module.exports = async () => {
   const proxyAddress = process.env.PROXY;
@@ -8,7 +8,7 @@ module.exports = async () => {
   const [deployer] = await ethers.getSigners();
   const dataFeedReaderExample = await deployments.deploy('DataFeedReaderExample', {
     args: [proxyAddress],
-    from: deployer,
+    from: deployer.address,
     log: true,
   });
   console.log(`Deployed DataFeedReaderExample at ${dataFeedReaderExample.address}`);

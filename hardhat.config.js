@@ -1,7 +1,7 @@
 require('@nomicfoundation/hardhat-toolbox');
 require('hardhat-deploy');
 const {
-  api3Chains: { hardhatConfig },
+  api3Contracts: { hardhatConfig },
 } = require('@api3/dapi-management');
 require('dotenv').config();
 
