@@ -199,10 +199,10 @@
     viem "^2.23.2"
     yargs "^17.7.2"
 
-"@api3/dapi-management@^3.0.2":
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/@api3/dapi-management/-/dapi-management-3.0.2.tgz#0365f8dfaa98d3640204288695ca38997a6c17f8"
-  integrity sha512-BxX5pdqkmtY07YAM277xVuMu/SY/B7uUBo0a3SQwij7WOebtPaZ40ECa3jIfpx7MJ3M3wb0yZKkJe0t3v9Hn6g==
+"@api3/dapi-management@^3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@api3/dapi-management/-/dapi-management-3.1.0.tgz#7f90e5d674fa03ec5162f2365b5aa26bf2300422"
+  integrity sha512-ZmabQb0EHBs3fRDiGtYQ9BhIMY2MThvUEyslFV6Pq3dahyBsEhWoixMSXqvSKNfkVSbg0KEepc+Y98uPjAsZuw==
   dependencies:
     "@api3/api-integrations" "^2.39.0"
     "@api3/commons" "^0.13.4"
