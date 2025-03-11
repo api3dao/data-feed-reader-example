@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "@api3/contracts": "^18.2.0",
-    "@api3/dapi-management": "^3.3.1",
+    "@api3/dapi-management": "^3.4.0",
     "@api3/eslint-plugin-commons": "^3.0.0",
     "@nomicfoundation/hardhat-chai-matchers": "^1.0.6",
     "@nomicfoundation/hardhat-network-helpers": "^1.0.12",
