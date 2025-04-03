@@ -36,7 +36,7 @@
     "@types/mocha": ">=10.0.10",
     "chai": "^4.5.0",
     "dotenv": "^16.4.7",
-    "eslint": "^9.23.0",
+    "eslint": "8.57.1",
     "hardhat": "^2.22.19",
     "hardhat-deploy": "^1.0.1",
     "hardhat-gas-reporter": "^2.2.2",
