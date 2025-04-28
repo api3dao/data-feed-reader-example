@@ -122,13 +122,13 @@
     yargs "^17.7.2"
     zod "^3.22.4"
 
-"@api3/api-integrations@^2.46.0":
-  version "2.46.0"
-  resolved "https://registry.yarnpkg.com/@api3/api-integrations/-/api-integrations-2.46.0.tgz#a4e25ffdb4f60bae2e5650f042a65831eb7f61dc"
-  integrity sha512-tStmKM4d1n6WCRdNFio5UXmc+nAcOAmBqH91BbONWf11dpk/grpqtfsZkY2znx5KM3V60x6CpZbKrzh7Qg8M9w==
+"@api3/api-integrations@^2.48.0":
+  version "2.48.0"
+  resolved "https://registry.yarnpkg.com/@api3/api-integrations/-/api-integrations-2.48.0.tgz#8f51e4299a8daeedd2df2e2b7e77deda7e6081ff"
+  integrity sha512-H1RPES/y3hDHw0tcZVQetmfFPCI2HY0kHFD82KKYJOKHr2822AOuFpIWA9bmxaFUvoJUtPiZcHp9NLnKNiAgPw==
   dependencies:
     "@api3/airnode-abi" "^0.15.0"
-    "@api3/contracts" "^20.2.0"
+    "@api3/contracts" "^20.3.0"
     "@api3/ois" "^2.3.2"
     "@api3/signed-api" "3.2.0"
     ethers "^5.8.0"
@@ -190,16 +190,6 @@
     winston-console-format "^1.0.8"
     zod "^3.22.4"
 
-"@api3/contracts@^20.2.0":
-  version "20.2.0"
-  resolved "https://registry.yarnpkg.com/@api3/contracts/-/contracts-20.2.0.tgz#6a6d43e73d57383194456d1f287d8320151515a3"
-  integrity sha512-b3QlQIuvfKdzaepHr2t1KHKEBZE6sanS8aMWCgW+eb4yGj6mKYpXgy9HGjml87Ne2nBVz4+5/99/fHt5Tx04OA==
-  dependencies:
-    ethers "^6.13.2"
-    viem "^2.23.2"
-    yargs "^17.7.2"
-    zod "^3.24.2"
-
 "@api3/contracts@^20.3.0":
   version "20.3.0"
   resolved "https://registry.yarnpkg.com/@api3/contracts/-/contracts-20.3.0.tgz#42bcca5fd487435f7768da00607488ad6641baff"
@@ -210,14 +200,14 @@
     yargs "^17.7.2"
     zod "^3.24.2"
 
-"@api3/dapi-management@^3.17.0":
-  version "3.17.0"
-  resolved "https://registry.yarnpkg.com/@api3/dapi-management/-/dapi-management-3.17.0.tgz#7020d70502897dba45f3ae7d36ad3ab7f7d662d0"
-  integrity sha512-uS0Y1+z8Zy7VRAvZrWRhMhIbxQKjH++9IN8VfCqPITXLorGUKp3r+Ab0fiK/f7HdR+85jEodOIfNQctuRbNQHw==
+"@api3/dapi-management@^3.18.1":
+  version "3.18.1"
+  resolved "https://registry.yarnpkg.com/@api3/dapi-management/-/dapi-management-3.18.1.tgz#de74178172aa08ce05c10d1f0e0c9b692ab5cbfe"
+  integrity sha512-AS3TTW1Yh8HkkX0xdqs1UudZop9cTg5m4aWc/XTSPsLFaG7VHZN6RFpbD81VBsqck/lGRHqGOezecTeK7rYhzw==
   dependencies:
-    "@api3/api-integrations" "^2.46.0"
+    "@api3/api-integrations" "^2.48.0"
     "@api3/commons" "^0.13.4"
-    "@api3/contracts" "^20.2.0"
+    "@api3/contracts" "^20.3.0"
     ethers "^6.13.5"
     zod "^3.24.2"
 
