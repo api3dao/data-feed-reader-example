@@ -195,10 +195,10 @@
     yargs "^17.7.2"
     zod "^3.24.2"
 
-"@api3/contracts@^21.0.1":
-  version "21.0.1"
-  resolved "https://registry.yarnpkg.com/@api3/contracts/-/contracts-21.0.1.tgz#cb0d2acabd2c7680f5aa4d7ced5d22c268a2a463"
-  integrity sha512-J37L41GtFc/I+k7csEIqnftXJKMvRlx6vvaoy+O0niC3lAuJhdcViadmpZJuRVzzY0hiIbT+Ymh1JbDIjKRZjw==
+"@api3/contracts@^21.1.0":
+  version "21.1.0"
+  resolved "https://registry.yarnpkg.com/@api3/contracts/-/contracts-21.1.0.tgz#b58fefc9cb91f520f9bb84d8841e5f71a49d2fa5"
+  integrity sha512-6Jo/noB4W6Mmvn/2USiM4zEpOD5Nr6POI+vOdrdd7kmvO3+zSommqVXpQG8KXu349zKr0VYEwALzYLBPoqonmQ==
   dependencies:
     ethers "^6.13.2"
     viem "^2.23.2"
