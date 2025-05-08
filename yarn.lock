@@ -205,16 +205,16 @@
     yargs "^17.7.2"
     zod "^3.24.2"
 
-"@api3/dapi-management@^3.20.0":
-  version "3.20.0"
-  resolved "https://registry.yarnpkg.com/@api3/dapi-management/-/dapi-management-3.20.0.tgz#fa7ceba7d10b3f05ed83d88ec8d13c0045e936f2"
-  integrity sha512-HMdWxISMq0KGPGXvIXKbGVOQ3p0TaIUqlihDH1efxZA2dREk9WXyv+Ah+NRF5n2fHF/R9W2h/ByAbxKckRtBXQ==
+"@api3/dapi-management@^3.20.1":
+  version "3.20.1"
+  resolved "https://registry.yarnpkg.com/@api3/dapi-management/-/dapi-management-3.20.1.tgz#4c65fb4bcc79ed873e3602dad5b892d3d82526a7"
+  integrity sha512-CldwkPymB5/erm6zlEJWx824SZUbqNJ/f4frZJWJgEp5OugTAkdjNFQdS/FalcrtYP0FSBCq74R7dJpjNFlCDA==
   dependencies:
     "@api3/api-integrations" "^2.49.0"
     "@api3/commons" "^0.13.4"
-    "@api3/contracts" "^20.3.0"
-    ethers "^6.13.5"
-    zod "^3.24.2"
+    "@api3/contracts" "^21.1.0"
+    ethers "^6.14.0"
+    zod "^3.24.4"
 
 "@api3/eslint-plugin-commons@^3.0.0":
   version "3.0.0"
@@ -5583,10 +5583,10 @@ ethers@^6.13.2:
     tslib "2.7.0"
     ws "8.17.1"
 
-ethers@^6.13.5:
-  version "6.13.5"
-  resolved "https://registry.yarnpkg.com/ethers/-/ethers-6.13.5.tgz#8c1d6ac988ac08abc3c1d8fabbd4b8b602851ac4"
-  integrity sha512-+knKNieu5EKRThQJWwqaJ10a6HE9sSehGeqWN65//wE7j47ZpFhKAnHB/JJFibwwg61I/koxaPsXbXpD/skNOQ==
+ethers@^6.14.0:
+  version "6.14.0"
+  resolved "https://registry.yarnpkg.com/ethers/-/ethers-6.14.0.tgz#b80eca3b60fc97da53f73b77629ce7392568eae0"
+  integrity sha512-KgHwltNSMdbrGWEyKkM0Rt2s+u1nDH/5BVDQakLinzGEJi4bWindBzZSCC4gKsbZjwDTI6ex/8suR9Ihbmz4IQ==
   dependencies:
     "@adraffy/ens-normalize" "1.10.1"
     "@noble/curves" "1.2.0"
@@ -9745,3 +9745,8 @@ zod@^3.24.2:
   version "3.24.2"
   resolved "https://registry.yarnpkg.com/zod/-/zod-3.24.2.tgz#8efa74126287c675e92f46871cfc8d15c34372b3"
   integrity sha512-lY7CDW43ECgW9u1TcT3IoXHflywfVqDYze4waEz812jR/bZ8FHDsl7pFQoSZTz5N+2NqRXs8GBwnAwo3ZNxqhQ==
+
+zod@^3.24.4:
+  version "3.24.4"
+  resolved "https://registry.yarnpkg.com/zod/-/zod-3.24.4.tgz#e2e2cca5faaa012d76e527d0d36622e0a90c315f"
+  integrity sha512-OdqJE9UDRPwWsrHjLN2F8bPxvwJBK22EHLWtanu0LSYr5YqzsaaW3RMgmjwr8Rypg5k+meEJdSPXJZXE/yqOMg==
