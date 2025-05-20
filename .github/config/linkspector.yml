@@ -1,0 +1,9 @@
+aliveStatusCodes:
+  - 200
+  - 406
+dirs:
+  - .
+  - .github
+ignorePatterns:
+  - pattern: '^https://basescan.org/address/.*$'
+useGitIgnore: true
