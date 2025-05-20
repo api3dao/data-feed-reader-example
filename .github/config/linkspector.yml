@@ -4,6 +4,4 @@ aliveStatusCodes:
 dirs:
   - .
   - .github
-ignorePatterns:
-  - pattern: '^https://basescan.org/address/.*$'
 useGitIgnore: true
