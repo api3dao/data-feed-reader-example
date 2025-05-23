@@ -205,10 +205,10 @@
     yargs "^17.7.2"
     zod "^3.24.2"
 
-"@api3/dapi-management@^3.22.0":
-  version "3.22.0"
-  resolved "https://registry.yarnpkg.com/@api3/dapi-management/-/dapi-management-3.22.0.tgz#f0143ee5ffb38208d8eba034e8afdecef287802c"
-  integrity sha512-yv7UoVJCgwjdZ/aSTs6wygy1FDbTbX2qtKB6qVxK4SbltT+A+vZiGigS3w73hKxaH1KUwm3Jo2UpBZsMkl+6Uw==
+"@api3/dapi-management@^3.23.0":
+  version "3.23.0"
+  resolved "https://registry.yarnpkg.com/@api3/dapi-management/-/dapi-management-3.23.0.tgz#6c3f2154d4a9f962e4ebb472cbc48d7521e62167"
+  integrity sha512-nr0TwGehbVBVREXSZV9GbTxsbFnw6amnTC0tlYHsETCOQxtGpc7QgBP4hxM7TB0g+mfp9YVMsZxD031KTkAS8A==
   dependencies:
     "@api3/api-integrations" "^2.50.0"
     "@api3/commons" "^0.13.4"
