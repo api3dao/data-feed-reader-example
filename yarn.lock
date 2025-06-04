@@ -117,13 +117,13 @@
     yargs "^17.7.2"
     zod "^3.22.4"
 
-"@api3/api-integrations@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@api3/api-integrations/-/api-integrations-3.0.0.tgz#654f36d51b59cb45b7fab62f38749171c2389c00"
-  integrity sha512-nh599EUVKefqoy3DNJnf327RjAVj1sng9LAtFprJMjeZox5dR6lVBSmT9A3XuKzNxoUN/y1oGbzZpaWfZj3kFw==
+"@api3/api-integrations@^3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@api3/api-integrations/-/api-integrations-3.1.0.tgz#dfeefb676a7c01f1f3ced30eb5d2b85ab57574a4"
+  integrity sha512-WvzOCGJ+c7Z/t92mZAWwDQJpLuZXnErL1Gfu37l631ToSolUHUe0d9HCsqtmydQAkRipjUqsqnEUC+m2Zu0G4Q==
   dependencies:
     "@api3/airnode-abi" "^0.15.0"
-    "@api3/contracts" "^21.3.0"
+    "@api3/contracts" "^22.0.0"
     "@api3/ois" "^2.3.2"
     "@api3/signed-api" "3.3.0"
     ethers "^5.8.0"
@@ -195,14 +195,24 @@
     yargs "^17.7.2"
     zod "^3.24.2"
 
-"@api3/dapi-management@^3.25.0":
-  version "3.25.0"
-  resolved "https://registry.yarnpkg.com/@api3/dapi-management/-/dapi-management-3.25.0.tgz#c3bd8c4041dffd5d4b8c3993660c2d257f77ed15"
-  integrity sha512-BIcuwna8mnfHoDvnFKp/osQOJvFlrA3LEzJfo0r6oFcfPEfwSTAhLqsedpFUgEb7K1Qkkjp6Qz5iW7b8ApFoEw==
+"@api3/contracts@^22.0.0":
+  version "22.0.0"
+  resolved "https://registry.yarnpkg.com/@api3/contracts/-/contracts-22.0.0.tgz#5bdedcb915e5a082e73338d8ff352f7b5d1cc21a"
+  integrity sha512-5EL3hKEScNOeRQAgJPROhyyMCLiw/Ou5HREyvdgsIqsKQsRcqZWy+Po8ZSCj/ILaviGzKXAAKc76+1ig4KtVdA==
   dependencies:
-    "@api3/api-integrations" "^3.0.0"
+    ethers "^6.13.2"
+    viem "^2.23.2"
+    yargs "^17.7.2"
+    zod "^3.24.2"
+
+"@api3/dapi-management@^3.25.1":
+  version "3.25.1"
+  resolved "https://registry.yarnpkg.com/@api3/dapi-management/-/dapi-management-3.25.1.tgz#ce5fdb64e3ca4e0074d60f0118ff737a316f59a4"
+  integrity sha512-OWJUVxFSeTg4kp/8mLDyKlAvEPD2AAn9Ycw4/avlBA5MRsORIRvg/E8dVuGByzu9FD8S5czA5K5pCjiknGAcIQ==
+  dependencies:
+    "@api3/api-integrations" "^3.1.0"
     "@api3/commons" "^0.13.4"
-    "@api3/contracts" "^21.3.0"
+    "@api3/contracts" "^22.0.0"
     ethers "^6.14.0"
     zod "^3.24.4"
 
