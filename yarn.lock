@@ -185,16 +185,6 @@
     winston-console-format "^1.0.8"
     zod "^3.22.4"
 
-"@api3/contracts@^21.3.0":
-  version "21.3.0"
-  resolved "https://registry.yarnpkg.com/@api3/contracts/-/contracts-21.3.0.tgz#1b83a023488ff78f8d9b720405213efbbe61a0d9"
-  integrity sha512-iiITmMRm7QFwy9qnWiBHt15koNSEWUsOyIg/TLnKlEHsTh/mByBoS5Ljcx6nNqi7Sca5X6EUl7EE19277XKABA==
-  dependencies:
-    ethers "^6.13.2"
-    viem "^2.23.2"
-    yargs "^17.7.2"
-    zod "^3.24.2"
-
 "@api3/contracts@^22.0.0":
   version "22.0.0"
   resolved "https://registry.yarnpkg.com/@api3/contracts/-/contracts-22.0.0.tgz#5bdedcb915e5a082e73338d8ff352f7b5d1cc21a"
