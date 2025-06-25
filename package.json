@@ -22,7 +22,7 @@
     "update-proxy": "hardhat run scripts/update-proxy.js --network $NETWORK"
   },
   "devDependencies": {
-    "@api3/contracts": "^24.2.0",
+    "@api3/contracts": "^24.2.1",
     "@api3/dapi-management": "^3.35.0",
     "@api3/eslint-plugin-commons": "^3.0.0",
     "@nomicfoundation/hardhat-chai-matchers": "^1.0.6",
