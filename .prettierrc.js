@@ -9,7 +9,7 @@ module.exports = {
     {
       files: '*.sol',
       options: {
-        parser: 'solidity-parse',
+        parser: 'slang',
         printWidth: 80,
         tabWidth: 4,
         useTabs: false,
