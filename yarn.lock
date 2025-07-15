@@ -117,17 +117,17 @@
     yargs "^17.7.2"
     zod "^3.22.4"
 
-"@api3/api-integrations@^5.3.0":
-  version "5.3.0"
-  resolved "https://registry.yarnpkg.com/@api3/api-integrations/-/api-integrations-5.3.0.tgz#989bc987fee8d8fa00ca6c58c691c4082ee690f7"
-  integrity sha512-fSIkqzcQUjrob2GgmFHt7KpfRBKfjMCc9t554fUX0rqxKOsrljgHZqzhdGThPhveAtgjTYk1Xxle4O/RYS19Ng==
+"@api3/api-integrations@^5.5.0":
+  version "5.5.0"
+  resolved "https://registry.yarnpkg.com/@api3/api-integrations/-/api-integrations-5.5.0.tgz#55d7ae8e859491fde0dcec915dd7a5c3c31172ee"
+  integrity sha512-vzoArWBEhb77dNGrvAzOnhbAIvXSXqefArizXBE52D8W57PZl2lLmRtJ4sg738kmwIg3vXuevhoOG31SjoGWPA==
   dependencies:
     "@api3/airnode-abi" "^0.15.0"
-    "@api3/contracts" "^26.1.0"
+    "@api3/contracts" "^26.2.0"
     "@api3/ois" "^2.3.2"
     "@api3/signed-api" "3.3.0"
     ethers "^5.8.0"
-    zod "^3.25.64"
+    zod "^3.25.76"
 
 "@api3/chains@^8.1.1":
   version "8.1.1"
@@ -185,16 +185,6 @@
     winston-console-format "^1.0.8"
     zod "^3.22.4"
 
-"@api3/contracts@^26.1.0":
-  version "26.1.0"
-  resolved "https://registry.yarnpkg.com/@api3/contracts/-/contracts-26.1.0.tgz#42b4dc83e08e136a525cc951bab5b30e82365e8a"
-  integrity sha512-PdexMLE6vKo2Us85Hd/t5idJII9/gry26pIilssZOL0tj+1HxOtuQhCnppDsTfhL0I/TP6jZuPua3whR82VqhA==
-  dependencies:
-    ethers "^6.13.2"
-    viem "^2.23.2"
-    yargs "^17.7.2"
-    zod "^3.24.2"
-
 "@api3/contracts@^26.2.0":
   version "26.2.0"
   resolved "https://registry.yarnpkg.com/@api3/contracts/-/contracts-26.2.0.tgz#9f14292250c1e6c185fa03b14af84d1263ab16b8"
@@ -205,16 +195,16 @@
     yargs "^17.7.2"
     zod "^3.24.2"
 
-"@api3/dapi-management@^3.40.0":
-  version "3.40.0"
-  resolved "https://registry.yarnpkg.com/@api3/dapi-management/-/dapi-management-3.40.0.tgz#0b1a0a24c0a711f28fedff14a83bfa053140de87"
-  integrity sha512-FhFjvPbd3rUe24lB8eukRjNSwZcKu8ykBHxWSx/CvPpW+i0ylZoAED+HWohSY/znkPVc/ivL+SHKeY8ToU3KYg==
+"@api3/dapi-management@^3.41.1":
+  version "3.41.1"
+  resolved "https://registry.yarnpkg.com/@api3/dapi-management/-/dapi-management-3.41.1.tgz#de709f77ebdb8b1d1219afc516a563e4bfce0458"
+  integrity sha512-GNFZgBe/7fRkFeNbV4w73O41MPNIQeyHzD1SjDS+ysBEoXdOJgnkwvEK1ke5J+3cSs6GF+XhyiAyzEsSzzqaFg==
   dependencies:
-    "@api3/api-integrations" "^5.3.0"
+    "@api3/api-integrations" "^5.5.0"
     "@api3/commons" "^0.13.4"
     "@api3/contracts" "^26.2.0"
-    ethers "^6.14.4"
-    zod "^3.25.64"
+    ethers "^6.15.0"
+    zod "^3.25.76"
 
 "@api3/eslint-plugin-commons@^3.0.0":
   version "3.0.0"
@@ -6353,10 +6343,10 @@ ethers@^6.13.2:
     tslib "2.7.0"
     ws "8.17.1"
 
-ethers@^6.14.4:
-  version "6.14.4"
-  resolved "https://registry.yarnpkg.com/ethers/-/ethers-6.14.4.tgz#0f6fbc562a8425c7c888da307fa71ef796be0c04"
-  integrity sha512-Jm/dzRs2Z9iBrT6e9TvGxyb5YVKAPLlpna7hjxH7KH/++DSh2T/JVmQUv7iHI5E55hDbp/gEVvstWYXVxXFzsA==
+ethers@^6.15.0:
+  version "6.15.0"
+  resolved "https://registry.yarnpkg.com/ethers/-/ethers-6.15.0.tgz#2980f2a3baf0509749b7e21f8692fa8a8349c0e3"
+  integrity sha512-Kf/3ZW54L4UT0pZtsY/rf+EkBU7Qi5nnhonjUb8yTXcxH3cdcWrV2cRyk0Xk/4jK6OoHhxxZHriyhje20If2hQ==
   dependencies:
     "@adraffy/ens-normalize" "1.10.1"
     "@noble/curves" "1.2.0"
@@ -10701,7 +10691,7 @@ zod@^3.24.3:
   resolved "https://registry.yarnpkg.com/zod/-/zod-3.25.7.tgz#74184ecfe03ef8c67a62393008117b3b8d9cc48c"
   integrity sha512-YGdT1cVRmKkOg6Sq7vY7IkxdphySKnXhaUmFI4r4FcuFVNgpCb9tZfNwXbT6BPjD5oz0nubFsoo9pIqKrDcCvg==
 
-zod@^3.25.64:
-  version "3.25.67"
-  resolved "https://registry.yarnpkg.com/zod/-/zod-3.25.67.tgz#62987e4078e2ab0f63b491ef0c4f33df24236da8"
-  integrity sha512-idA2YXwpCdqUSKRCACDE6ItZD9TZzy3OZMtpfLoh6oPR47lipysRrJfjzMqFxQ3uJuUPyUeWe1r9vLH33xO/Qw==
+zod@^3.25.76:
+  version "3.25.76"
+  resolved "https://registry.yarnpkg.com/zod/-/zod-3.25.76.tgz#26841c3f6fd22a6a2760e7ccb719179768471e34"
+  integrity sha512-gzUt/qt81nXsFGKIFcC3YnfEAx5NkunCfnDlvuBSSFS02bcXu4Lmea0AFIUwbLWxWPx3d9p8S5QoaujKcNQxcQ==
