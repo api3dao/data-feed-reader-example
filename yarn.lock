@@ -117,13 +117,13 @@
     yargs "^17.7.2"
     zod "^3.22.4"
 
-"@api3/api-integrations@^5.7.0":
-  version "5.7.0"
-  resolved "https://registry.yarnpkg.com/@api3/api-integrations/-/api-integrations-5.7.0.tgz#81dd2da6d8412fbc9095d5252b286b92c37cc483"
-  integrity sha512-nlmqJBI2UDEQo0HcBLnYuZS52r6/WW5GSDrHp+vm7pI5nSXkP1Iyrfbbh3XNfcy7DgKLDeodAFg/sDMAsyXvWA==
+"@api3/api-integrations@^5.8.0":
+  version "5.8.0"
+  resolved "https://registry.yarnpkg.com/@api3/api-integrations/-/api-integrations-5.8.0.tgz#de39c2746a7d3aa52218c863bc6708a1e7f54634"
+  integrity sha512-oPb+fw3uTsEo83vYnHXhrRyMB2DKZerz63s84J0TVUAixYX4IgDszhymyHQOguSSMxycnSoKv9RYUQwi/qonSw==
   dependencies:
     "@api3/airnode-abi" "^0.15.0"
-    "@api3/contracts" "^26.2.1"
+    "@api3/contracts" "^27.0.0"
     "@api3/ois" "^2.3.2"
     "@api3/signed-api" "3.3.0"
     ethers "^5.8.0"
@@ -185,16 +185,6 @@
     winston-console-format "^1.0.8"
     zod "^3.22.4"
 
-"@api3/contracts@^26.2.1":
-  version "26.2.1"
-  resolved "https://registry.yarnpkg.com/@api3/contracts/-/contracts-26.2.1.tgz#a548d330f6ed67ec3ffa9d5db6de86491ca1f668"
-  integrity sha512-9AJA+AoipHfAf33zXY0ZDbjNq7xf53Z9itN73+7iXMWv2SW9l1q95OkYw4MsHJXG+vFUsw9SnZFEwJNo+6VnqA==
-  dependencies:
-    ethers "^6.13.2"
-    viem "^2.23.2"
-    yargs "^17.7.2"
-    zod "^3.25.76"
-
 "@api3/contracts@^27.0.0":
   version "27.0.0"
   resolved "https://registry.yarnpkg.com/@api3/contracts/-/contracts-27.0.0.tgz#5b5dcbb42054fbc7d2ff6d6260fdf8242c88bfc9"
@@ -205,14 +195,14 @@
     yargs "^17.7.2"
     zod "^4.0.15"
 
-"@api3/dapi-management@^3.44.0":
-  version "3.44.0"
-  resolved "https://registry.yarnpkg.com/@api3/dapi-management/-/dapi-management-3.44.0.tgz#271ae6525b3b4b718b0ca8bd0a7dda1734aa361d"
-  integrity sha512-jT1m1PPDMMud5ogNTEfWUY+kW3eNqKi4aW51QmnriSaok7ZwVvqP+tynPJtAHTPxtXO6FvaYcz+plDnJuWc2zA==
+"@api3/dapi-management@^3.45.0":
+  version "3.45.0"
+  resolved "https://registry.yarnpkg.com/@api3/dapi-management/-/dapi-management-3.45.0.tgz#c5b5457a8582d425ea7c0faf60953a6615ddf6a8"
+  integrity sha512-afyQ2IBcTX1UDKSk4IR2G1H3gunOXkIRCVp21Xh3WAMaRbMuk/iaOJMG+x3NTwgmB22uNfCUaU2/rbrfvLD2hg==
   dependencies:
-    "@api3/api-integrations" "^5.7.0"
+    "@api3/api-integrations" "^5.8.0"
     "@api3/commons" "^0.13.4"
-    "@api3/contracts" "^26.2.1"
+    "@api3/contracts" "^27.0.0"
     ethers "^6.15.0"
     zod "^3.25.76"
 
