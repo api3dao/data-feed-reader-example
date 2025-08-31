@@ -117,10 +117,10 @@
     yargs "^17.7.2"
     zod "^3.22.4"
 
-"@api3/api-integrations@^5.9.0":
-  version "5.9.0"
-  resolved "https://registry.yarnpkg.com/@api3/api-integrations/-/api-integrations-5.9.0.tgz#49c0cecba4a614fcb52f9fde118339a4ab081e40"
-  integrity sha512-IvgLb97O0tp8xdUJKRFWP4l45mbxVTA+1LcVkNOb5BWMrseyyMNSih5qv4P+dnEbkz8O/64X8SW2BsJt9h4uTw==
+"@api3/api-integrations@^5.10.0":
+  version "5.10.0"
+  resolved "https://registry.yarnpkg.com/@api3/api-integrations/-/api-integrations-5.10.0.tgz#f0f600d1024c6d6d51003debf28cb7342e728a7a"
+  integrity sha512-Dmga4ec5B/sG6XQvyxG14cxP2CezBYZsS8be4wr7n4q8kEgScGVSfjk77zlEQR12wL42Y0+n+PH3p91zR1rwiw==
   dependencies:
     "@api3/airnode-abi" "^0.15.0"
     "@api3/contracts" "^27.0.0"
@@ -195,14 +195,24 @@
     yargs "^17.7.2"
     zod "^4.0.15"
 
-"@api3/dapi-management@^3.48.0":
-  version "3.48.0"
-  resolved "https://registry.yarnpkg.com/@api3/dapi-management/-/dapi-management-3.48.0.tgz#f3b246ffe076cce12da56d8aeded1b803471d8b8"
-  integrity sha512-QV+Ic0DlfNHbHer3C9E0EyOdG/oIsSxz3Lb2Ic3SAkE+nnVJ4dG7OFPcw9knSmC1soS8BSJWMEKCXPU7aKVHcQ==
+"@api3/contracts@^27.1.0", "@api3/contracts@^27.2.0":
+  version "27.2.0"
+  resolved "https://registry.yarnpkg.com/@api3/contracts/-/contracts-27.2.0.tgz#31a33d09ed1ce6b9377401624a90e0fd06cee978"
+  integrity sha512-7cUMGf+mkqFXjCYbiI5eAjAYfXVpAKAJEFfbP+M7HpBZoxiKdawD9Y4vqR/vmP1XFTc5skabItzXYLXTFkc0Sw==
   dependencies:
-    "@api3/api-integrations" "^5.9.0"
+    ethers "^6.15.0"
+    viem "^2.23.2"
+    yargs "^17.7.2"
+    zod "^4.0.15"
+
+"@api3/dapi-management@^3.50.0":
+  version "3.50.0"
+  resolved "https://registry.yarnpkg.com/@api3/dapi-management/-/dapi-management-3.50.0.tgz#bbddca975f175c4efefa1ee36eeb30f1dfd84677"
+  integrity sha512-rnwWjYVj5ajrr3wIpN6YqjyBzAU2wBgSeuOKQP43ElC3Am+HIrpuIUKo+iOpmg5fAddN/IDBjg2Z1kKMapaB8g==
+  dependencies:
+    "@api3/api-integrations" "^5.10.0"
     "@api3/commons" "^0.13.4"
-    "@api3/contracts" "^27.0.0"
+    "@api3/contracts" "^27.1.0"
     ethers "^6.15.0"
     zod "^3.25.76"
 
