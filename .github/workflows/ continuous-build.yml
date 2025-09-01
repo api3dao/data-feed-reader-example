@@ -9,7 +9,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: '22.18.0'
       - run: yarn
       - run: yarn lint
       - run: yarn test
@@ -24,4 +24,3 @@ jobs:
           reporter: github-pr-review
           config_file: .github/config/linkspector.yml
           fail_on_error: true
-
