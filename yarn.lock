@@ -205,14 +205,14 @@
     yargs "^17.7.2"
     zod "^4.0.15"
 
-"@api3/dapi-management@^3.63.0":
-  version "3.63.0"
-  resolved "https://registry.yarnpkg.com/@api3/dapi-management/-/dapi-management-3.63.0.tgz#83ecc43852debc91e8db4cd5ef59de13801f2fd5"
-  integrity sha512-a2SBSDUAshk1x4W7b+LV8FXHaYO+IYmCFU0uJqScQcbP6GRdeH6ojMazzNFt6iiRvZAIgc1FkFHHYfFpItoT5Q==
+"@api3/dapi-management@^3.64.0":
+  version "3.64.0"
+  resolved "https://registry.yarnpkg.com/@api3/dapi-management/-/dapi-management-3.64.0.tgz#da49f275dc6a04017fb3bc0b7d3c54a521124382"
+  integrity sha512-7alfSnsI8AZ2Vdn0zP4h9N799rNAtuaaSzw/JKytf77iEFAFYhB15ABfRhnex4hnlgIUYhJT7nghsYQL7LM9MQ==
   dependencies:
     "@api3/api-integrations" "^8.1.0"
     "@api3/commons" "^0.13.4"
-    "@api3/contracts" "^28.0.0"
+    "@api3/contracts" "^31.0.0"
     ethers "^6.15.0"
     zod "^3.25.76"
 
