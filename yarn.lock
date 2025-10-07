@@ -205,6 +205,16 @@
     yargs "^17.7.2"
     zod "^4.0.15"
 
+"@api3/contracts@^31.1.0":
+  version "31.1.0"
+  resolved "https://registry.yarnpkg.com/@api3/contracts/-/contracts-31.1.0.tgz#f3d8e33e9225027475c5f6350d69d4d65c770ca2"
+  integrity sha512-oTzrWG4oC5uRUieR3B990f+y9f4JBSPhHTeim4BJLUN37sKQ716X3qvsXLnUIytoibvxifeDE8jkOxmbSNMUuA==
+  dependencies:
+    ethers "^6.15.0"
+    viem "^2.23.2"
+    yargs "^17.7.2"
+    zod "^4.0.15"
+
 "@api3/dapi-management@^3.64.0":
   version "3.64.0"
   resolved "https://registry.yarnpkg.com/@api3/dapi-management/-/dapi-management-3.64.0.tgz#da49f275dc6a04017fb3bc0b7d3c54a521124382"
