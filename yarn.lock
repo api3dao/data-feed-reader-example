@@ -205,14 +205,24 @@
     yargs "^17.7.2"
     zod "^4.0.15"
 
-"@api3/dapi-management@^3.71.0":
-  version "3.71.0"
-  resolved "https://registry.yarnpkg.com/@api3/dapi-management/-/dapi-management-3.71.0.tgz#dd764d211f66e3d00d8626171fe5b9a92de8ba0d"
-  integrity sha512-c7jxDgTaPk47n1rbl4C0YcLsmRYTYbyHV9D1hyh5yyIPA7gDF2Rtq/rMN+J/cirxFEY6elVCUaX4+lS9l5WIvw==
+"@api3/contracts@^32.0.0":
+  version "32.0.0"
+  resolved "https://registry.yarnpkg.com/@api3/contracts/-/contracts-32.0.0.tgz#0bcca1c4e6b996d43fa55bbc41cb86353c7d17d0"
+  integrity sha512-6U7AfmFwZNe0kx6Nhl5YBqrEt6uJeUC/tosotyN4RmY9woVPem459JHcpxa4v3pYlq/rNI0JStb5btPeMrbSMw==
+  dependencies:
+    ethers "^6.15.0"
+    viem "^2.23.2"
+    yargs "^17.7.2"
+    zod "^4.0.15"
+
+"@api3/dapi-management@^3.72.0":
+  version "3.72.0"
+  resolved "https://registry.yarnpkg.com/@api3/dapi-management/-/dapi-management-3.72.0.tgz#ab637e045ee9441c2cd2e7b37d464da8d609ab3e"
+  integrity sha512-uiQDb8j/svXAtXpxS1RF8okwihwrMoXoTDv/IDdduocOfL0MyhtmLmN9+ymi4j1YDRJZiS7rvxKjNIjv+gbInA==
   dependencies:
     "@api3/api-integrations" "^8.4.0"
     "@api3/commons" "^0.13.4"
-    "@api3/contracts" "^31.4.0"
+    "@api3/contracts" "^32.0.0"
     ethers "^6.15.0"
     zod "^3.25.76"
 
