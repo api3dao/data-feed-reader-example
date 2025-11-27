@@ -117,13 +117,13 @@
     yargs "^17.7.2"
     zod "^3.22.4"
 
-"@api3/api-integrations@^8.4.0":
-  version "8.4.0"
-  resolved "https://registry.yarnpkg.com/@api3/api-integrations/-/api-integrations-8.4.0.tgz#47be5380ec11288cf34e5fb50fdc3739fdb5a977"
-  integrity sha512-dIwGilH2kw+qxvwQiO9Di7ukbwqWGeloypRu9Rq9gU7tIUjhaVamX77FygeZ72wn/BLst0ey4Zc5MVBZDdXUcQ==
+"@api3/api-integrations@^8.6.0":
+  version "8.6.0"
+  resolved "https://registry.yarnpkg.com/@api3/api-integrations/-/api-integrations-8.6.0.tgz#b68d2ebe2df2139c197251129d156add9c9ff9d5"
+  integrity sha512-vWmRcH/Gp4bPTq5sDszAIVjrqcp7raU9uXsedV0XpDBo9d6Sawt4H/9Z5q0bVHb5D2EZg4e9znw2MWKywOvqIQ==
   dependencies:
     "@api3/airnode-abi" "^0.15.0"
-    "@api3/contracts" "^31.2.0"
+    "@api3/contracts" "^32.0.0"
     "@api3/ois" "^2.3.2"
     "@api3/signed-api" "3.3.0"
     ethers "^5.8.0"
@@ -185,16 +185,6 @@
     winston-console-format "^1.0.8"
     zod "^3.22.4"
 
-"@api3/contracts@^31.2.0":
-  version "31.2.0"
-  resolved "https://registry.yarnpkg.com/@api3/contracts/-/contracts-31.2.0.tgz#b5572c48b88d843fbfded510bd9e32e966bb7995"
-  integrity sha512-RhwZojBynueMS3swS0UyBu0rXQ0swPr0pGLJAaFX1OUjjx/aPNZ2DIOpPFuCWov5Uhc7KnsMDmnXXWyHYDrvqQ==
-  dependencies:
-    ethers "^6.15.0"
-    viem "^2.23.2"
-    yargs "^17.7.2"
-    zod "^4.0.15"
-
 "@api3/contracts@^32.0.0":
   version "32.0.0"
   resolved "https://registry.yarnpkg.com/@api3/contracts/-/contracts-32.0.0.tgz#0bcca1c4e6b996d43fa55bbc41cb86353c7d17d0"
@@ -205,12 +195,12 @@
     yargs "^17.7.2"
     zod "^4.0.15"
 
-"@api3/dapi-management@^3.73.0":
-  version "3.73.0"
-  resolved "https://registry.yarnpkg.com/@api3/dapi-management/-/dapi-management-3.73.0.tgz#8794a4ae5c3089f1b1bfa9d3cf6f844f315226f2"
-  integrity sha512-T6h9a2QsofONQot4wb8KyPc4kSHF61hYeGiK93Mcp4M5VtQGbL7BZR/6sjTRobqTMa6bA94VtvoKDcn2T0rWKA==
+"@api3/dapi-management@^3.74.0":
+  version "3.74.0"
+  resolved "https://registry.yarnpkg.com/@api3/dapi-management/-/dapi-management-3.74.0.tgz#d3037f8c782f8eb06c1b5f4457359262afcc4752"
+  integrity sha512-qgdKxTY8sBfmlu/hTgm+RsGvdAYxkAypPlPMy+GQSJrEZNxaMG2hE6HHGs9y/l4TZcB5kwB/kFvrwgZ2oPV9SQ==
   dependencies:
-    "@api3/api-integrations" "^8.4.0"
+    "@api3/api-integrations" "^8.6.0"
     "@api3/commons" "^0.13.4"
     "@api3/contracts" "^32.0.0"
     ethers "^6.15.0"
