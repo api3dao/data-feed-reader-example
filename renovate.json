@@ -34,6 +34,6 @@
   "lockFileMaintenance": {
     "enabled": false
   },
-  "reviewers": ["acenolaza"],
+  "reviewers": ["Siegrift"],
   "dependencyDashboard": false
 }
