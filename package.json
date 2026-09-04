@@ -36,9 +36,9 @@
     "@types/mocha": ">=10.0.10",
     "chai": "^4.5.0",
     "dotenv": "^17.2.3",
-    "eslint": "^8.57.1",
-    "hardhat": "^2.27.1",
-    "hardhat-deploy": "^1.0.4",
+    "eslint": "^10.10.0",
+    "hardhat": "^3.15.0",
+    "hardhat-deploy": "^2.0.26",
     "hardhat-gas-reporter": "^2.3.0",
     "prettier": "^3.7.3",
     "prettier-plugin-solidity": "^2.2.0",
@@ -46,7 +46,7 @@
     "solidity-coverage": "^0.8.16",
     "ts-node": ">=10.9.2",
     "typechain": "^8.3.2",
-    "typescript": ">=5.9.3"
+    "typescript": ">=7.0.2"
   },
   "dependencies": {
     "@openzeppelin/contracts": "^4.9.6"
