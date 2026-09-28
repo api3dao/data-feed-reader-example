@@ -1,6 +1,7 @@
-const helpers = require('@nomicfoundation/hardhat-network-helpers');
-const { expect } = require('chai');
-const { ethers } = require('hardhat');
+import { expect } from 'chai';
+import { network } from 'hardhat';
+
+const { ethers, networkHelpers: helpers } = await network.getOrCreate();
 
 describe('AggregatorV2V3InterfaceReaderExample', function () {
   async function deploy() {
@@ -16,7 +17,7 @@ describe('AggregatorV2V3InterfaceReaderExample', function () {
       roles.owner
     );
     const aggregatorV2V3InterfaceReaderExample = await aggregatorV2V3InterfaceReaderExampleFactory.deploy(
-      mockApi3ReaderProxyV1.address
+      await mockApi3ReaderProxyV1.getAddress()
     );
     return {
       roles,
@@ -29,7 +30,7 @@ describe('AggregatorV2V3InterfaceReaderExample', function () {
     it('constructs', async function () {
       const { roles, mockApi3ReaderProxyV1, aggregatorV2V3InterfaceReaderExample } = await helpers.loadFixture(deploy);
       expect(await aggregatorV2V3InterfaceReaderExample.owner()).to.equal(roles.owner.address);
-      expect(await aggregatorV2V3InterfaceReaderExample.proxy()).to.equal(mockApi3ReaderProxyV1.address);
+      expect(await aggregatorV2V3InterfaceReaderExample.proxy()).to.equal(await mockApi3ReaderProxyV1.getAddress());
     });
   });
 

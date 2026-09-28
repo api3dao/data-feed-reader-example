@@ -1,6 +1,7 @@
-const helpers = require('@nomicfoundation/hardhat-network-helpers');
-const { expect } = require('chai');
-const { ethers } = require('hardhat');
+import { expect } from 'chai';
+import { network } from 'hardhat';
+
+const { ethers, networkHelpers: helpers } = await network.getOrCreate();
 
 describe('DataFeedReaderExample', function () {
   async function deploy() {
@@ -12,7 +13,7 @@ describe('DataFeedReaderExample', function () {
     const mockApi3ReaderProxyFactory = await ethers.getContractFactory('MockApi3ReaderProxy', roles.owner);
     const mockApi3ReaderProxy = await mockApi3ReaderProxyFactory.deploy();
     const dataFeedReaderExampleFactory = await ethers.getContractFactory('DataFeedReaderExample', roles.owner);
-    const dataFeedReaderExample = await dataFeedReaderExampleFactory.deploy(mockApi3ReaderProxy.address);
+    const dataFeedReaderExample = await dataFeedReaderExampleFactory.deploy(await mockApi3ReaderProxy.getAddress());
     return {
       roles,
       mockApi3ReaderProxy,
@@ -24,7 +25,7 @@ describe('DataFeedReaderExample', function () {
     it('constructs', async function () {
       const { roles, mockApi3ReaderProxy, dataFeedReaderExample } = await helpers.loadFixture(deploy);
       expect(await dataFeedReaderExample.owner()).to.equal(roles.owner.address);
-      expect(await dataFeedReaderExample.proxy()).to.equal(mockApi3ReaderProxy.address);
+      expect(await dataFeedReaderExample.proxy()).to.equal(await mockApi3ReaderProxy.getAddress());
     });
   });
 
