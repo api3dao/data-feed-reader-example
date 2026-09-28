@@ -1,7 +1,13 @@
 {
   "compilerOptions": {
     "allowJs": true,
-    "strict": true
+    "lib": ["es2023"],
+    "module": "nodenext",
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "es2023",
+    "types": ["node", "mocha"],
+    "verbatimModuleSyntax": true
   },
-  "include": ["**/*", ".eslintrc.js"]
+  "include": ["**/*", ".eslintrc.cjs"]
 }
