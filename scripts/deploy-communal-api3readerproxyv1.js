@@ -1,7 +1,7 @@
-const api3Contracts = require('@api3/contracts');
-const { artifacts, ethers, network } = require('hardhat');
+import * as api3Contracts from '@api3/contracts';
+import hre from 'hardhat';
 
-const { validateDapiName } = require('./utils');
+import { validateDapiName } from './utils.js';
 
 async function main() {
   const dapiName = process.env.DAPI_NAME;
@@ -9,34 +9,31 @@ async function main() {
     throw new Error('Environment variable DAPI_NAME is not defined');
   }
   validateDapiName(dapiName);
-  const { chainId } = network.config;
+  const { ethers, networkConfig, networkName } = await hre.network.getOrCreate();
+  const { chainId } = networkConfig;
   const api3ReaderProxyV1Address = api3Contracts.computeCommunalApi3ReaderProxyV1Address(chainId, dapiName);
   if ((await ethers.provider.getCode(api3ReaderProxyV1Address)) === '0x') {
     const api3ReaderProxyV1FactoryAddress =
       api3Contracts.deploymentAddresses.Api3ReaderProxyV1Factory[chainId.toString()];
-    const api3ReaderProxyV1FactoryArtifact = await artifacts.readArtifact('IApi3ReaderProxyV1Factory');
+    const api3ReaderProxyV1FactoryArtifact = await hre.artifacts.readArtifact('IApi3ReaderProxyV1Factory');
     const [deployer] = await ethers.getSigners();
     const api3ReaderProxyV1Factory = new ethers.Contract(
       api3ReaderProxyV1FactoryAddress,
       api3ReaderProxyV1FactoryArtifact.abi,
       deployer
     );
-    const receipt = await api3ReaderProxyV1Factory.deployApi3ReaderProxyV1(
-      ethers.utils.formatBytes32String(dapiName),
+    const transaction = await api3ReaderProxyV1Factory.deployApi3ReaderProxyV1(
+      ethers.encodeBytes32String(dapiName),
       1,
       '0x'
     );
-    await new Promise((resolve) =>
-      ethers.provider.once(receipt.hash, () => {
-        resolve();
-      })
-    );
+    await transaction.wait();
     console.log(
-      `The communal Api3ReaderProxyV1 for ${dapiName} is deployed at ${api3ReaderProxyV1Address} of ${network.name}`
+      `The communal Api3ReaderProxyV1 for ${dapiName} is deployed at ${api3ReaderProxyV1Address} of ${networkName}`
     );
   } else {
     console.log(
-      `The communal Api3ReaderProxyV1 for ${dapiName} was already deployed at ${api3ReaderProxyV1Address} of ${network.name}`
+      `The communal Api3ReaderProxyV1 for ${dapiName} was already deployed at ${api3ReaderProxyV1Address} of ${networkName}`
     );
   }
 }

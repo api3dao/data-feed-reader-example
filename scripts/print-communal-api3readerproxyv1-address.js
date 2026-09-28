@@ -1,7 +1,7 @@
-const api3Contracts = require('@api3/contracts');
-const { network } = require('hardhat');
+import * as api3Contracts from '@api3/contracts';
+import hre from 'hardhat';
 
-const { validateDapiName } = require('./utils');
+import { validateDapiName } from './utils.js';
 
 async function main() {
   const dapiName = process.env.DAPI_NAME;
@@ -9,7 +9,8 @@ async function main() {
     throw new Error('Environment variable DAPI_NAME is not defined');
   }
   validateDapiName(dapiName);
-  const { chainId } = network.config;
+  const { networkConfig } = await hre.network.getOrCreate();
+  const { chainId } = networkConfig;
   const api3ReaderProxyV1Address = api3Contracts.computeCommunalApi3ReaderProxyV1Address(chainId, dapiName);
   console.log(`The address of the communal Api3ReaderProxyV1 for ${dapiName} is ${api3ReaderProxyV1Address}`);
 }

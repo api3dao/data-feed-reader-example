@@ -1,15 +1,18 @@
-const { deployments, ethers } = require('hardhat');
+import { artifacts, deployScript } from '../rocketh/deploy.js';
 
-module.exports = async () => {
-  const proxyAddress = process.env.PROXY;
-  if (!proxyAddress) {
-    throw new Error('Environment variable "PROXY" is not defined');
-  }
-  const [deployer] = await ethers.getSigners();
-  const dataFeedReaderExample = await deployments.deploy('DataFeedReaderExample', {
-    args: [proxyAddress],
-    from: deployer.address,
-    log: true,
-  });
-  console.log(`Deployed DataFeedReaderExample at ${dataFeedReaderExample.address}`);
-};
+// eslint-disable-next-line import/no-default-export
+export default deployScript(
+  async (env) => {
+    const proxyAddress = process.env.PROXY;
+    if (!proxyAddress) {
+      throw new Error('Environment variable "PROXY" is not defined');
+    }
+    const dataFeedReaderExample = await env.deploy('DataFeedReaderExample', {
+      account: env.namedAccounts.deployer,
+      artifact: artifacts.DataFeedReaderExample,
+      args: [proxyAddress],
+    });
+    console.log(`Deployed DataFeedReaderExample at ${dataFeedReaderExample.address}`);
+  },
+  { tags: ['DataFeedReaderExample'] }
+);

@@ -1,7 +1,7 @@
-const api3Contracts = require('@api3/contracts');
-const { artifacts, ethers, network } = require('hardhat');
+import * as api3Contracts from '@api3/contracts';
+import hre from 'hardhat';
 
-const { validateDapiName } = require('./utils');
+import { validateDapiName } from './utils.js';
 
 async function main() {
   const dapiName = process.env.DAPI_NAME;
@@ -13,7 +13,8 @@ async function main() {
   if (!dappAlias) {
     throw new Error('Environment variable DAPP_ALIAS is not defined');
   }
-  const { chainId } = network.config;
+  const { ethers, networkConfig, networkName } = await hre.network.getOrCreate();
+  const { chainId } = networkConfig;
   const api3ReaderProxyV1Address = api3Contracts.computeDappSpecificApi3ReaderProxyV1Address(
     dappAlias,
     chainId,
@@ -22,29 +23,25 @@ async function main() {
   if ((await ethers.provider.getCode(api3ReaderProxyV1Address)) === '0x') {
     const api3ReaderProxyV1FactoryAddress =
       api3Contracts.deploymentAddresses.Api3ReaderProxyV1Factory[chainId.toString()];
-    const api3ReaderProxyV1FactoryArtifact = await artifacts.readArtifact('IApi3ReaderProxyV1Factory');
+    const api3ReaderProxyV1FactoryArtifact = await hre.artifacts.readArtifact('IApi3ReaderProxyV1Factory');
     const [deployer] = await ethers.getSigners();
     const api3ReaderProxyV1Factory = new ethers.Contract(
       api3ReaderProxyV1FactoryAddress,
       api3ReaderProxyV1FactoryArtifact.abi,
       deployer
     );
-    const receipt = await api3ReaderProxyV1Factory.deployApi3ReaderProxyV1(
-      ethers.utils.formatBytes32String(dapiName),
+    const transaction = await api3ReaderProxyV1Factory.deployApi3ReaderProxyV1(
+      ethers.encodeBytes32String(dapiName),
       api3Contracts.computeDappId(dappAlias, chainId),
       '0x'
     );
-    await new Promise((resolve) =>
-      ethers.provider.once(receipt.hash, () => {
-        resolve();
-      })
-    );
+    await transaction.wait();
     console.log(
-      `${dappAlias}'s Api3ReaderProxyV1 for ${dapiName} is deployed at ${api3ReaderProxyV1Address} of ${network.name}`
+      `${dappAlias}'s Api3ReaderProxyV1 for ${dapiName} is deployed at ${api3ReaderProxyV1Address} of ${networkName}`
     );
   } else {
     console.log(
-      `${dappAlias}'s Api3ReaderProxyV1 for ${dapiName} was already deployed at ${api3ReaderProxyV1Address} of ${network.name}`
+      `${dappAlias}'s Api3ReaderProxyV1 for ${dapiName} was already deployed at ${api3ReaderProxyV1Address} of ${networkName}`
     );
   }
 }

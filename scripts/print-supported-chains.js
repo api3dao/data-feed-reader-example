@@ -1,4 +1,4 @@
-const { getChains, api3Contracts } = require('@api3/dapi-management');
+import { api3Contracts, getChains } from '@api3/dapi-management';
 
 async function main() {
   const supportedChains = getChains()
