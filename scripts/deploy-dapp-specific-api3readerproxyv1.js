@@ -32,7 +32,7 @@ async function main() {
     );
     const transaction = await api3ReaderProxyV1Factory.deployApi3ReaderProxyV1(
       ethers.encodeBytes32String(dapiName),
-      api3Contracts.computeDappId(dappAlias, chainId),
+      api3Contracts.unsafeComputeDappId(dappAlias, chainId),
       '0x'
     );
     await transaction.wait();

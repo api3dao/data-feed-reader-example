@@ -25,7 +25,7 @@ async function main() {
   if (!dappAlias) {
     throw new Error('Environment variable DAPP_ALIAS is not defined');
   }
-  if (!api3Contracts.DAPPS.some((dapp) => dapp.alias === dappAlias)) {
+  if (!api3Contracts.DAPPS.some((dapp) => dappAlias in dapp.aliases)) {
     console.warn(`@api3/contracts does not include the dApp with alias ${dappAlias}. Deployment will continue anyway.`);
   }
   const { ethers, networkConfig, networkName } = await hre.network.getOrCreate();
